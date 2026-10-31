@@ -57,6 +57,7 @@ Bu komut indekslemeyi açar ve canonical, OG, schema, sitemap adreslerini yayın
 | `seo.py`, `localize.py`, `polish.py` | SEO, iki dil, blog ve görsel düzenlemeler |
 | `data/site.json` | Marka, iletişim ve yayın adresleri |
 | `data/blog.json` | Beş yazının iki dildeki içerikleri |
+| `data/destinations.json`, `destinations.py` | İki dilde destinasyon metinleri, hedef ifadeler, kaynaklar ve yer/hizmet schema yapıları |
 | `data/tr.json` | Türkçe arayüz metinleri |
 | `data/galleries.json` | Galeri kaynak bilgileri |
 | `dist/editorial.css`, `dist/portfolio.css`, `dist/brand.css` | Ek arayüz stilleri |
@@ -76,3 +77,5 @@ docker run --rm -p 8090:8080 charlot-demo
 ```
 
 Nginx gerçek 301/404 yanıtları üretir ve bütün demo yanıtlarında `X-Robots-Tag: noindex, nofollow` gönderir. Bu Dockerfile demo yayını içindir; gerçek alan adına indekslenebilir yayın için ayrıca yayın yapılandırması yapılmalıdır. Coolify tokenleri repoda tutulmaz.
+
+Destinasyonların anahtar kelime ve içerik haritası: [docs/destination-seo.md](docs/destination-seo.md).

@@ -98,3 +98,10 @@ IKI DIL / BLOG / ILETISIM GUNCELLEMESI
 - Adres ve harita data/site.json icindeki dogrulanmis Antalya adresinden uretilir.
 - Kaynak sitedeki Music telefonu kullanilmaz; Film icin ayrica telefon uydurulmaz.
 - Google Maps haritasi internet baglantisi gerektirir; yol tarifi baglantisi da vardir.
+
+DESTINASYON ICERIKLERI
+- Turkiye, BAE, Misir, Suudi Arabistan ve Dubai icin ozgun Turkce/Ingilizce metinler.
+- data/destinations.json: giris, bolge baglami, hizmet basliklari, sorular ve kaynaklar.
+- destinations.py: gorunur icerik, arka plan yer adi, metadata ve schema uretimi.
+- docs/destination-seo.md: hedef ifade haritasi; arama hacmi olcumu yapilmamistir.
+- Buyuk arka plan yazisi dekoratiftir; icerik okunabilir paragraflarda yer alir.

@@ -69,4 +69,23 @@ class SEO(unittest.TestCase):
    path=D/('tr/iletisim/index.html' if lang=='tr' else 'en/contact/index.html');html=path.read_text()
    self.assertIn('mailto:info@charlotcrea.com',html);self.assertIn('tel:+905413962260',html);self.assertIn('output=embed',html);self.assertIn('Muratpa',html);self.assertNotIn('West%20Orange',html)
    home=(D/lang/'index.html').read_text();self.assertIn('class="editorial-ticker"',home);self.assertIn('class="logo-marquee"',home)
+ def test_destination_content(self):
+  from html import escape,unescape
+  data=json.loads(Path('data/destinations.json').read_text());routes=json.loads(Path('data/language-routes.json').read_text())
+  for entry in data:
+   en='/en/destinations/'+entry['slug']+'/'
+   for lang,path in [('en',en),('tr',routes[en])]:
+    html=(D/path.strip('/')/'index.html').read_text();page=Page(html);copy=entry[lang]
+    self.assertIn('class="section destination-story"',html)
+    self.assertIn('class="destination-bg-text" aria-hidden="true"',html)
+    self.assertEqual(unescape(re.search(r'<h1>(.*?)</h1>',html).group(1)),copy['h1'])
+    self.assertEqual(page.meta['description'],copy['description'])
+    self.assertEqual(len(re.findall('class="section destination-story"',html)),1)
+    graph=page.ld[0]['@graph'];service=next(n for n in graph if n['@type']=='Service');place=next(n for n in graph if n['@type'] in ('City','Country'))
+    self.assertEqual(service['areaServed']['@id'],place['@id']);self.assertEqual(place['name'],copy['name'])
+    faq=next(n for n in graph if n['@type']=='FAQPage');self.assertEqual(len(faq['mainEntity']),len(copy['faq']))
+    for question,answer in copy['faq']:
+     self.assertIn(escape(question),html);self.assertIn(escape(answer),html)
+    for heading,paragraph in copy['sections']:
+     self.assertIn(escape(heading),html);self.assertIn(escape(paragraph),html)
 if __name__=='__main__':unittest.main()

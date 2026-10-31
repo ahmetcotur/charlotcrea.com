@@ -221,3 +221,4 @@ print(f'Languages: {len(allpaths)} pages; 5 blog articles in EN + TR.')
 
 import runpy
 runpy.run_path("polish.py")
+runpy.run_path("destinations.py")
