@@ -78,17 +78,18 @@ def meta_head(html,lang,path,title,description,image,graph,article=False):
  styles=''.join(dict.fromkeys(re.findall(r'<link\b[^>]*(?:rel="stylesheet"|rel="icon")[^>]*>',oldhead)))
  if '/editorial.css' not in styles:styles+='<link rel="stylesheet" href="/editorial.css">'
  url=base+path;enpath=reverse[path] if lang=='tr' else path;trpath=routes[enpath]
+ social_image=config['social_image'];social_alt='Charlot Crea logosu' if lang=='tr' else 'Charlot Crea logo'
  head='<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
  head+='<title>'+escape(title)+'</title><meta name="description" content="'+escape(description,quote=True)+'">'
  head+='<meta name="robots" content="'+('index,follow,max-image-preview:large' if production else 'noindex,nofollow')+'">'
  head+='<link rel="canonical" href="'+url+'">'
  for code,target in [('en',enpath),('tr',trpath),('x-default',enpath)]:head+=f'<link rel="alternate" hreflang="{code}" href="{base+target}">'
- props={'og:type':'article' if article else 'website','og:site_name':'Charlot Crea','og:locale':locale,'og:locale:alternate':other,'og:title':title,'og:description':description,'og:url':url,'og:image':base+image,'og:image:alt':title,'og:image:type':'image/png' if image.endswith('.png') else 'image/jpeg'}
- dims=dimensions(D/image.lstrip('/'))
+ props={'og:type':'article' if article else 'website','og:site_name':'Charlot Crea','og:locale':locale,'og:locale:alternate':other,'og:title':title,'og:description':description,'og:url':url,'og:image':base+social_image,'og:image:alt':social_alt,'og:image:type':'image/png'}
+ dims=dimensions(D/social_image.lstrip('/'))
  if dims:props.update({'og:image:width':str(dims[0]),'og:image:height':str(dims[1])})
  if article:props.update({'article:published_time':'2026-10-31','article:author':base+('/tr/hakkimizda/' if lang=='tr' else '/en/about/')})
  head+=''.join(f'<meta property="{k}" content="{escape(v,quote=True)}">' for k,v in props.items())
- for k,v in {'twitter:card':'summary_large_image','twitter:title':title,'twitter:description':description,'twitter:image':base+image,'twitter:image:alt':title,'theme-color':'#f6f5f0'}.items():head+=f'<meta name="{k}" content="{escape(v,quote=True)}">'
+ for k,v in {'twitter:card':'summary_large_image','twitter:title':title,'twitter:description':description,'twitter:image':base+social_image,'twitter:image:alt':social_alt,'theme-color':'#f6f5f0'}.items():head+=f'<meta name="{k}" content="{escape(v,quote=True)}">'
  head+=styles+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('<','\\u003c')+'</script>'
  return re.sub(r'<head>.*?</head>',lambda m:'<head>'+head+'</head>',html,flags=re.S)
 # Blog content: five actual editorial examples in each language.

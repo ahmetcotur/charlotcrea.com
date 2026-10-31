@@ -30,6 +30,7 @@ class SEO(unittest.TestCase):
    self.assertEqual(page.canonical,[base+path],f);self.assertEqual(page.h1,1,f)
    lang=path.split('/')[1];self.assertEqual(page.lang,lang)
    title=re.search('<title>(.*?)</title>',html).group(1);titles.append(title);descriptions.append(page.meta['description'])
+   self.assertEqual(page.meta['og:image'],base+'/assets/charlot-crea-share.png');self.assertEqual(page.meta['twitter:image'],page.meta['og:image']);self.assertEqual(page.meta['og:image:width'],'1200');self.assertEqual(page.meta['og:image:height'],'630')
    self.assertEqual(page.meta['og:url'],base+path);self.assertEqual(page.meta['og:title'],page.meta['twitter:title'])
    self.assertEqual(page.meta['og:locale'],'tr_TR' if lang=='tr' else 'en_US')
    self.assertTrue((D/urlsplit(page.meta['og:image']).path.lstrip('/')).is_file())
