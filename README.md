@@ -65,3 +65,14 @@ Bu komut indekslemeyi açar ve canonical, OG, schema, sitemap adreslerini yayın
 Form, brief'i tarayıcıda hazırlar ve dosya olarak indirir; e-posta veya CRM bağlantısı henüz yoktur. Film sayfasına gerçek video içerikleri henüz eklenmemiştir. Google Maps ve Google Fonts internet bağlantısı gerektirir.
 
 Fotoğraflar ve marka logoları mevcut Charlot Crea sitesinden bu demo için alınmıştır. Ayrıntılı Türkçe notlar: [README-TR.txt](README-TR.txt).
+
+## Coolify / Docker demo
+
+Coolify'da **Dockerfile** build pack ve `8080` container portu kullanılır. Sağlık kontrolü `/en/` adresidir. Build-time `SITE_URL` demo origin'ine ayarlanır; varsayılan değer `https://charlot-demo.5.189.135.4.sslip.io`.
+
+```sh
+docker build --build-arg SITE_URL=https://demo.example.com -t charlot-demo .
+docker run --rm -p 8090:8080 charlot-demo
+```
+
+Nginx gerçek 301/404 yanıtları üretir ve bütün demo yanıtlarında `X-Robots-Tag: noindex, nofollow` gönderir. Bu Dockerfile demo yayını içindir; gerçek alan adına indekslenebilir yayın için ayrıca yayın yapılandırması yapılmalıdır. Coolify tokenleri repoda tutulmaz.
