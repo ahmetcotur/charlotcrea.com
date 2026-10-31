@@ -26,3 +26,9 @@ for page in D.rglob('index.html'):
     if 'class="reference-logo"' in html:
         html = html.replace('<body>', '<body>' + logo_filter, 1)
         page.write_text(html)
+
+# Keep the overview compact while preserving each image's complete composition.
+for route in ('en/photography', 'tr/fotograf'):
+    page = D / route / 'index.html'
+    html = page.read_text().replace('<main>', '<main class="photography-page">', 1)
+    page.write_text(html)

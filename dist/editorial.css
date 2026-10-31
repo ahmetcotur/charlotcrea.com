@@ -25,3 +25,9 @@
 @media(hover:hover){.discipline-card:hover{background:var(--ink);color:var(--paper)}.discipline-card:hover .discipline-link{transform:translateX(5px)}}
 @media(prefers-reduced-motion:reduce){.discipline-card,.discipline-card .discipline-link{transition:none}.discipline-card:hover .discipline-link,.discipline-card:focus-visible .discipline-link{transform:none}}
 @media(prefers-reduced-motion:reduce){.discipline-card.discipline-film{transition:none}}
+/* Portfolio overview: complete photographs within a compact, consistent viewing area. */
+.photography-page .project-grid{align-items:start}
+.photography-page .project-card:nth-child(even){margin-top:0}
+.photography-page .project-card .picture{display:flex;justify-content:center;align-items:center;height:clamp(260px,48svh,420px);overflow:visible;background:transparent}
+.photography-page .project-card .picture img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;flex:0 1 auto}
+@media(max-width:760px){.photography-page .project-card .picture{height:clamp(220px,48svh,340px)}.photography-page .project-grid{gap:38px}}
