@@ -1,0 +1,14 @@
+{
+  "name": "Charlot Crea",
+  "production_url": "https://www.charlotcrea.com",
+  "preview_url": "http://localhost:8080",
+  "language": "en",
+  "locale": "en_US",
+  "telephone": "+90 541 396 22 60",
+  "city": "Antalya",
+  "country": "TR",
+  "email": "info@charlotcrea.com",
+  "street_address": "Güzeloba Mh. 2388 Sk. Ekopark Evleri, E/Blok No:7",
+  "district": "Muratpaşa",
+  "address": "Güzeloba Mh. 2388 Sk. Ekopark Evleri, E/Blok No:7, Muratpaşa / Antalya, Türkiye"
+}

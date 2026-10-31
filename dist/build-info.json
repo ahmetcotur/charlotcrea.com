@@ -1,0 +1,10 @@
+{
+  "environment": "preview",
+  "site_url": "http://localhost:8080",
+  "canonical_pages": 54,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "blog_posts": 5
+}

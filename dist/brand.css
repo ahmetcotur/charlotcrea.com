@@ -1,0 +1,10 @@
+/* Opening brand sequence: CSS keeps the page available without JavaScript. */
+.brand-reveal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:var(--paper,#f6f5f0);pointer-events:none;animation:brand-curtain .7s cubic-bezier(.76,0,.24,1) 1.25s both}
+.brand-reveal-mark{width:clamp(150px,22vw,260px);text-align:center;animation:brand-mark-out .4s ease 1.15s both}
+.brand-reveal img{display:block;width:100%;height:auto;mix-blend-mode:multiply;animation:brand-mark-in .9s cubic-bezier(.16,1,.3,1) .1s both}
+.brand-reveal-line{display:block;width:44px;height:1px;background:var(--green,#485a40);margin:24px auto 0;transform-origin:center;animation:brand-line .65s ease .35s both}
+@keyframes brand-mark-in{from{opacity:0;transform:translateY(18px);clip-path:inset(100% 0 0)}to{opacity:1;transform:translateY(0);clip-path:inset(0)}}
+@keyframes brand-line{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+@keyframes brand-mark-out{to{opacity:0;transform:translateY(-12px)}}
+@keyframes brand-curtain{from{clip-path:inset(0)}to{clip-path:inset(0 0 100%);visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.brand-reveal{display:none}.brand-reveal *{animation:none}}

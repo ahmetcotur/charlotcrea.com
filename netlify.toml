@@ -1,0 +1,6 @@
+[build]
+  command = 'python3 build.py --site-url "${DEPLOY_PRIME_URL:-http://localhost:8080}" && python3 tests/check_seo.py'
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
