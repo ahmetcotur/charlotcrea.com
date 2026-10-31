@@ -1,0 +1,152 @@
+[
+  {
+    "country_slug": "turkey",
+    "slug": "antalya",
+    "key": "Antalya",
+    "country": "Türkiye",
+    "en": {
+      "name": "Antalya",
+      "intro": "From a home base in Antalya, Charlot Crea connects the character of a Mediterranean city with its interiors and everyday experiences. The Rixos Downtown Antalya gallery brings daylight, room details and views into one selected collection."
+    },
+    "tr": {
+      "name": "Antalya",
+      "intro": "Antalya merkezli Charlot Crea, bir Akdeniz şehrinin karakterini iç mekânları ve günlük deneyimleriyle buluşturur. Rixos Downtown Antalya galerisi gün ışığını, oda ayrıntılarını ve manzaraları aynı seçkide bir araya getirir."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "turkey",
+    "slug": "istanbul",
+    "key": "Istanbul",
+    "country": "Türkiye",
+    "en": {
+      "name": "Istanbul",
+      "intro": "The Fairmont Istanbul collection offers a focused view of interiors, materials and moments in the city. Explore the photographs as a sequence, from the overall character of a room to the details that shape its atmosphere."
+    },
+    "tr": {
+      "name": "İstanbul",
+      "intro": "Fairmont Istanbul koleksiyonu şehirdeki iç mekânlara, malzemelere ve yaşamdan anlara odaklanır. Bir odanın genel karakterinden atmosferini belirleyen ayrıntılara uzanan fotoğrafları bir seri olarak keşfedin."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "turkey",
+    "slug": "kemer",
+    "key": "Kemer",
+    "country": "Türkiye",
+    "en": {
+      "name": "Kemer",
+      "intro": "The Kemer selection connects Balmy Beach Resort photography with films for Balmy and Swandor. Water, greenery, shared spaces and moments of relaxation offer different ways to tell the story of a stay."
+    },
+    "tr": {
+      "name": "Kemer",
+      "intro": "Kemer seçkisi, Balmy Beach Resort fotoğraflarını Balmy ve Swandor filmleriyle buluşturur. Su, yeşil, ortak alanlar ve dinlenme anları, bir konaklama hikâyesini farklı anlatım biçimleriyle gösterir."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "turkey",
+    "slug": "tekirova",
+    "key": "Tekirova",
+    "country": "Türkiye",
+    "en": {
+      "name": "Tekirova",
+      "intro": "Rixos Premium Tekirova photographs and the Güral Premier Tekirova film bring still and moving images together. Explore open spaces, colour and life around the water, then discuss the views and moments that matter to your own project."
+    },
+    "tr": {
+      "name": "Tekirova",
+      "intro": "Rixos Premium Tekirova fotoğrafları ve Güral Premier Tekirova filmi, sabit ve hareketli görüntüleri bir araya getirir. Açık alanları, rengi ve suyun etrafındaki yaşamı keşfedin; ardından kendi projeniz için önemli açıları ve anları konuşalım."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "uae",
+    "slug": "abu-dhabi",
+    "key": "Abu Dhabi",
+    "country": "UAE",
+    "en": {
+      "name": "Abu Dhabi",
+      "intro": "The Rixos Premium Saadiyat collection offers a specific Abu Dhabi reference, with architecture, interiors and carefully considered details. Follow the gallery from the rhythm of the spaces to the smaller elements that make them recognisable."
+    },
+    "tr": {
+      "name": "Abu Dhabi",
+      "intro": "Rixos Premium Saadiyat koleksiyonu; mimari, iç mekânlar ve özenli ayrıntılarla Abu Dhabi’den somut bir referans sunar. Galeride mekânların ritminden onları tanınır kılan küçük öğelere uzanan bir akışı izleyin."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "egypt",
+    "slug": "cairo",
+    "key": "Cairo",
+    "country": "Egypt",
+    "en": {
+      "name": "Cairo",
+      "intro": "Fairmont Cairo photography and the Fairmont Nile City film offer two ways to explore the same city setting. Room interiors, views and moments of arrival connect the architectural character of the property with the experience of being there."
+    },
+    "tr": {
+      "name": "Kahire",
+      "intro": "Fairmont Cairo fotoğrafları ve Fairmont Nile City filmi aynı şehir çevresini iki farklı anlatımla keşfetmenizi sağlar. Oda içleri, manzaralar ve varış anları, tesisin mimari karakterini mekânda bulunma deneyimiyle ilişkilendirir."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "egypt",
+    "slug": "el-quseir",
+    "key": "El Quseir",
+    "country": "Egypt",
+    "en": {
+      "name": "El Quseir",
+      "intro": "Photography and film for Mövenpick Resort El Quseir meet in this coastal selection. Natural textures, framed views and a quieter rhythm give the collection its identity. See how the same setting can be expressed through individual photographs and moving images."
+    },
+    "tr": {
+      "name": "El Quseir",
+      "intro": "Mövenpick Resort El Quseir için hazırlanan fotoğraf ve film bu kıyı seçkisinde buluşur. Doğal dokular, çerçevelenen manzaralar ve daha sakin bir ritim koleksiyona kimliğini verir. Aynı çevrenin tek tek karelerle ve hareketli görüntülerle nasıl anlatıldığını inceleyin."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "egypt",
+    "slug": "luxor",
+    "key": "Luxor",
+    "country": "Egypt",
+    "en": {
+      "name": "Luxor",
+      "intro": "The Sofitel Winter Palace collection combines photography and film. Garden paths, warm light and moments of movement shape a visual story that unfolds across both formats. Explore the still images before watching the film to see how the setting changes with time."
+    },
+    "tr": {
+      "name": "Luksor",
+      "intro": "Sofitel Winter Palace koleksiyonu fotoğraf ve filmi birlikte sunar. Bahçe yolları, sıcak ışık ve hareket anları, iki formata da uzanan bir görsel hikâye oluşturur. Mekânın zamanla nasıl değiştiğini görmek için fotoğrafları inceleyip ardından filmi izleyin."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "egypt",
+    "slug": "aswan",
+    "key": "Aswan",
+    "country": "Egypt",
+    "en": {
+      "name": "Aswan",
+      "intro": "Sofitel Legend Old Cataract is represented through interiors, architecture and film. Rich materials, room proportions and a sense of arrival create a coherent starting point for the collection. Discover the project in still images and in motion."
+    },
+    "tr": {
+      "name": "Asvan",
+      "intro": "Sofitel Legend Old Cataract; iç mekânlar, mimari ve filmle temsil edilir. Zengin malzemeler, oda oranları ve varış hissi, koleksiyon için tutarlı bir başlangıç oluşturur. Projeyi hem fotoğraflarla hem de hareketli görüntülerle keşfedin."
+    },
+    "published": "2026-11-01"
+  },
+  {
+    "country_slug": "egypt",
+    "slug": "sharm-el-sheikh",
+    "key": "Sharm El Sheikh",
+    "country": "Egypt",
+    "en": {
+      "name": "Sharm El Sheikh",
+      "intro": "The Sharm El Sheikh selection brings together films for Rixos Sharm El Sheikh and Rixos Premium Seagate. Watch the films to explore different approaches to a property’s setting, shared spaces and the flow of a guest experience."
+    },
+    "tr": {
+      "name": "Şarm El Şeyh",
+      "intro": "Şarm El Şeyh seçkisi Rixos Sharm El Sheikh ve Rixos Premium Seagate filmlerini bir araya getirir. Tesisin çevresini, ortak alanlarını ve misafir deneyiminin akışını farklı yaklaşımlarla keşfetmek için filmleri izleyin."
+    },
+    "published": "2026-11-01"
+  }
+]

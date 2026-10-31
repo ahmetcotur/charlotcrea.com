@@ -52,7 +52,7 @@ class SEO(unittest.TestCase):
    self.assertEqual(html.count('class="language-switch"'),1)
    self.assertNotRegex(html,r'href="/en/projects/project-\d+')
    urls.append(base+path)
-  self.assertEqual(len(urls),info['canonical_pages']);self.assertEqual(len(urls),54)
+  self.assertEqual(len(urls),info['canonical_pages']);self.assertEqual(len(urls),len(pairs)*2)
   self.assertEqual(len(titles),len(set(titles)));self.assertEqual(len(descriptions),len(set(descriptions)))
   tree=ET.parse(D/'sitemap.xml');ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9','i':'http://www.google.com/schemas/sitemap-image/1.1','x':'http://www.w3.org/1999/xhtml'}
   sitemap=[x.text for x in tree.findall('s:url/s:loc',ns)];self.assertEqual(set(sitemap),set(urls));self.assertEqual(len(sitemap),len(set(sitemap)))
@@ -88,4 +88,24 @@ class SEO(unittest.TestCase):
      self.assertIn(escape(question),html);self.assertIn(escape(answer),html)
     for heading,paragraph in copy['sections']:
      self.assertIn(escape(heading),html);self.assertIn(escape(paragraph),html)
+ def test_expanded_portfolio(self):
+  data=json.loads(Path('data/portfolio.json').read_text());info=json.loads((D/'build-info.json').read_text());pairs=json.loads(Path('data/language-routes.json').read_text())
+  self.assertEqual(info['photography_collections'],len(data['projects']));self.assertEqual(info['films'],len(data['films']))
+  unique_images={a['src'] for p in data['projects'] for a in p['images']};self.assertEqual(info['portfolio_photographs'],len(unique_images))
+  for project in data['projects']:
+   self.assertTrue(project['images']);en='/en/projects/'+project['slug']+'/'
+   for lang,path in [('en',en),('tr',pairs[en])]:
+    page=Page((D/path.strip('/')/'index.html').read_text());images=[n for n in page.ld[0]['@graph'] if n['@type']=='ImageObject'];self.assertEqual(len(images),len(project['images']))
+   for asset in project['images']:
+    self.assertTrue((D/asset['src'].lstrip('/')).is_file());self.assertTrue((D/asset['small'].lstrip('/')).is_file());self.assertGreater(asset['width'],0);self.assertGreater(asset['height'],0)
+  for film in data['films']:
+   self.assertTrue((D/film['poster'].lstrip('/')).is_file());self.assertTrue(film['embed_url'].endswith('/preview'))
+   if film.get('file'):self.assertTrue((D/film['file'].lstrip('/')).is_file())
+   en='/en/films/'+film['slug']+'/'
+   for lang,path in [('en',en),('tr',pairs[en])]:
+    html=(D/path.strip('/')/'index.html').read_text();page=Page(html);video=next(n for n in page.ld[0]['@graph'] if n['@type']=='VideoObject')
+    self.assertEqual(video['thumbnailUrl'][0],info['site_url']+film['poster']);self.assertEqual(video['embedUrl'],film['embed_url']);self.assertIn('class="film-poster',html)
+  for city in json.loads(Path('data/portfolio-cities.json').read_text()):
+   supported=any(city['key'] in p['cities'] and p['country']==city['country'] for p in data['projects']) or any(city['key']==f['city'] and city['country']==f['country'] for f in data['films'])
+   self.assertTrue(supported,city['key'])
 if __name__=='__main__':unittest.main()

@@ -105,11 +105,16 @@
     "country": "Egypt",
     "cities": [
       "Cairo",
-      "El Quseir"
+      "El Quseir",
+      "Luxor",
+      "Aswan",
+      "Sharm El Sheikh"
     ],
     "projects": [
       "fairmont-cairo",
-      "movenpick-resort-el-quseir"
+      "movenpick-resort-el-quseir",
+      "sofitel-winter-palace-luxor",
+      "sofitel-old-cataract-aswan"
     ],
     "sources": [
       {
@@ -130,10 +135,10 @@
       "background": "EGYPT",
       "h1": "Photography in Egypt",
       "meta": "Egypt Photography | Cairo & El Quseir | Charlot Crea",
-      "description": "Discover Charlot Crea photography in Egypt through Fairmont Cairo and Mövenpick Resort El Quseir. Explore hotel, resort and architectural project galleries.",
-      "lead": "From Cairo’s urban setting to the Red Sea coast at El Quseir, a different sense of place asks for a different photographic approach. Explore two perspectives from our Egypt portfolio.",
+      "description": "Discover Charlot Crea photography and films in Egypt: Cairo, El Quseir, Luxor, Aswan and selected Red Sea projects. Explore city pages and project galleries.",
+      "lead": "From Cairo and the Red Sea coast to Luxor and Aswan, explore a connected collection of photography and film. Each project brings a different setting, atmosphere and story into view.",
       "heading": "City character. Coastal atmosphere.",
-      "intro": "Cairo and El Quseir offer contrasting settings for a photography collection. The capital’s urban context and the Red Sea setting of El Quseir create different relationships between architecture, landscape and the guest experience. A focused brief can give each location its own visual rhythm.",
+      "intro": "The Egypt portfolio connects Fairmont Cairo, Mövenpick Resort El Quseir, Sofitel Winter Palace and Sofitel Legend Old Cataract photography. Films add perspectives from those properties and Rixos projects on the coast. City pages make it possible to follow each location through both still and moving images.",
       "sections": [
         [
           "Hotel photography in Cairo",
@@ -157,7 +162,7 @@
       "faq": [
         [
           "Which Egypt locations are represented?",
-          "The selected collection includes Fairmont Cairo and Mövenpick Resort El Quseir. Each links to its own photography gallery."
+          "Photography collections cover Cairo, El Quseir, Luxor and Aswan. The film selection also includes Rixos projects in El Alamein, Sharm El Sheikh and Hurghada."
         ],
         [
           "Can one brief cover city and coastal locations?",
@@ -170,10 +175,10 @@
       "background": "MISIR",
       "h1": "Mısır’da fotoğraf çekimi",
       "meta": "Mısır Fotoğraf Çekimi | Kahire ve El Quseir | Charlot Crea",
-      "description": "Fairmont Cairo ve Mövenpick Resort El Quseir projeleriyle Charlot Crea’nın Mısır fotoğraf çalışmalarını keşfedin. Otel, resort ve mimari galerileri inceleyin.",
-      "lead": "Kahire’nin şehir dokusundan El Quseir’in Kızıldeniz kıyısına, farklı mekânlar farklı bir fotoğraf yaklaşımı ister. Mısır portfolyomuzdan iki ayrı bakış açısını keşfedin.",
+      "description": "Kahire, El Quseir, Luksor ve Asvan fotoğrafları ile seçili Kızıldeniz filmlerini keşfedin. Charlot Crea Mısır projelerini şehirlere göre inceleyin.",
+      "lead": "Kahire ve Kızıldeniz kıyısından Luksor ve Asvan’a, fotoğraf ve filmlerden oluşan bağlantılı bir koleksiyonu keşfedin. Her proje farklı bir çevreyi, atmosferi ve hikâyeyi görünür kılar.",
       "heading": "Şehrin karakteri. Kıyının atmosferi.",
-      "intro": "Kahire ve El Quseir, bir fotoğraf serisi için birbirinden farklı çevreler sunar. Başkentin şehir dokusu ve El Quseir’in Kızıldeniz kıyısındaki konumu; mimari, peyzaj ve misafir deneyimi arasında farklı ilişkiler kurar. Odaklı bir brief, her konumun kendine özgü görsel ritmini bulmasını destekler.",
+      "intro": "Mısır portfolyosu; Fairmont Cairo, Mövenpick Resort El Quseir, Sofitel Winter Palace ve Sofitel Legend Old Cataract fotoğraflarını buluşturur. Filmler, bu tesislere ve kıyıdaki Rixos projelerine farklı bakışlar ekler. Şehir sayfalarında her konumu hem fotoğraf hem de hareketli görüntülerle izleyebilirsiniz.",
       "sections": [
         [
           "Kahire’de otel fotoğrafçılığı",
@@ -197,7 +202,7 @@
       "faq": [
         [
           "Mısır’dan hangi konumlar portfolyoda bulunuyor?",
-          "Seçili koleksiyon Fairmont Cairo ve Mövenpick Resort El Quseir projelerini içerir. Her projenin ayrı bir fotoğraf galerisi vardır."
+          "Fotoğraf koleksiyonları Kahire, El Quseir, Luksor ve Asvan’ı kapsar. Film seçkisinde ayrıca El Alamein, Şarm El Şeyh ve Hurgada’daki Rixos projeleri yer alır."
         ],
         [
           "Şehir ve kıyı konumları tek brief’te yer alabilir mi?",
@@ -212,10 +217,16 @@
     "country": "Türkiye",
     "cities": [
       "Antalya",
-      "Istanbul"
+      "Istanbul",
+      "Kemer",
+      "Tekirova"
     ],
     "projects": [
-      "fairmont-istanbul"
+      "fairmont-istanbul",
+      "rixos-downtown-antalya",
+      "balmy-beach-resort-kemer",
+      "rixos-premium-tekirova",
+      "gural-hotels-turkiye"
     ],
     "sources": [
       {
@@ -232,10 +243,10 @@
       "background": "TÜRKİYE",
       "h1": "Photography in Türkiye",
       "meta": "Türkiye Photography | Istanbul & Antalya | Charlot Crea",
-      "description": "Explore Charlot Crea photography in Türkiye, with the Fairmont Istanbul gallery and an Antalya-based practice. Discuss hotel, architectural and interior photography.",
+      "description": "Explore Charlot Crea photography and films in Türkiye: Istanbul, Antalya, Kemer and Tekirova. View project galleries, watch films and plan a shoot.",
       "lead": "An Antalya-based perspective, connected to the character of Istanbul and the Mediterranean coast. Discover selected photography in Türkiye and tell us about the place you want to bring into focus.",
       "heading": "A home perspective, open to the world.",
-      "intro": "Istanbul’s cultural and architectural variety and Antalya’s Mediterranean setting offer different starting points for visual storytelling. Charlot Crea is based in Antalya; the selected Türkiye gallery currently presents Fairmont Istanbul. These are distinct parts of the practice: the home base and a published project reference.",
+      "intro": "Charlot Crea is based in Antalya. The Türkiye collection now connects Fairmont Istanbul, Rixos Downtown Antalya, Balmy Beach Resort Kemer, Rixos Premium Tekirova and Güral Hotels. Photography and films bring different places and experiences into a portfolio that can be explored by city.",
       "sections": [
         [
           "Hotel photography in Istanbul",
@@ -259,7 +270,7 @@
       "faq": [
         [
           "Where is Charlot Crea based?",
-          "Charlot Crea is based in Antalya, Türkiye, and works internationally. The selected Türkiye portfolio on this page features Fairmont Istanbul."
+          "Charlot Crea is based in Antalya and works internationally. The Türkiye portfolio connects Istanbul, Antalya, Kemer and Tekirova photography with films for Balmy, Swandor and Güral Hotels."
         ],
         [
           "Can I enquire about photography and film together?",
@@ -272,10 +283,10 @@
       "background": "TÜRKİYE",
       "h1": "Türkiye’de fotoğraf çekimi",
       "meta": "Türkiye Fotoğraf Çekimi | İstanbul ve Antalya | Charlot Crea",
-      "description": "Antalya merkezli Charlot Crea’nın Türkiye fotoğraf çalışmalarını ve Fairmont Istanbul galerisini keşfedin. Otel, mimari ve iç mekân projenizi konuşalım.",
+      "description": "İstanbul, Antalya, Kemer ve Tekirova projeleriyle Charlot Crea’nın Türkiye fotoğraf ve film çalışmalarını keşfedin. Galerileri inceleyin, filmleri izleyin.",
       "lead": "Antalya merkezli bir bakış; İstanbul’un karakteriyle ve Akdeniz kıyısıyla kurulan bir ilişki. Türkiye’deki seçili fotoğraf çalışmalarını keşfedin; odağa almak istediğiniz mekânı anlatın.",
       "heading": "Buradan dünyaya açılan bir bakış.",
-      "intro": "İstanbul’un kültürel ve mimari çeşitliliği ile Antalya’nın Akdeniz çevresi, görsel hikâye anlatımı için farklı başlangıçlar sunar. Charlot Crea Antalya merkezlidir; seçili Türkiye galerisi ise şu anda Fairmont Istanbul projesini içerir. Biri çalışma merkezini, diğeri yayımlanmış proje referansını temsil eder.",
+      "intro": "Charlot Crea Antalya merkezlidir. Türkiye koleksiyonu; Fairmont Istanbul, Rixos Downtown Antalya, Balmy Beach Resort Kemer, Rixos Premium Tekirova ve Güral Hotels çalışmalarını bir araya getirir. Fotoğraf ve filmler farklı mekânları ve deneyimleri şehirlere göre keşfedilen bir portfolyoya bağlar.",
       "sections": [
         [
           "İstanbul’da otel fotoğrafçılığı",
@@ -299,7 +310,7 @@
       "faq": [
         [
           "Charlot Crea nerede bulunuyor?",
-          "Charlot Crea Antalya, Türkiye merkezlidir ve uluslararası çalışır. Bu sayfadaki seçili Türkiye portfolyosu Fairmont Istanbul projesini içerir."
+          "Charlot Crea Antalya merkezlidir ve uluslararası çalışır. Türkiye portfolyosu; İstanbul, Antalya, Kemer ve Tekirova fotoğraflarını Balmy, Swandor ve Güral Hotels filmleriyle buluşturur."
         ],
         [
           "Fotoğraf ve film için birlikte talep oluşturabilir miyim?",
@@ -320,6 +331,8 @@
       "25hours-dubai",
       "raffles-the-palm-dubai",
       "rixos-the-palm-dubai",
+      "rixos-jbr-dubai",
+      "th8-palm-dubai",
       "rixos-premium-saadiyat-abu-dhabi"
     ],
     "sources": [
@@ -344,7 +357,7 @@
       "sections": [
         [
           "Dubai photography, from character to detail",
-          "The Dubai selection includes 25 Hours Dubai, Raffles The Palm and Rixos The Palm. Together, these galleries provide different references for hotel and interior photography in Dubai. Look at how the images work as a collection, then describe the architectural features, spaces and atmosphere that matter to your own project."
+          "The Dubai selection includes 25 Hours Dubai, Raffles The Palm, Rixos The Palm, Rixos JBR and Th8 Palm Dubai. Together, these galleries provide different references for hotel and interior photography in Dubai. Look at how the images work as a collection, then describe the architectural features, spaces and atmosphere that matter to your own project."
         ],
         [
           "Abu Dhabi photography and the Saadiyat reference",
@@ -384,7 +397,7 @@
       "sections": [
         [
           "Dubai fotoğrafları: karakterden detaya",
-          "Dubai seçkisi; 25 Hours Dubai, Raffles The Palm ve Rixos The Palm projelerini içerir. Bu galeriler, Dubai’de otel ve iç mekân fotoğrafçılığı için farklı referanslar sunar. Fotoğrafların bir seri olarak nasıl çalıştığına bakın; ardından kendi projenizin mimari özelliklerini, mekânlarını ve atmosferini tarif edin."
+          "Dubai seçkisi; 25 Hours Dubai, Raffles The Palm, Rixos The Palm, Rixos JBR ve Th8 Palm Dubai projelerini içerir. Bu galeriler, Dubai’de otel ve iç mekân fotoğrafçılığı için farklı referanslar sunar. Fotoğrafların bir seri olarak nasıl çalıştığına bakın; ardından kendi projenizin mimari özelliklerini, mekânlarını ve atmosferini tarif edin."
         ],
         [
           "Abu Dhabi çekimleri ve Saadiyat referansı",
@@ -423,7 +436,9 @@
     "projects": [
       "25hours-dubai",
       "raffles-the-palm-dubai",
-      "rixos-the-palm-dubai"
+      "rixos-the-palm-dubai",
+      "rixos-jbr-dubai",
+      "th8-palm-dubai"
     ],
     "sources": [
       {
@@ -447,7 +462,7 @@
       "sections": [
         [
           "Hotel photography in Dubai",
-          "25 Hours Dubai, Raffles The Palm and Rixos The Palm are the three Dubai projects featured in this collection. Their galleries are useful references when discussing hotel photography in Dubai. Compare the different settings and identify the spaces, details and atmosphere that should define your own photographic story."
+          "25 Hours Dubai, Raffles The Palm, Rixos The Palm, Rixos JBR and Th8 Palm Dubai are the five Dubai projects featured in this collection. Their galleries are useful references when discussing hotel photography in Dubai. Compare the different settings and identify the spaces, details and atmosphere that should define your own photographic story."
         ],
         [
           "Interior and architectural photography",
@@ -467,7 +482,7 @@
       "faq": [
         [
           "Which Dubai photography projects can I view?",
-          "The selected galleries feature 25 Hours Dubai, Raffles The Palm and Rixos The Palm. Each project links to its published photo selection."
+          "The selected galleries feature 25 Hours Dubai, Raffles The Palm, Rixos The Palm, Rixos JBR and Th8 Palm Dubai. Each project links to its published photo selection."
         ],
         [
           "What information helps with a Dubai project enquiry?",
@@ -487,7 +502,7 @@
       "sections": [
         [
           "Dubai’de otel fotoğrafçılığı",
-          "25 Hours Dubai, Raffles The Palm ve Rixos The Palm, bu koleksiyonda yer alan üç Dubai projesidir. Galerileri, Dubai’de otel fotoğrafçılığı konuşulurken yararlı referanslar sunar. Farklı mekânları karşılaştırın; kendi fotoğraf hikâyenizi tanımlayacak alanları, ayrıntıları ve atmosferi belirleyin."
+          "25 Hours Dubai, Raffles The Palm, Rixos The Palm, Rixos JBR ve Th8 Palm Dubai, bu koleksiyonda yer alan beş Dubai projesidir. Galerileri, Dubai’de otel fotoğrafçılığı konuşulurken yararlı referanslar sunar. Farklı mekânları karşılaştırın; kendi fotoğraf hikâyenizi tanımlayacak alanları, ayrıntıları ve atmosferi belirleyin."
         ],
         [
           "İç mekân ve mimari fotoğraf çekimi",
@@ -507,7 +522,7 @@
       "faq": [
         [
           "Dubai’den hangi fotoğraf projelerini inceleyebilirim?",
-          "Seçili galeriler 25 Hours Dubai, Raffles The Palm ve Rixos The Palm projelerini içerir. Her proje, yayımlanan fotoğraf seçkisinin tamamına bağlanır."
+          "Seçili galeriler 25 Hours Dubai, Raffles The Palm, Rixos The Palm, Rixos JBR ve Th8 Palm Dubai projelerini içerir. Her proje, yayımlanan fotoğraf seçkisinin tamamına bağlanır."
         ],
         [
           "Dubai projesi talebinde hangi bilgiler yardımcı olur?",

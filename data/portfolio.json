@@ -1,0 +1,2325 @@
+{
+  "source_folder": "https://drive.google.com/drive/folders/1QqBnYivvLGutPnE0COi3HaANtj7C0kKO",
+  "projects": [
+    {
+      "slug": "25hours-dubai",
+      "name": "25 Hours Dubai",
+      "country": "UAE",
+      "city": "Dubai",
+      "cities": [
+        "Dubai"
+      ],
+      "legacy_id": 0,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/25hours-dubai/01.jpg",
+          "small": "/assets/portfolio/25hours-dubai/01-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/114Aw3ZfBqqV_D0AjW5tQC18fOjBkmGxT/view?usp=drivesdk",
+          "source_name": "AHM07145.jpg"
+        },
+        {
+          "src": "/assets/portfolio/25hours-dubai/02.jpg",
+          "small": "/assets/portfolio/25hours-dubai/02-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1YwH6lOV5sTWzrzJfzznN4SwAW5gqHmEv/view?usp=drivesdk",
+          "source_name": "AHM07189.jpg"
+        },
+        {
+          "src": "/assets/portfolio/25hours-dubai/03.jpg",
+          "small": "/assets/portfolio/25hours-dubai/03-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1PAaqkp6uyJD0lwd1FQhIKmz3t5HOgmDY/view?usp=drivesdk",
+          "source_name": "AHM07335.jpg"
+        },
+        {
+          "src": "/assets/portfolio/25hours-dubai/04.jpg",
+          "small": "/assets/portfolio/25hours-dubai/04-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1MBfijTCEQp5q42uobupH9hVddr3sxW5D/view?usp=drivesdk",
+          "source_name": "AHM07586.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/25hours-dubai/01.jpg",
+      "cover_small": "/assets/portfolio/25hours-dubai/01-800.jpg",
+      "description": {
+        "en": "People, design and the character of 25 Hours Dubai.",
+        "tr": "İnsanlar, tasarım ve 25 Hours Dubai’nin karakteri."
+      },
+      "source_folder": "24Hours_Dubai",
+      "published": "2026-11-01",
+      "cover_width": 1200,
+      "cover_height": 1800
+    },
+    {
+      "slug": "fairmont-cairo",
+      "name": "Fairmont Cairo",
+      "country": "Egypt",
+      "city": "Cairo",
+      "cities": [
+        "Cairo"
+      ],
+      "legacy_id": 3,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/fairmont-cairo/01.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/01-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1fKQLemHVGvhaQzK5bdHteErNqDS2QHha/view?usp=drivesdk",
+          "source_name": "AHM08657 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/02.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/02-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1Uh2GSnj6koaWGoTqOtuiU52sEHVoMPGZ/view?usp=drivesdk",
+          "source_name": "AHM08646 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/03.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/03-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1jGJCz1AuU5up63eljdQ56hKJE5a0DW1x/view?usp=drivesdk",
+          "source_name": "AHM08580 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/04.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/04-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1-osI9mEjye3xDdU_DDEPvTfedxtf4Wjy/view?usp=drivesdk",
+          "source_name": "AHM08509 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/05.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/10fnugLU-p-QuMNPeow2eJkjsAHhYCymx/view?usp=drivesdk",
+          "source_name": "AHM08436 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/06.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/06-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/12gtQH5dS1sbE1HjorSllcy2-_0uVMh6p/view?usp=drivesdk",
+          "source_name": "AHM08863.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/07.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1oSDyD3TGHSfmWgbrKDtOi2o4WPwZ9Dhm/view?usp=drivesdk",
+          "source_name": "AHM08877.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/08.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/08-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1OPzuKnQzmpRvkoaV2cJ14_mhNL7XVhFI/view?usp=drivesdk",
+          "source_name": "AHM08942.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/09.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/09-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1LU25WlOlIz8IHh3Qh4tPbyJc5vlaBWO7/view?usp=drivesdk",
+          "source_name": "AHM09364.jpg"
+        },
+        {
+          "src": "/assets/galleries/fairmont-cairo-01.jpg",
+          "small": "/assets/galleries/fairmont-cairo-01.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/4",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-cairo-02.jpg",
+          "small": "/assets/galleries/fairmont-cairo-02.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/4",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-cairo-03.jpg",
+          "small": "/assets/galleries/fairmont-cairo-03.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/4",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/portfolio/fairmont-cairo/05.jpg",
+      "cover_small": "/assets/portfolio/fairmont-cairo/05-800.jpg",
+      "description": {
+        "en": "City views, intimate interiors and moments at Fairmont Cairo.",
+        "tr": "Fairmont Cairo’da şehir manzaraları, iç mekânlar ve yaşamdan anlar."
+      },
+      "source_folder": "Fairmont_Nile_Egypt",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "raffles-the-palm-dubai",
+      "name": "Raffles The Palm",
+      "country": "UAE",
+      "city": "Dubai",
+      "cities": [
+        "Dubai"
+      ],
+      "legacy_id": 8,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/01.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/01-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1agDEeLzb3sQWyfteETdQp9pBtyWyeUv4/view?usp=drivesdk",
+          "source_name": "AHM01381.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/02.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/02-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1NTVKaE1wc_jlnk6_NSi_BswFdp0KszR_/view?usp=drivesdk",
+          "source_name": "AHM01117.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/03.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1YndqCjoIu_zWjsM7ozfr42p0UzLg62xv/view?usp=drivesdk",
+          "source_name": "AHM09309.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/04.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/04-800.jpg",
+          "width": 1800,
+          "height": 1593,
+          "source": "https://drive.google.com/file/d/11XGwp_E-BdE1xg2xbpkYYaLozQU7XSFR/view?usp=drivesdk",
+          "source_name": "AHM09250.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/05.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1HAF7KLhX7pthtsATBkzI7QAG-BBG4Rwm/view?usp=drivesdk",
+          "source_name": "AHM09198.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/06.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/06-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1PGTtTLsiSlmCVMHs3A76QqTEjzxFVPsL/view?usp=drivesdk",
+          "source_name": "AHM01114.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/07.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1cAcR9y9d1n9HGZrhfdtkV-Mud2DXeToj/view?usp=drivesdk",
+          "source_name": "AHM00078.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/08.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/08-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/16MFAnMGL9E-dagWenhUaUeI0r3-XBKEM/view?usp=drivesdk",
+          "source_name": "AHM00665.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/09.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/09-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1EsbCeUXAMk_fDsvtWQ8pnB8-Q17xVVtl/view?usp=drivesdk",
+          "source_name": "AHM01071.jpg"
+        },
+        {
+          "src": "/assets/galleries/raffles-the-palm-dubai-04.jpg",
+          "small": "/assets/galleries/raffles-the-palm-dubai-04.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/9",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/raffles-the-palm-dubai-05.jpg",
+          "small": "/assets/galleries/raffles-the-palm-dubai-05.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/9",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/portfolio/raffles-the-palm-dubai/03.jpg",
+      "cover_small": "/assets/portfolio/raffles-the-palm-dubai/03-800.jpg",
+      "description": {
+        "en": "Architecture, evening light and the atmosphere of the Palm.",
+        "tr": "Palm’ın mimarisi, akşam ışığı ve atmosferi."
+      },
+      "source_folder": "Raffels_The Palm_Dubai",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "rixos-the-palm-dubai",
+      "name": "Rixos The Palm",
+      "country": "UAE",
+      "city": "Dubai",
+      "cities": [
+        "Dubai"
+      ],
+      "legacy_id": 13,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/rixos-the-palm-dubai/01.jpg",
+          "small": "/assets/portfolio/rixos-the-palm-dubai/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1tMDaGR_4O-BGVCfdva62fOYD0fcUVODJ/view?usp=drivesdk",
+          "source_name": "AHM08551 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-the-palm-dubai/02.jpg",
+          "small": "/assets/portfolio/rixos-the-palm-dubai/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1o4wNT_2CcDHbRxyuA1CcDgr605HFHx8Z/view?usp=drivesdk",
+          "source_name": "AHM08541 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-the-palm-dubai/03.jpg",
+          "small": "/assets/portfolio/rixos-the-palm-dubai/03-800.jpg",
+          "width": 1800,
+          "height": 1281,
+          "source": "https://drive.google.com/file/d/11FNbm4gbH1wIuyXUG2KvIcAOln40V55i/view?usp=drivesdk",
+          "source_name": "AHM07158.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-the-palm-dubai/04.jpg",
+          "small": "/assets/portfolio/rixos-the-palm-dubai/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1Fq_gCtFpaEvIncpzRiDGRpJbNUFWepwE/view?usp=drivesdk",
+          "source_name": "AHM06924.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-the-palm-dubai/05.jpg",
+          "small": "/assets/portfolio/rixos-the-palm-dubai/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1Yd6ppJQLX2SOiykUZPSZpVUR2WO3ttii/view?usp=drivesdk",
+          "source_name": "AHM06926.jpg"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-01.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-01.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-02.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-02.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-03.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-03.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-04.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-04.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-05.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-05.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-06.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-06.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-07.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-07.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-08.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-08.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-09.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-09.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-10.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-10.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-the-palm-dubai-11.jpg",
+          "small": "/assets/galleries/rixos-the-palm-dubai-11.jpg",
+          "width": 1368,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/15",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/portfolio/rixos-the-palm-dubai/04.jpg",
+      "cover_small": "/assets/portfolio/rixos-the-palm-dubai/04-800.jpg",
+      "description": {
+        "en": "Interiors, dining and the relationship between space and light.",
+        "tr": "İç mekânlar, gastronomi ve mekânın ışıkla kurduğu ilişki."
+      },
+      "source_folder": "Rixos_The_Palm_Dubai",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "rixos-premium-saadiyat-abu-dhabi",
+      "name": "Rixos Premium Saadiyat",
+      "country": "UAE",
+      "city": "Abu Dhabi",
+      "cities": [
+        "Abu Dhabi"
+      ],
+      "legacy_id": 16,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/01.jpg",
+          "small": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/14HGF_ApCqb2VhJkWHdBSlAggADpPynrL/view?usp=drivesdk",
+          "source_name": "AHM00778.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/02.jpg",
+          "small": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/02-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1JySowY_POwhyqftyO0kLPdvrESnbxRk5/view?usp=drivesdk",
+          "source_name": "AHM01462.jpg"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-01.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-01.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-02.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-02.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-03.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-03.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-04.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-04.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-05.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-05.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-07.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-07.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-08.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-08.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-09.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-09.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-10.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-10.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-11.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-11.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-12.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-12.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-13.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-13.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-14.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-14.jpg",
+          "width": 2000,
+          "height": 1334,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-16.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-16.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-17.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-17.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-18.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-18.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-19.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-19.jpg",
+          "width": 2000,
+          "height": 1334,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-20.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-20.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-21.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-21.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-23.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-23.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-24.jpg",
+          "small": "/assets/galleries/rixos-premium-saadiyat-abu-dhabi-24.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/18",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/02.jpg",
+      "cover_small": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/02-800.jpg",
+      "description": {
+        "en": "Architectural rhythm and considered details in Abu Dhabi.",
+        "tr": "Abu Dhabi’de mimari ritim ve özenli ayrıntılar."
+      },
+      "source_folder": "Rixos_Abu Dhabi_Sadiyad",
+      "published": "2026-11-01",
+      "cover_width": 1200,
+      "cover_height": 1800
+    },
+    {
+      "slug": "movenpick-resort-el-quseir",
+      "name": "Mövenpick Resort El Quseir",
+      "country": "Egypt",
+      "city": "El Quseir",
+      "cities": [
+        "El Quseir"
+      ],
+      "legacy_id": 7,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/movenpick-resort-el-quseir/01.jpg",
+          "small": "/assets/portfolio/movenpick-resort-el-quseir/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1-J1E9V_Tjbxds-dekLicnrTKtZtGSuWN/view?usp=drivesdk",
+          "source_name": "AHM03366.jpg"
+        },
+        {
+          "src": "/assets/portfolio/movenpick-resort-el-quseir/02.jpg",
+          "small": "/assets/portfolio/movenpick-resort-el-quseir/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1nmcSGqT_iTbgjun4eNTVu1KsElVUIzhx/view?usp=drivesdk",
+          "source_name": "AHM03377.jpg"
+        },
+        {
+          "src": "/assets/galleries/movenpick-resort-el-quseir-02.jpg",
+          "small": "/assets/galleries/movenpick-resort-el-quseir-02.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/8",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/movenpick-resort-el-quseir-03.jpg",
+          "small": "/assets/galleries/movenpick-resort-el-quseir-03.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/8",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/movenpick-resort-el-quseir-04.jpg",
+          "small": "/assets/galleries/movenpick-resort-el-quseir-04.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/8",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/movenpick-resort-el-quseir-05.jpg",
+          "small": "/assets/galleries/movenpick-resort-el-quseir-05.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/8",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/movenpick-resort-el-quseir-06.jpg",
+          "small": "/assets/galleries/movenpick-resort-el-quseir-06.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/8",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/portfolio/movenpick-resort-el-quseir/01.jpg",
+      "cover_small": "/assets/portfolio/movenpick-resort-el-quseir/01-800.jpg",
+      "description": {
+        "en": "Natural textures and a quiet Red Sea perspective.",
+        "tr": "Doğal dokular ve Kızıldeniz’e sakin bir bakış."
+      },
+      "source_folder": "Mövempick_Egypt",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "balmy-beach-resort-kemer",
+      "name": "Balmy Beach Resort Kemer",
+      "country": "Türkiye",
+      "city": "Kemer",
+      "cities": [
+        "Kemer"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/01.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/01-800.jpg",
+          "width": 1800,
+          "height": 1350,
+          "source": "https://drive.google.com/file/d/1nA7UGxtjm5YeN1uoKg3x7uQIIQP0Mcu3/view?usp=drivesdk",
+          "source_name": "DJI_20231019130210_0171_D-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/02.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/02-800.jpg",
+          "width": 1800,
+          "height": 1350,
+          "source": "https://drive.google.com/file/d/12LmaxogQejCtD8JMcR6wi9jYqqVcmxrR/view?usp=drivesdk",
+          "source_name": "DJI_20231019095426_0054_D-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/03.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/03-800.jpg",
+          "width": 1800,
+          "height": 1350,
+          "source": "https://drive.google.com/file/d/1VRsOwR-QgAgxKsdOVFH8uOqEBzoqICpW/view?usp=drivesdk",
+          "source_name": "DJI_20231019074005_0003_D-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/04.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/04-800.jpg",
+          "width": 1800,
+          "height": 1199,
+          "source": "https://drive.google.com/file/d/10tcjdPbXo5wBJWOcfqfTPEuN0mzxbYDd/view?usp=drivesdk",
+          "source_name": "DJI_0849-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/05.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/05-800.jpg",
+          "width": 1800,
+          "height": 1199,
+          "source": "https://drive.google.com/file/d/1phUTZxHBYTv6xO8GgThIf0cDK3yMC0zV/view?usp=drivesdk",
+          "source_name": "DJI_0821-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/06.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1J_uU3nJRGrofEQQoPGBdP-ozsdzm8eYT/view?usp=drivesdk",
+          "source_name": "AHG05985-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/07.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/07-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/11QFqPpOfIOSyd_LlkNzbscWraoReigT-/view?usp=drivesdk",
+          "source_name": "AHG05976-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/08.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/08-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1CWtXdMzhwoTAGTWkxndkVxjIEuyqm3cz/view?usp=drivesdk",
+          "source_name": "AHG05762-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/09.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/09-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1YpFjrwXLlxRkeB0IojNpvvV1nS-o6-sC/view?usp=drivesdk",
+          "source_name": "AHG05623-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/10.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/10-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1BFqBDqe1ulV-zB1A5eRLCOj2jqEAt5rm/view?usp=drivesdk",
+          "source_name": "AHG05527-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/11.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/11-800.jpg",
+          "width": 1800,
+          "height": 1199,
+          "source": "https://drive.google.com/file/d/19GDlLBZcnYqMMtaXeJaKmJVaKq1pO9_-/view?usp=drivesdk",
+          "source_name": "DJI_0829-fit.jpg"
+        },
+        {
+          "src": "/assets/portfolio/balmy-beach-resort-kemer/12.jpg",
+          "small": "/assets/portfolio/balmy-beach-resort-kemer/12-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1nDlp-1IAaP8hXopD9frm1tTnmZ82nZha/view?usp=drivesdk",
+          "source_name": "AHG05236-fit.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/balmy-beach-resort-kemer/01.jpg",
+      "cover_small": "/assets/portfolio/balmy-beach-resort-kemer/01-800.jpg",
+      "description": {
+        "en": "Water, greenery and a Mediterranean sense of ease.",
+        "tr": "Su, yeşil ve Akdeniz’in sakin ritmi."
+      },
+      "source_folder": "Balmy Hotels_Turkey",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1350
+    },
+    {
+      "slug": "rixos-jbr-dubai",
+      "name": "Rixos JBR Dubai",
+      "country": "UAE",
+      "city": "Dubai",
+      "cities": [
+        "Dubai"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/rixos-jbr-dubai/01.jpg",
+          "small": "/assets/portfolio/rixos-jbr-dubai/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/17SrBmpbAr-jGlEqJiRO_MuTQLoN8N9qm/view?usp=drivesdk",
+          "source_name": "AHM09877.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-jbr-dubai/02.jpg",
+          "small": "/assets/portfolio/rixos-jbr-dubai/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/133QvekiKbIMF6JU46Oif15ncKZWowkXr/view?usp=drivesdk",
+          "source_name": "AHM00093.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-jbr-dubai/03.jpg",
+          "small": "/assets/portfolio/rixos-jbr-dubai/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1KfUJ2aPXFfsDjKgApdqFQ3nTxCUOIgjw/view?usp=drivesdk",
+          "source_name": "AHM09197.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-jbr-dubai/04.jpg",
+          "small": "/assets/portfolio/rixos-jbr-dubai/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1IWaNcRFvrFzutqtofvqhw9CbivMiSmpj/view?usp=drivesdk",
+          "source_name": "AHM09192.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-jbr-dubai/05.jpg",
+          "small": "/assets/portfolio/rixos-jbr-dubai/05-800.jpg",
+          "width": 1800,
+          "height": 1036,
+          "source": "https://drive.google.com/file/d/1XHjBAIwOyvb3-jNz6denJHUB3Z_dJGPP/view?usp=drivesdk",
+          "source_name": "AHM05540.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-jbr-dubai/06.jpg",
+          "small": "/assets/portfolio/rixos-jbr-dubai/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1yJOHAIYNE3Yqsz3ZN0HkNZaEi9a2Sh_3/view?usp=drivesdk",
+          "source_name": "AHM08928.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/rixos-jbr-dubai/01.jpg",
+      "cover_small": "/assets/portfolio/rixos-jbr-dubai/01-800.jpg",
+      "description": {
+        "en": "Rooms with a view, dining details and the rhythm of Dubai.",
+        "tr": "Manzaraya açılan odalar, gastronomi ve Dubai’nin ritmi."
+      },
+      "source_folder": "Rixos_JBR_Dubai",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "rixos-premium-tekirova",
+      "name": "Rixos Premium Tekirova",
+      "country": "Türkiye",
+      "city": "Tekirova",
+      "cities": [
+        "Tekirova"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/rixos-premium-tekirova/01.jpg",
+          "small": "/assets/portfolio/rixos-premium-tekirova/01-800.jpg",
+          "width": 1800,
+          "height": 1061,
+          "source": "https://drive.google.com/file/d/1Qd4n5vi9ym8OIXaoFCKNgU-1f0w4zgNi/view?usp=drivesdk",
+          "source_name": "AHM05129.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-premium-tekirova/02.jpg",
+          "small": "/assets/portfolio/rixos-premium-tekirova/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1Qt3fCOgzpd2QZldFvj9gz0sBn2_vmAXK/view?usp=drivesdk",
+          "source_name": "AHM04572.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-premium-tekirova/03.jpg",
+          "small": "/assets/portfolio/rixos-premium-tekirova/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1GYQOVH-AdhV9RI9tcCieIuQhoA6-IaE_/view?usp=drivesdk",
+          "source_name": "AHM05166 copy.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/rixos-premium-tekirova/03.jpg",
+      "cover_small": "/assets/portfolio/rixos-premium-tekirova/03-800.jpg",
+      "description": {
+        "en": "Open spaces, colour and life around the water.",
+        "tr": "Açık alanlar, renk ve suyun etrafında şekillenen yaşam."
+      },
+      "source_folder": "Rixos_Tekirova_Turkey",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "sofitel-winter-palace-luxor",
+      "name": "Sofitel Winter Palace",
+      "country": "Egypt",
+      "city": "Luxor",
+      "cities": [
+        "Luxor"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/sofitel-winter-palace-luxor/01.jpg",
+          "small": "/assets/portfolio/sofitel-winter-palace-luxor/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/19hFLjLam2VVIW2SEsRcKS_3VsGpJaPiJ/view?usp=drivesdk",
+          "source_name": "AHM04025.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-winter-palace-luxor/02.jpg",
+          "small": "/assets/portfolio/sofitel-winter-palace-luxor/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1j2vH2OtB0UigevOWdXThIapUhvVJMD4i/view?usp=drivesdk",
+          "source_name": "AHM04054.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-winter-palace-luxor/03.jpg",
+          "small": "/assets/portfolio/sofitel-winter-palace-luxor/03-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1PVV4As51ju6RJ5yyXSI3Z5U0hex6O9R1/view?usp=drivesdk",
+          "source_name": "AHM04313.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-winter-palace-luxor/04.jpg",
+          "small": "/assets/portfolio/sofitel-winter-palace-luxor/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1h8QqR1iYgRiuzidfExX40VtLKkLRtwwE/view?usp=drivesdk",
+          "source_name": "AHM04565.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-winter-palace-luxor/05.jpg",
+          "small": "/assets/portfolio/sofitel-winter-palace-luxor/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/11JoDvQOH-tDMkk1R44oyLW4gU1pBpWA9/view?usp=drivesdk",
+          "source_name": "AHM05004.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-winter-palace-luxor/06.jpg",
+          "small": "/assets/portfolio/sofitel-winter-palace-luxor/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1_dTY-ytrQN1k2VJSzEWuU6tLL7N0AHsZ/view?usp=drivesdk",
+          "source_name": "_07A7461.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/sofitel-winter-palace-luxor/01.jpg",
+      "cover_small": "/assets/portfolio/sofitel-winter-palace-luxor/01-800.jpg",
+      "description": {
+        "en": "Garden paths, warm light and the character of Luxor.",
+        "tr": "Bahçe yolları, sıcak ışık ve Luksor’un karakteri."
+      },
+      "source_folder": "Sofitel_Winter_Palace_Egypt",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "sofitel-old-cataract-aswan",
+      "name": "Sofitel Legend Old Cataract",
+      "country": "Egypt",
+      "city": "Aswan",
+      "cities": [
+        "Aswan"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/01.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1AIen9yPd1oAuyN4-XIn7o49iJQ3Z4rIr/view?usp=drivesdk",
+          "source_name": "AHM05416 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/02.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1qJobztIWJVyuXJ48wosE0N7usE4Jg0d-/view?usp=drivesdk",
+          "source_name": "AHM05381 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/03.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1pMbrZTGU1MApCKFd6aYYvXX246EaHgvL/view?usp=drivesdk",
+          "source_name": "AHM07421 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/04.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1ENlHPGLaEQAGY7LrkLKevVKssP55LXb1/view?usp=drivesdk",
+          "source_name": "AHM07352 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/05.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/05-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1yaHDC-XjMWJlV2pct04wAUiydORQFoF6/view?usp=drivesdk",
+          "source_name": "AHM05390 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/06.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/06-800.jpg",
+          "width": 1275,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1nnstU9FuwOZ8B-RwwG2Td-pPR6tCswI-/view?usp=drivesdk",
+          "source_name": "AHM06070 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/sofitel-old-cataract-aswan/07.jpg",
+          "small": "/assets/portfolio/sofitel-old-cataract-aswan/07-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1mbKez8Apv6jozD6KvqwwezCOrOzqbb9f/view?usp=drivesdk",
+          "source_name": "AHM06290 kopya.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/sofitel-old-cataract-aswan/06.jpg",
+      "cover_small": "/assets/portfolio/sofitel-old-cataract-aswan/06-800.jpg",
+      "description": {
+        "en": "Historic interiors, rich materials and a sense of arrival.",
+        "tr": "Tarihî iç mekânlar, zengin malzemeler ve varış hissi."
+      },
+      "source_folder": "Sofitel_Old Cataract_Egypt",
+      "published": "2026-11-01",
+      "cover_width": 1275,
+      "cover_height": 1800
+    },
+    {
+      "slug": "th8-palm-dubai",
+      "name": "Th8 Palm Dubai",
+      "country": "UAE",
+      "city": "Dubai",
+      "cities": [
+        "Dubai"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/01.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1gph3icNs4CwoUF4tDYY34quwiMCstYQ1/view?usp=drivesdk",
+          "source_name": "AHM02776.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/02.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1sXZBXE3H2kNYM8owVVOsFFKiMVmUdIk8/view?usp=drivesdk",
+          "source_name": "AHM02780.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/03.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/12-69EjoauhgTcj6hu_WnOlPWdzz3XMvB/view?usp=drivesdk",
+          "source_name": "AHM02805.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/04.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/13eR3ObyF6v7-zV5_Ndk8YyGp1TcUNO2O/view?usp=drivesdk",
+          "source_name": "AHM02856.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/05.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1PxbS2Xy78zeeO0jIvcjDk1to1lhGieyW/view?usp=drivesdk",
+          "source_name": "AHM03902.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/06.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1qt79hxMUSEm8a_pjZDIerHhIcnm-jD-c/view?usp=drivesdk",
+          "source_name": "AHM04057.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/07.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1aAv4vMYIVOGVNqsaFBZKsrROJO3Ze5l8/view?usp=drivesdk",
+          "source_name": "AHM02971.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/08.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/08-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1fL_7EH3-6uBeQbQR2-R2hd2aCpLm7XrO/view?usp=drivesdk",
+          "source_name": "AHM03694.jpg"
+        },
+        {
+          "src": "/assets/portfolio/th8-palm-dubai/09.jpg",
+          "small": "/assets/portfolio/th8-palm-dubai/09-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1x-haZekE6haNxnaVWeoKSWod2VkKINcV/view?usp=drivesdk",
+          "source_name": "AHM04045.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/th8-palm-dubai/07.jpg",
+      "cover_small": "/assets/portfolio/th8-palm-dubai/07-800.jpg",
+      "description": {
+        "en": "Contemporary rooms, outdoor living and a coastal outlook.",
+        "tr": "Çağdaş odalar, açık hava yaşamı ve kıyıya açılan bir bakış."
+      },
+      "source_folder": "The8_Dubai",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "rixos-downtown-antalya",
+      "name": "Rixos Downtown Antalya",
+      "country": "Türkiye",
+      "city": "Antalya",
+      "cities": [
+        "Antalya"
+      ],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/01.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1M60EZPtfJA9pAvt2ysKPGz0Zpl1vPKzG/view?usp=drivesdk",
+          "source_name": "AHM03943.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/02.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1eD_mXDALCm9QzAhPTGUbzO0yAAOpFvhh/view?usp=drivesdk",
+          "source_name": "AHM03908-1.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/03.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1p2w4vDidR2QjQ3G35TJ75HGn52HczJ5j/view?usp=drivesdk",
+          "source_name": "AHM03792-1.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/04.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1KZk5ivpANmBL2yu0VmySppJUx4GHCItt/view?usp=drivesdk",
+          "source_name": "AHM03574 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/05.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1uKKoI3LQdoagzunGvICQCsFRzBTX88V7/view?usp=drivesdk",
+          "source_name": "AHM03532 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/06.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1ye3Q7TTLfgJ4SXz7mzQFeINBz8ug0l9e/view?usp=drivesdk",
+          "source_name": "AHM03505 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/07.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1287zTdqcHXakllN0VFT0szCDX4zE02Wb/view?usp=drivesdk",
+          "source_name": "AHM03951-1.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/rixos-downtown-antalya/05.jpg",
+      "cover_small": "/assets/portfolio/rixos-downtown-antalya/05-800.jpg",
+      "description": {
+        "en": "Daylight, interiors and views from Antalya.",
+        "tr": "Antalya’dan gün ışığı, iç mekânlar ve manzaralar."
+      },
+      "source_folder": "Rixos_Downtown_Turkey",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "gural-hotels-turkiye",
+      "name": "Güral Hotels",
+      "country": "Türkiye",
+      "city": "Türkiye",
+      "cities": [],
+      "legacy_id": null,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/01.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/01-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1joNnKhwcE-2Le-1l7xLiJiJTWSvcfr-u/view?usp=drivesdk",
+          "source_name": "IMG_0524.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/02.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1C0xvZNlWRzfI9TSvj6dT5GLvnNJmPjw_/view?usp=drivesdk",
+          "source_name": "IMG_0559.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/03.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1d4VJOu6YJv-e6ZgP5xObM8j_RiHGBbpw/view?usp=drivesdk",
+          "source_name": "IMG_0572.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/04.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1iHXP1JOdqWfDOcPF93t_OoUB0v9V8C_Y/view?usp=drivesdk",
+          "source_name": "IMG_0582.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/05.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1dBNtt4-VvV0YSaUMs-xBLKQ4hapBzOlc/view?usp=drivesdk",
+          "source_name": "IMG_1301.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/06.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1ELqKraHJFRnj7ch5rJs08Mlf3Abv74jZ/view?usp=drivesdk",
+          "source_name": "IMG_1303.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/07.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1rQ-VnJROJSC5vNihNzMkaKniDfcsmUZB/view?usp=drivesdk",
+          "source_name": "IMG_1430.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/08.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/08-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1o5h9bETtKx6FWhf4YQAOXU9F0qyfEzmB/view?usp=drivesdk",
+          "source_name": "IMG_1500.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/09.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/09-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1sVl50saxHQH2RLO5-4pQ-qjukah76SQW/view?usp=drivesdk",
+          "source_name": "IMG_1508.JPG"
+        },
+        {
+          "src": "/assets/portfolio/gural-hotels-turkiye/10.jpg",
+          "small": "/assets/portfolio/gural-hotels-turkiye/10-800.jpg",
+          "width": 1800,
+          "height": 1240,
+          "source": "https://drive.google.com/file/d/1_i5UzIJGDgnzwD2bDT2buYBKJgvI-1ug/view?usp=drivesdk",
+          "source_name": "052_ahmet_gul.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/gural-hotels-turkiye/06.jpg",
+      "cover_small": "/assets/portfolio/gural-hotels-turkiye/06-800.jpg",
+      "description": {
+        "en": "Portraits, family moments and the experience of a holiday.",
+        "tr": "Portreler, aile anları ve tatil deneyimi."
+      },
+      "source_folder": "Güral_Hotels_Turkey",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1200
+    },
+    {
+      "slug": "swandor-hotels-collection",
+      "name": "Swandor Hotels",
+      "country": "International",
+      "city": "Türkiye / Vietnam",
+      "cities": [],
+      "legacy_id": null,
+      "collection": true,
+      "images": [
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/01.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/01-800.jpg",
+          "width": 1800,
+          "height": 1737,
+          "source": "https://drive.google.com/file/d/1nS5kzrRQf4oh2OtmiXjLjnO-fMn_eKY9/view?usp=drivesdk",
+          "source_name": "AHG09723.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/02.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1h1N2P4zA_QMmdWQ7ZKXJALiNxKVBZFPg/view?usp=drivesdk",
+          "source_name": "AHG09552.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/03.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1qT1beHygeFOwTYDi-eRu0rP2AjsXvhrP/view?usp=drivesdk",
+          "source_name": "AHG09562.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/04.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/04-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1Udslu2gM8xs7J5-W98cHoCH_8ZiHLp0V/view?usp=drivesdk",
+          "source_name": "AHG09465.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/05.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/05-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1Nyu1ZIn4Kq9VDFWgwXU7PZvx0QIuiq8I/view?usp=drivesdk",
+          "source_name": "AHG07687.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/06.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/06-800.jpg",
+          "width": 1800,
+          "height": 1199,
+          "source": "https://drive.google.com/file/d/1ZwiHVs16K2HMKckmpSk2KSnBOC-6gXn5/view?usp=drivesdk",
+          "source_name": "DJI_0254 copy.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/07.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1q-gnVLmVVoG1GzUK3-o99C1JBmhKVYH3/view?usp=drivesdk",
+          "source_name": "AHG06852.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/08.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/08-800.jpg",
+          "width": 1800,
+          "height": 1321,
+          "source": "https://drive.google.com/file/d/1i4MWVCPFG8h5mOyPy0qWoUYq6lQrd5-B/view?usp=drivesdk",
+          "source_name": "AHG08043.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/09.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/09-800.jpg",
+          "width": 1800,
+          "height": 1199,
+          "source": "https://drive.google.com/file/d/1f0sdCWEyiHu50votQzmkn-CRLhdZphko/view?usp=drivesdk",
+          "source_name": "DJI_0040.jpg"
+        },
+        {
+          "src": "/assets/portfolio/swandor-hotels-collection/10.jpg",
+          "small": "/assets/portfolio/swandor-hotels-collection/10-800.jpg",
+          "width": 1800,
+          "height": 966,
+          "source": "https://drive.google.com/file/d/1MZJpcHhnMmlL1OW383SF68SnY8lNN3JO/view?usp=drivesdk",
+          "source_name": "_07A4798.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/swandor-hotels-collection/06.jpg",
+      "cover_small": "/assets/portfolio/swandor-hotels-collection/06-800.jpg",
+      "description": {
+        "en": "A selected collection of people, architecture and resort life.",
+        "tr": "İnsanlar, mimari ve resort yaşamından seçili bir koleksiyon."
+      },
+      "source_folder": "Swandor Hotels_Turkey_Vietnam",
+      "published": "2026-11-01",
+      "cover_width": 1800,
+      "cover_height": 1199
+    },
+    {
+      "slug": "rixos-hotels-collection",
+      "name": "Rixos Hotels",
+      "country": "International",
+      "city": "Selected properties",
+      "cities": [],
+      "legacy_id": null,
+      "collection": true,
+      "images": [
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/01.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/01-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1rkZGq6Fv4dVMqnJqDWW8IV-enqK4UuhN/view?usp=drivesdk",
+          "source_name": "AHM05090 copy.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/02.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1AWq-_uobxX38UTOhpWMkj_eTEeVMuWRc/view?usp=drivesdk",
+          "source_name": "AHM09802.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/03.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/03-800.jpg",
+          "width": 1800,
+          "height": 1139,
+          "source": "https://drive.google.com/file/d/189OlgblXs7v8akPw9JUuIOHhIl7RHPMb/view?usp=drivesdk",
+          "source_name": "beach_1.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/04.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/14eLhLG9QwH5qy4mTWR_HE3cJj8_iNKXa/view?usp=drivesdk",
+          "source_name": "IMG_4263.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/05.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/05-800.jpg",
+          "width": 1800,
+          "height": 1353,
+          "source": "https://drive.google.com/file/d/1J0ksf_9bGbRLL66bZVLjIXrFCygdJ6-T/view?usp=drivesdk",
+          "source_name": "AD_2_01_0003.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/06.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/06-800.jpg",
+          "width": 1800,
+          "height": 1353,
+          "source": "https://drive.google.com/file/d/1br4syFX5jvBuLahOcvbiGCmcz84IwUPC/view?usp=drivesdk",
+          "source_name": "AD_2_02_0037.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/07.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/07-800.jpg",
+          "width": 1353,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1mMUQgN4IrOfWM5tBWQdGRaoJixpdLWCF/view?usp=drivesdk",
+          "source_name": "AD_2_08_0332.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/08.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/08-800.jpg",
+          "width": 1800,
+          "height": 1347,
+          "source": "https://drive.google.com/file/d/1jeKi9Q1wa1EW4RXW8wmo8LZZ5ocNVya5/view?usp=drivesdk",
+          "source_name": "AD_3_01_0056.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/09.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/09-800.jpg",
+          "width": 1800,
+          "height": 1380,
+          "source": "https://drive.google.com/file/d/1Sq4LIp-IjP-fhM8hi1NRU2S99WMT1pMP/view?usp=drivesdk",
+          "source_name": "AD_3_06_0233.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/10.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/10-800.jpg",
+          "width": 1800,
+          "height": 1353,
+          "source": "https://drive.google.com/file/d/1aTLzEWyw5YflPLGIsV3Q6NCrRWTHfdvx/view?usp=drivesdk",
+          "source_name": "AD_3_10_0354.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/11.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/11-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/13Qb74ETPyuWg7QRnTlSH5RuaFBRJwKJ9/view?usp=drivesdk",
+          "source_name": "AHM04609.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-hotels-collection/12.jpg",
+          "small": "/assets/portfolio/rixos-hotels-collection/12-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1TV1WWIxK5aUYQ0vb8s4tM-1cd3Uf3evv/view?usp=drivesdk",
+          "source_name": "AHM05045_a2.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/rixos-hotels-collection/01.jpg",
+      "cover_small": "/assets/portfolio/rixos-hotels-collection/01-800.jpg",
+      "description": {
+        "en": "Spaces, celebrations and moments across a selected collection.",
+        "tr": "Seçili bir koleksiyonda mekânlar, kutlamalar ve yaşamdan anlar."
+      },
+      "source_folder": "Rixos_Hotels",
+      "published": "2026-11-01",
+      "cover_width": 1200,
+      "cover_height": 1800
+    },
+    {
+      "slug": "architecture-interiors",
+      "name": "Architecture & Interiors",
+      "country": "International",
+      "city": "Selected spaces",
+      "cities": [],
+      "legacy_id": null,
+      "collection": true,
+      "images": [
+        {
+          "src": "/assets/portfolio/architecture-interiors/01.jpg",
+          "small": "/assets/portfolio/architecture-interiors/01-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1P--or8PQdHw9wpoEAufTVWq9bMhhstzt/view?usp=drivesdk",
+          "source_name": "AHM08707.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/02.jpg",
+          "small": "/assets/portfolio/architecture-interiors/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1LW3s4-kucgQomnvnkQ_K8PcrkKHF8sOJ/view?usp=drivesdk",
+          "source_name": "AHM07396 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/03.jpg",
+          "small": "/assets/portfolio/architecture-interiors/03-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/18tHd-4GEI0vqoiA8u1_B-dibekAccWCL/view?usp=drivesdk",
+          "source_name": "AHM05572 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/04.jpg",
+          "small": "/assets/portfolio/architecture-interiors/04-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1iDbaZpWc6NMO-G97lnWg1nR5LspYGga2/view?usp=drivesdk",
+          "source_name": "AHM05555 kopya (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/05.jpg",
+          "small": "/assets/portfolio/architecture-interiors/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1PHf1hB2Qi08h2EmOk33Kjpvz5hRMDSHp/view?usp=drivesdk",
+          "source_name": "AHM05532 kopya (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/06.jpg",
+          "small": "/assets/portfolio/architecture-interiors/06-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1RiBJsMsG7steQOlnSi-qBie3gRhkRDez/view?usp=drivesdk",
+          "source_name": "AHM05368 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/07.jpg",
+          "small": "/assets/portfolio/architecture-interiors/07-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1OeI3E5sbNNYfHntf7rpPMizkfD6xz8bY/view?usp=drivesdk",
+          "source_name": "AHM05270 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/08.jpg",
+          "small": "/assets/portfolio/architecture-interiors/08-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1GN16LLoQ2BNsLjEMRJAi2Cg9EJ3h-yjp/view?usp=drivesdk",
+          "source_name": "AHM05273 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/09.jpg",
+          "small": "/assets/portfolio/architecture-interiors/09-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1dY-dKot8R5hgqB1OY97tyxwnuoJ1g6Pe/view?usp=drivesdk",
+          "source_name": "AHM04075 copy.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/10.jpg",
+          "small": "/assets/portfolio/architecture-interiors/10-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1qjardcZ3uGF4S-18--FcL3k0bEE4aFcE/view?usp=drivesdk",
+          "source_name": "AHM03366 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/11.jpg",
+          "small": "/assets/portfolio/architecture-interiors/11-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1sEAAh_mi0P7QhbTiqTvfSI0bs66k48md/view?usp=drivesdk",
+          "source_name": "AHM03714 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/12.jpg",
+          "small": "/assets/portfolio/architecture-interiors/12-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1jxs03sdzCntHimwPuSrOuhlN6YJQ3-fn/view?usp=drivesdk",
+          "source_name": "AHM03895 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/13.jpg",
+          "small": "/assets/portfolio/architecture-interiors/13-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1Kv2qnjGs01Da6hLs-qC6zEZ12XRmlVhA/view?usp=drivesdk",
+          "source_name": "AHM01155_1.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/14.jpg",
+          "small": "/assets/portfolio/architecture-interiors/14-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1l0WmzzGTPWTVx-FZppLMsuyitosN4_zW/view?usp=drivesdk",
+          "source_name": "AHM01139_1.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/15.jpg",
+          "small": "/assets/portfolio/architecture-interiors/15-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1rh4h7SRfE_xK-MWA7nAZRMh95A5zngNx/view?usp=drivesdk",
+          "source_name": "AHM01111.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/16.jpg",
+          "small": "/assets/portfolio/architecture-interiors/16-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1EHRepggsA78TkBxqNR-4f0FVwfyBQ3Zh/view?usp=drivesdk",
+          "source_name": "AHM00328 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/17.jpg",
+          "small": "/assets/portfolio/architecture-interiors/17-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/11Ktqcpf06kAhADNqPuTyTUmyX9KBuZBF/view?usp=drivesdk",
+          "source_name": "AHM01179 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/18.jpg",
+          "small": "/assets/portfolio/architecture-interiors/18-800.jpg",
+          "width": 1800,
+          "height": 1201,
+          "source": "https://drive.google.com/file/d/111ZS79n2UQo3lJkWcauk35bWXw1appti/view?usp=drivesdk",
+          "source_name": "AHM08214 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/19.jpg",
+          "small": "/assets/portfolio/architecture-interiors/19-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1_Eh5OhuRiZo4_EWLRQJ2EQY3wlcZBAN4/view?usp=drivesdk",
+          "source_name": "AHM08683 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/fairmont-cairo/06.jpg",
+          "small": "/assets/portfolio/fairmont-cairo/06-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1SxW8A0-QIrDCpekpJyVBBrrGZDCuMmsH/view?usp=drivesdk",
+          "source_name": "AHM08863.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/21.jpg",
+          "small": "/assets/portfolio/architecture-interiors/21-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1fysQyO_ERfsQQY8HlENZfl86C0l5k7Vp/view?usp=drivesdk",
+          "source_name": "AHM05467 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/22.jpg",
+          "small": "/assets/portfolio/architecture-interiors/22-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1HiTGgjBwQnhFh03NWUE__eW-ogsdYnIq/view?usp=drivesdk",
+          "source_name": "AHM05466.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/23.jpg",
+          "small": "/assets/portfolio/architecture-interiors/23-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1YHyyWYYUOmzQqh4-ZP4AZ8sVBwvRGjHG/view?usp=drivesdk",
+          "source_name": "AHM05452.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/24.jpg",
+          "small": "/assets/portfolio/architecture-interiors/24-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1CAv3hsLP3HD-tKcKcSpnLQJkKIU2jcv5/view?usp=drivesdk",
+          "source_name": "AHM05449.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/25.jpg",
+          "small": "/assets/portfolio/architecture-interiors/25-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1Okpnb1v2Qtt1o5drgtTgPK7Hm6bhwXL_/view?usp=drivesdk",
+          "source_name": "AHM05539 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/26.jpg",
+          "small": "/assets/portfolio/architecture-interiors/26-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1LTTx4Fugc8ocSCyeJKSYsukLRsY3TLkF/view?usp=drivesdk",
+          "source_name": "AHM05517 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/27.jpg",
+          "small": "/assets/portfolio/architecture-interiors/27-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1kZ4OUsrGAm3R8PZh_a3uYlOx6mNuOVcK/view?usp=drivesdk",
+          "source_name": "AHM05642.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/28.jpg",
+          "small": "/assets/portfolio/architecture-interiors/28-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1iGNexA2KCASnc6Vhuwe8oLG_Lw2_g5W0/view?usp=drivesdk",
+          "source_name": "AHM05580.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/29.jpg",
+          "small": "/assets/portfolio/architecture-interiors/29-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1N8vlt4ugKvfoHntLRVK1o3ajVxvmvrCE/view?usp=drivesdk",
+          "source_name": "AHM05434.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/30.jpg",
+          "small": "/assets/portfolio/architecture-interiors/30-800.jpg",
+          "width": 1800,
+          "height": 1350,
+          "source": "https://drive.google.com/file/d/1sohECeR1Fj3lTPBzk5iBWeltEOHDDUCe/view?usp=drivesdk",
+          "source_name": "AHM09829 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/05.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/05-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1VX1TymTPkKQs_E5Yly42z-oRvcnWIxYA/view?usp=drivesdk",
+          "source_name": "AHM09198 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/06.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/06-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1znX9omZYQN4Pk13P9s8xJLWCIUUOCmXJ/view?usp=drivesdk",
+          "source_name": "AHM01114 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/33.jpg",
+          "small": "/assets/portfolio/architecture-interiors/33-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/12wUH1ffeKhty2BHR-v4FERT89DkptL_h/view?usp=drivesdk",
+          "source_name": "AHM00107.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/34.jpg",
+          "small": "/assets/portfolio/architecture-interiors/34-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1_SEZLCJd0OyyIrybS0MnjUEnnMYJe_-J/view?usp=drivesdk",
+          "source_name": "AHM00078.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/35.jpg",
+          "small": "/assets/portfolio/architecture-interiors/35-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1VgPJpTyPrZMOuWi5g-VkciNLd74RxvhY/view?usp=drivesdk",
+          "source_name": "AHM01956.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/36.jpg",
+          "small": "/assets/portfolio/architecture-interiors/36-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1eeHCRNVj49Az8ND5x6o2QDBLuxLdtxtA/view?usp=drivesdk",
+          "source_name": "6_Panaroma_Suit_01.jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/02.jpg",
+          "small": "/assets/portfolio/rixos-premium-saadiyat-abu-dhabi/02-800.jpg",
+          "width": 1200,
+          "height": 1800,
+          "source": "https://drive.google.com/file/d/1Bm3T5-5shiI8eGAFjqGrJLhNEwIOvYVw/view?usp=drivesdk",
+          "source_name": "AHM01462 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/rixos-downtown-antalya/02.jpg",
+          "small": "/assets/portfolio/rixos-downtown-antalya/02-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1axR5DIHyCeXBrhcOooRrmZpmH0OPxs58/view?usp=drivesdk",
+          "source_name": "AHM03908-1 (1).jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/39.jpg",
+          "small": "/assets/portfolio/architecture-interiors/39-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/15GOqRkvnFJUFXqC_WlCHb1CQ_aOLvoRf/view?usp=drivesdk",
+          "source_name": "AHM03438-1.jpg"
+        },
+        {
+          "src": "/assets/portfolio/architecture-interiors/40.jpg",
+          "small": "/assets/portfolio/architecture-interiors/40-800.jpg",
+          "width": 1800,
+          "height": 1200,
+          "source": "https://drive.google.com/file/d/1-iTc79Wtso8EJtVKiRxB_KZH3v3ppviw/view?usp=drivesdk",
+          "source_name": "AHM07357 kopya.jpg"
+        },
+        {
+          "src": "/assets/portfolio/raffles-the-palm-dubai/04.jpg",
+          "small": "/assets/portfolio/raffles-the-palm-dubai/04-800.jpg",
+          "width": 1800,
+          "height": 1593,
+          "source": "https://drive.google.com/file/d/18OExrAtcbzJwONKRlRshebPgEQ-NLpgb/view?usp=drivesdk",
+          "source_name": "AHM09250.jpg"
+        }
+      ],
+      "cover": "/assets/portfolio/fairmont-cairo/06.jpg",
+      "cover_small": "/assets/portfolio/fairmont-cairo/06-800.jpg",
+      "description": {
+        "en": "A study of light, proportion and the details that give a place its identity.",
+        "tr": "Bir mekâna kimlik kazandıran ışık, oran ve ayrıntılar üzerine bir seçki."
+      },
+      "source_folder": "Architecture",
+      "published": "2026-11-01",
+      "cover_width": 1200,
+      "cover_height": 1800
+    },
+    {
+      "slug": "fairmont-istanbul",
+      "name": "Fairmont Istanbul",
+      "country": "Türkiye",
+      "city": "Istanbul",
+      "cities": [
+        "Istanbul"
+      ],
+      "legacy_id": 4,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/galleries/fairmont-istanbul-01.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-01.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-02.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-02.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-03.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-03.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-04.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-04.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-05.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-05.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-06.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-06.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-07.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-07.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-08.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-08.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-09.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-09.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-10.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-10.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-11.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-11.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-12.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-12.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-istanbul-13.jpg",
+          "small": "/assets/galleries/fairmont-istanbul-13.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/5",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/fairmont-istanbul-cover.jpg",
+      "cover_small": "/assets/fairmont-istanbul-cover.jpg",
+      "description": {
+        "en": "Selected photography from Fairmont Istanbul.",
+        "tr": "Fairmont Istanbul projesinden seçili fotoğraflar."
+      },
+      "published": "2026-11-01",
+      "cover_width": 1200,
+      "cover_height": 1800
+    },
+    {
+      "slug": "fairmont-makkah",
+      "name": "Fairmont Makkah",
+      "country": "Saudi Arabia",
+      "city": "Makkah",
+      "cities": [
+        "Makkah"
+      ],
+      "legacy_id": 5,
+      "collection": false,
+      "images": [
+        {
+          "src": "/assets/galleries/fairmont-makkah-01.jpg",
+          "small": "/assets/galleries/fairmont-makkah-01.jpg",
+          "width": 1333,
+          "height": 2000,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/6",
+          "source_name": "Original Charlot Crea portfolio"
+        },
+        {
+          "src": "/assets/galleries/fairmont-makkah-02.jpg",
+          "small": "/assets/galleries/fairmont-makkah-02.jpg",
+          "width": 2000,
+          "height": 1333,
+          "source": "https://www.charlotcrea.com/en/portfolio-detail/6",
+          "source_name": "Original Charlot Crea portfolio"
+        }
+      ],
+      "cover": "/assets/fairmont-makkah-cover.jpg",
+      "cover_small": "/assets/fairmont-makkah-cover.jpg",
+      "description": {
+        "en": "Selected photography from Fairmont Makkah.",
+        "tr": "Fairmont Makkah projesinden seçili fotoğraflar."
+      },
+      "published": "2026-11-01",
+      "cover_width": 1200,
+      "cover_height": 1800
+    }
+  ],
+  "films": [
+    {
+      "slug": "charlot-crea-showreel",
+      "name": "Charlot Crea — Showreel",
+      "country": "International",
+      "city": "",
+      "photo_slug": null,
+      "drive_id": "17MZHHIu8ZvIXwD_O2zlDI9hkQ9eeaKRC",
+      "embed_url": "https://drive.google.com/file/d/17MZHHIu8ZvIXwD_O2zlDI9hkQ9eeaKRC/preview",
+      "source": "https://drive.google.com/file/d/17MZHHIu8ZvIXwD_O2zlDI9hkQ9eeaKRC/view?usp=drivesdk",
+      "poster": "/assets/films/charlot-crea-showreel.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/charlot-crea-showreel.mp4",
+      "duration": "PT1M0.57S"
+    },
+    {
+      "slug": "balmy-beach-resort-kemer",
+      "name": "Balmy Beach Resort Kemer",
+      "country": "Türkiye",
+      "city": "Kemer",
+      "photo_slug": "balmy-beach-resort-kemer",
+      "drive_id": "1b2Wi73JqvZS4WwfYF08Hb21wx9ZsXWRt",
+      "embed_url": "https://drive.google.com/file/d/1b2Wi73JqvZS4WwfYF08Hb21wx9ZsXWRt/preview",
+      "source": "https://drive.google.com/file/d/1b2Wi73JqvZS4WwfYF08Hb21wx9ZsXWRt/view?usp=drivesdk",
+      "poster": "/assets/portfolio/film-posters/02.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/balmy-beach-resort-kemer.mp4",
+      "duration": "PT1M13.45S"
+    },
+    {
+      "slug": "sofitel-winter-palace-luxor",
+      "name": "Sofitel Winter Palace",
+      "country": "Egypt",
+      "city": "Luxor",
+      "photo_slug": "sofitel-winter-palace-luxor",
+      "drive_id": "1hXOMB0ZANuW_4WqqxnSoDGolMceCmTCL",
+      "embed_url": "https://drive.google.com/file/d/1hXOMB0ZANuW_4WqqxnSoDGolMceCmTCL/preview",
+      "source": "https://drive.google.com/file/d/1hXOMB0ZANuW_4WqqxnSoDGolMceCmTCL/view?usp=drivesdk",
+      "poster": "/assets/portfolio/film-posters/03.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/sofitel-winter-palace-luxor.mp4",
+      "duration": "PT1M25.53S"
+    },
+    {
+      "slug": "sofitel-old-cataract-aswan",
+      "name": "Sofitel Legend Old Cataract",
+      "country": "Egypt",
+      "city": "Aswan",
+      "photo_slug": "sofitel-old-cataract-aswan",
+      "drive_id": "1gpu0hRzKHky3kf7YFclbZHqelggdfgqC",
+      "embed_url": "https://drive.google.com/file/d/1gpu0hRzKHky3kf7YFclbZHqelggdfgqC/preview",
+      "source": "https://drive.google.com/file/d/1gpu0hRzKHky3kf7YFclbZHqelggdfgqC/view?usp=drivesdk",
+      "poster": "/assets/portfolio/film-posters/04.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/sofitel-old-cataract-aswan.mp4",
+      "duration": "PT1M29.77S"
+    },
+    {
+      "slug": "swandor-kemer",
+      "name": "Swandor Kemer",
+      "country": "Türkiye",
+      "city": "Kemer",
+      "photo_slug": "swandor-hotels-collection",
+      "drive_id": "1F0_gmQjv1Ad88MGd8Ry6nDAnA7LnTzKC",
+      "embed_url": "https://drive.google.com/file/d/1F0_gmQjv1Ad88MGd8Ry6nDAnA7LnTzKC/preview",
+      "source": "https://drive.google.com/file/d/1F0_gmQjv1Ad88MGd8Ry6nDAnA7LnTzKC/view?usp=drivesdk",
+      "poster": "/assets/films/swandor-kemer.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/swandor-kemer.mp4",
+      "duration": "PT1M15.46S"
+    },
+    {
+      "slug": "ali-bey-hotels",
+      "name": "Ali Bey Hotels",
+      "country": "Türkiye",
+      "city": "",
+      "photo_slug": null,
+      "drive_id": "1fPqA6WOWopOlEe9NVBYVMin1PCQ6Q7lt",
+      "embed_url": "https://drive.google.com/file/d/1fPqA6WOWopOlEe9NVBYVMin1PCQ6Q7lt/preview",
+      "source": "https://drive.google.com/file/d/1fPqA6WOWopOlEe9NVBYVMin1PCQ6Q7lt/view?usp=drivesdk",
+      "poster": "/assets/charlot-crea-share.png",
+      "published": "2026-10-31T23:36:06+00:00",
+      "audio_language": "tr"
+    },
+    {
+      "slug": "movenpick-el-quseir",
+      "name": "Mövenpick Resort El Quseir",
+      "country": "Egypt",
+      "city": "El Quseir",
+      "photo_slug": "movenpick-resort-el-quseir",
+      "drive_id": "1FJEt5lkYuqIws04ollY7T_ME1TsOuDbl",
+      "embed_url": "https://drive.google.com/file/d/1FJEt5lkYuqIws04ollY7T_ME1TsOuDbl/preview",
+      "source": "https://drive.google.com/file/d/1FJEt5lkYuqIws04ollY7T_ME1TsOuDbl/view?usp=drivesdk",
+      "poster": "/assets/portfolio/film-posters/07.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/movenpick-el-quseir.mp4",
+      "duration": "PT1M19.72S"
+    },
+    {
+      "slug": "rixos-alamein",
+      "name": "Rixos Alamein",
+      "country": "Egypt",
+      "city": "El Alamein",
+      "photo_slug": null,
+      "drive_id": "1JGibuWB_NnOm2JK72ppJvmUCyAEeHM_h",
+      "embed_url": "https://drive.google.com/file/d/1JGibuWB_NnOm2JK72ppJvmUCyAEeHM_h/preview",
+      "source": "https://drive.google.com/file/d/1JGibuWB_NnOm2JK72ppJvmUCyAEeHM_h/view?usp=drivesdk",
+      "poster": "/assets/films/rixos-alamein.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "duration": "PT1M24.89S",
+      "file": "/assets/films/rixos-alamein.mp4"
+    },
+    {
+      "slug": "rixos-sharm-el-sheikh",
+      "name": "Rixos Sharm El Sheikh",
+      "country": "Egypt",
+      "city": "Sharm El Sheikh",
+      "photo_slug": null,
+      "drive_id": "1TfZ6yuf3y815S6LnfqfU8oJ_wriaeHIl",
+      "embed_url": "https://drive.google.com/file/d/1TfZ6yuf3y815S6LnfqfU8oJ_wriaeHIl/preview",
+      "source": "https://drive.google.com/file/d/1TfZ6yuf3y815S6LnfqfU8oJ_wriaeHIl/view?usp=drivesdk",
+      "poster": "/assets/films/rixos-sharm-el-sheikh.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "duration": "PT1M30.73S",
+      "file": "/assets/films/rixos-sharm-el-sheikh.mp4"
+    },
+    {
+      "slug": "rixos-premium-seagate",
+      "name": "Rixos Premium Seagate",
+      "country": "Egypt",
+      "city": "Sharm El Sheikh",
+      "photo_slug": null,
+      "drive_id": "1sbpdJrdJjBU9-0dGBN01c_mqdKZzeQhf",
+      "embed_url": "https://drive.google.com/file/d/1sbpdJrdJjBU9-0dGBN01c_mqdKZzeQhf/preview",
+      "source": "https://drive.google.com/file/d/1sbpdJrdJjBU9-0dGBN01c_mqdKZzeQhf/view?usp=drivesdk",
+      "poster": "/assets/films/rixos-premium-seagate.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "duration": "PT1M12.68S",
+      "file": "/assets/films/rixos-premium-seagate.mp4"
+    },
+    {
+      "slug": "fairmont-nile-city",
+      "name": "Fairmont Nile City",
+      "country": "Egypt",
+      "city": "Cairo",
+      "photo_slug": "fairmont-cairo",
+      "drive_id": "1LvVI3vBj63I3pzx0lWkXBdL53Hgsgw9u",
+      "embed_url": "https://drive.google.com/file/d/1LvVI3vBj63I3pzx0lWkXBdL53Hgsgw9u/preview",
+      "source": "https://drive.google.com/file/d/1LvVI3vBj63I3pzx0lWkXBdL53Hgsgw9u/view?usp=drivesdk",
+      "poster": "/assets/portfolio/fairmont-cairo/05.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/fairmont-nile-city.mp4",
+      "duration": "PT1M26.06S"
+    },
+    {
+      "slug": "rixos-premium-magawish",
+      "name": "Rixos Premium Magawish",
+      "country": "Egypt",
+      "city": "Hurghada",
+      "photo_slug": null,
+      "drive_id": "190LzayPNTyfBnZVKIc8KLglpzuTNS3j6",
+      "embed_url": "https://drive.google.com/file/d/190LzayPNTyfBnZVKIc8KLglpzuTNS3j6/preview",
+      "source": "https://drive.google.com/file/d/190LzayPNTyfBnZVKIc8KLglpzuTNS3j6/view?usp=drivesdk",
+      "poster": "/assets/films/rixos-premium-magawish.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "duration": "PT1M26.81S",
+      "file": "/assets/films/rixos-premium-magawish.mp4"
+    },
+    {
+      "slug": "gural-premier-belek",
+      "name": "Güral Premier Belek",
+      "country": "Türkiye",
+      "city": "Belek",
+      "photo_slug": "gural-hotels-turkiye",
+      "drive_id": "1U7zE74OirX1JrfICan7XB4AebadZVMDy",
+      "embed_url": "https://drive.google.com/file/d/1U7zE74OirX1JrfICan7XB4AebadZVMDy/preview",
+      "source": "https://drive.google.com/file/d/1U7zE74OirX1JrfICan7XB4AebadZVMDy/view?usp=drivesdk",
+      "poster": "/assets/portfolio/film-posters/13.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/gural-premier-belek.mp4",
+      "duration": "PT1M19.85S"
+    },
+    {
+      "slug": "gural-premier-tekirova",
+      "name": "Güral Premier Tekirova",
+      "country": "Türkiye",
+      "city": "Tekirova",
+      "photo_slug": "gural-hotels-turkiye",
+      "drive_id": "1dpCRKGxDUiL-M5Y77ClXpzd0q0RLyLCD",
+      "embed_url": "https://drive.google.com/file/d/1dpCRKGxDUiL-M5Y77ClXpzd0q0RLyLCD/preview",
+      "source": "https://drive.google.com/file/d/1dpCRKGxDUiL-M5Y77ClXpzd0q0RLyLCD/view?usp=drivesdk",
+      "poster": "/assets/portfolio/film-posters/14.jpg",
+      "published": "2026-10-31T23:36:06+00:00",
+      "file": "/assets/films/gural-premier-tekirova.mp4",
+      "duration": "PT1M16.97S"
+    }
+  ],
+  "featured_projects": [
+    "balmy-beach-resort-kemer",
+    "raffles-the-palm-dubai",
+    "sofitel-old-cataract-aswan",
+    "rixos-jbr-dubai",
+    "sofitel-winter-palace-luxor",
+    "architecture-interiors"
+  ]
+}

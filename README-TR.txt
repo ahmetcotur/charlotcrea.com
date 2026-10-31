@@ -105,3 +105,13 @@ DESTINASYON ICERIKLERI
 - destinations.py: gorunur icerik, arka plan yer adi, metadata ve schema uretimi.
 - docs/destination-seo.md: hedef ifade haritasi; arama hacmi olcumu yapilmamistir.
 - Buyuk arka plan yazisi dekoratiftir; icerik okunabilir paragraflarda yer alir.
+
+DRIVE PORTFOLYOSU — 1 KASIM 2026
+- 19 fotograf koleksiyonu, 205 farkli fotograf, 14 film.
+- 13 film web MP4 kopyasiyla, Ali Bey Hotels filmi Drive oynaticisiyla acilir.
+- 4 ulke ve 11 sehir destinasyonu; toplam 124 Turkce/Ingilizce sayfa.
+- data/portfolio.json katalog, data/portfolio-cities.json sehir metinleridir.
+- portfolio.py ve site_pages.py yeni sayfalari ve metadata/schema baglarini uretir.
+- Filmler fotograflara, projeler ulke/sehirlere karsilikli baglanir.
+- Yeni gorunum ve oynatici: dist/work.css ve dist/work.js.
+- Ayrintili eslestirme ve secim notlari: docs/portfolio-import.md.

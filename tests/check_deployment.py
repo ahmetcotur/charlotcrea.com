@@ -15,7 +15,7 @@ for path in ['/en/','/tr/','/tr/blog/','/en/blog/how-to-prepare-a-photography-br
  html=body.decode();assert 'href="'+origin+path+'"' in html,(path,'canonical origin')
  assert headers.get('X-Robots-Tag')=='noindex, nofollow'
 status,_,_=request('/missing-page-for-deployment-check/');assert status==404,status
-status,_,body=request('/sitemap.xml');assert status==200;root=ET.fromstring(body);locs=root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc');assert len(locs)==54;assert all(n.text.startswith(origin+'/') for n in locs)
+status,_,body=request('/sitemap.xml');assert status==200;root=ET.fromstring(body);locs=root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc');build_info=json.loads(request('/build-info.json')[2]);assert len(locs)==build_info['canonical_pages'];assert all(n.text.startswith(origin+'/') for n in locs)
 status,_,body=request('/assets/favicon.svg');assert status==200 and b'<svg' in body
 status,_,body=request('/robots.txt');assert status==200 and b'Disallow: /' in body
 print('PASS: HTTP 301/404, both languages, blog, contact, gallery, sitemap, favicon and noindex on '+url)

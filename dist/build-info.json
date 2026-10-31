@@ -1,10 +1,15 @@
 {
   "environment": "preview",
   "site_url": "http://localhost:8080",
-  "canonical_pages": 54,
+  "canonical_pages": 124,
   "languages": [
     "en",
     "tr"
   ],
-  "blog_posts": 5
+  "blog_posts": 5,
+  "native_films": 13,
+  "photography_collections": 19,
+  "portfolio_photographs": 205,
+  "films": 14,
+  "city_pages": 11
 }
