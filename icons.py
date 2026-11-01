@@ -21,7 +21,9 @@ class Icons(HTMLParser):
 for file in Path('dist').rglob('index.html'):
  parser=Icons();parser.feed(file.read_text());s=''.join(parser.output)
  s=s.replace('</head>','<meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no"><link rel="stylesheet" href="/icons.css"></head>')
- s=s.replace('</body>','<script src="/icons.js"></script></body>');file.write_text(s)
+ label='Başa dön' if '<html lang="tr"' in s else 'Back to top'
+ button='<button type="button" class="back-to-top" aria-label="'+label+'" hidden>'+icon('↑')+'</button>'
+ s=s.replace('</body>',button+'<script src="/icons.js"></script><script src="/back-to-top.js"></script></body>');file.write_text(s)
 # Keep controls updated by JS (brief forms and video modal links) consistent too.
 import json
 Path('dist/icons.js').write_text("(()=>{const icons="+json.dumps({c:icon(c) for c in paths},ensure_ascii=False)+";function replace(node){if(node.nodeType===3){if(!/[↗↘→←↓↑×☰▶✳]/.test(node.data)||node.parentElement?.closest('script,style,svg,textarea,title'))return;const f=document.createDocumentFragment();for(const c of node.data){if(icons[c]){const t=document.createElement('template');t.innerHTML=icons[c];f.append(t.content)}else f.append(document.createTextNode(c))}node.replaceWith(f)}else if(node.nodeType===1&&!node.matches('script,style,svg,textarea,title'))[...node.childNodes].forEach(replace)}const observer=new MutationObserver(records=>records.forEach(r=>{if(r.type==='characterData')replace(r.target);else r.addedNodes.forEach(replace)}));observer.observe(document.body,{childList:true,subtree:true,characterData:true})})();")
@@ -29,7 +31,7 @@ Path('dist/icons.js').write_text("(()=>{const icons="+json.dumps({c:icon(c) for 
 import hashlib
 for file in Path('dist').rglob('index.html'):
  s=file.read_text()
- for asset in ('motion.js','icons.js','icons.css'):
+ for asset in ('motion.js','icons.js','icons.css','back-to-top.js'):
   version=hashlib.sha256((Path('dist')/asset).read_bytes()).hexdigest()[:12]
   s=s.replace('/'+asset+'"','/'+asset+'?v='+version+'"')
  file.write_text(s)
