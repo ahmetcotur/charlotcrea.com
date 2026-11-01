@@ -5,21 +5,6 @@
  // Mobile browser chrome changes height while scrolling; keep trigger positions stable.
  ScrollTrigger.config({ignoreMobileResize:true});
  const mm=gsap.matchMedia();
- const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- let preference=null;
- try{preference=sessionStorage.getItem('charlot-motion')}catch(e){}
- const control=document.createElement('button');control.type='button';control.className='motion-preference';
- document.querySelector('.footer-bottom')?.append(control);
- const tr=document.documentElement.lang==='tr';
- function configure(){
-  mm.revert();
-  const enabled=preference==='on'||(preference!=='off'&&!reduced.matches);
-  control.textContent=enabled?(tr?'Animasyonları duraklat':'Pause animations'):(tr?'Animasyonları aç':'Enable animations');
-  control.setAttribute('aria-pressed',String(enabled));
-  if(enabled)mm.add('all',animate);
- }
- control.addEventListener('click',()=>{preference=control.getAttribute('aria-pressed')==='true'?'off':'on';try{sessionStorage.setItem('charlot-motion',preference)}catch(e){}configure()});
- if(reduced.addEventListener)reduced.addEventListener('change',configure);else reduced.addListener(configure);
  function animate(){
   let active=true;
   const compact=matchMedia('(max-width: 760px)').matches;
@@ -78,5 +63,5 @@
   refresh();
   return()=>{active=false;cancelAnimationFrame(refreshFrame);cleanup.forEach(fn=>fn());window.removeEventListener('load',refresh);window.removeEventListener('pageshow',resume);document.removeEventListener('visibilitychange',visibility);window.removeEventListener('orientationchange',orientation);navObserver?.disconnect();progress.remove()};
  }
- configure();
+ mm.add('all',animate);
 })();
