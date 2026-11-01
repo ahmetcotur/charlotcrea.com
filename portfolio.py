@@ -160,19 +160,34 @@ for lang in ('en','tr'):
   body+='</div></article>'
  body+='</section>'+cta(lang)
  publish(path,lang,title,desc,body,'CollectionPage',crumbs)
- # Home: a broader photography selection and the actual one-minute showreel.
+ # Home: an editorial portfolio opening with an in-view motion feature.
  file=D/lang/'index.html';s=file.read_text();featured_projects=[next(p for p in projects if p['slug']==slug) for slug in catalogue['featured_projects']]
  s=re.sub(r'<div class="project-grid">.*?</div></section>',lambda m:'<div class="project-grid">'+''.join(photo_card(p,lang) for p in featured_projects)+'</div></section>',s,count=1,flags=re.S)
- showreel='<section class="section home-showreel"><div class="section-head"><div><span class="label">Film / Showreel</span><h2>'+('Bir dakikada<br>birçok hikâye.' if lang=='tr' else 'One minute.<br>Many stories.')+'</h2></div><a class="text-link" href="'+filmroute+'">'+('Tüm filmler ↗' if lang=='tr' else 'All films ↗')+'</a></div>'+video_button(films[0],lang)+'</section>'
- s=s.replace('<section class="section intro">',showreel+'<section class="section intro">',1)
+ # Lead with three real projects instead of the previous generic hero image.
+ hero_slugs=['balmy-beach-resort-kemer','sofitel-old-cataract-aswan','raffles-the-palm-dubai']
+ hero='<div class="home-contact-sheet">'
+ for i,slug in enumerate(hero_slugs):
+  p=next(p for p in projects if p['slug']==slug)
+  hero+='<a class="home-frame home-frame-'+str(i+1)+'" href="'+pp(p,lang)+'">'+img({'src':p['cover'],'small':p['cover_small'],'width':p['cover_width'],'height':p['cover_height']},p['name'],'eager' if i==0 else 'lazy')+'<span><small>'+escape(loc(p['city'],lang))+'</small>'+escape(p['name'])+' ↗</span></a>'
+ hero+='</div><div class="home-opening-note"><span class="label">'+('Işık. Mekân. Hareket.' if lang=='tr' else 'Light. Place. Motion.')+'</span><button type="button" class="text-link home-reel-link" data-video-src="'+films[0]['file']+'" data-film-title="Charlot Crea — Showreel">'+('Showreeli izle ↗' if lang=='tr' else 'Watch the showreel ↗')+'</button></div>'
+ s=re.sub(r'<div class="hero-image">.*?</div></div><div class="below-image">.*?</div>',lambda m:hero,s,count=1,flags=re.S)
+ f=films[0]
+ showreel='<section class="section home-showreel"><div class="section-head"><div><span class="label">Film / Showreel</span><h2>'+('Kadrajın ötesinde,<br>hareketin içinde.' if lang=='tr' else 'Beyond the frame.<br>Into the moment.')+'</h2></div><a class="text-link" href="'+filmroute+'">'+('Tüm filmler ↗' if lang=='tr' else 'All films ↗')+'</a></div><div class="home-motion"><video class="home-motion-video" muted loop playsinline preload="none" poster="'+f['poster']+'" data-src="'+f['file']+'" aria-label="Charlot Crea Showreel"></video><div class="home-motion-controls"><button class="motion-toggle" type="button" aria-pressed="false">'+('Önizlemeyi oynat' if lang=='tr' else 'Play preview')+'</button><button type="button" class="motion-full" data-video-src="'+f['file']+'" data-film-title="Charlot Crea — Showreel">'+('Filmi sesli izle ↗' if lang=='tr' else 'Watch with sound ↗')+'</button></div></div><div class="home-film-selection">'
+ for slug in ['sofitel-winter-palace-luxor','balmy-beach-resort-kemer']:
+  showreel+=film_card(next(f for f in films if f['slug']==slug),lang)
+ showreel+='</div></section>'
+ s=s.replace('<section class="section discipline-section">',showreel+'<section class="section discipline-section">',1)
  # Update the existing country rows with cities that now have dedicated work pages.
  for country,slug in country_slugs.items():
   names=[c[lang]['name'] for c in cities if c['country']==country]
   if country=='UAE':names=['Dubai']+names
   if country=='Saudi Arabia':names=['Mekke' if lang=='tr' else 'Makkah']
   url=country_path(country,lang)
+  p=next((p for p in featured_projects if p['country']==country),next(p for p in projects if p['country']==country))
+  s=s.replace('<a class="destination-row" href="'+url+'">','<a class="destination-row" href="'+url+'">'+img(p['cover_small'],p['name']),1)
   s=re.sub(r'(<a class="destination-row" href="'+re.escape(url)+r'">.*?<p>).*?(</p>)',lambda m:m[1]+escape(' · '.join(names))+m[2],s,flags=re.S)
  s=s.replace('</main>',dialog(lang)+'</main>',1)
+ s=s.replace('</body>','<script src="/home.js"></script></body>')
  s=s.replace('<main>','<main class="home-page">',1)
  nodes=graph(s);wp=next(n for n in nodes if n['@id']==base+home+'#webpage');nodes.append(video_schema(films[0],lang,home));wp['hasPart']=[{'@id':base+fp(films[0],lang)+'#video'}]
  s=rewrite_head(s,base,home,routes['/en/'] if lang=='en' else '/en/',wp['name'],wp['description'],nodes);file.write_text(s)
