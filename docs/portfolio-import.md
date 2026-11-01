@@ -6,8 +6,8 @@ Kaynak: Kullanıcının sağladığı “Ahmet Gül Portfolyo” Drive arşivi. 
 
 - 19 fotoğraf koleksiyonu, toplam 205 farklı fotoğraf.
 - 14 film: yatay Charlot Crea showreel’i, Balmy, Swandor, Sofitel, Mövenpick, Fairmont, Güral ve Rixos projeleri; Ali Bey Hotels’in Türkçe anlatımlı filmi.
-- 4 ülke ve 11 şehir destinasyonu. Şehir sayfaları ilgili fotoğraf ve filmlere dayanır.
-- 124 Türkçe / İngilizce sayfa; mevcut proje adresleri korunur.
+- 4 ülke ve 12 şehir destinasyonu. Şehir sayfaları ilgili fotoğraf ve filmlere dayanır.
+- 126 Türkçe / İngilizce sayfa; mevcut proje adresleri korunur.
 
 Mevcut Fairmont Istanbul ve Fairmont Makkah projeleri korunmuştur. Drive’daki fotoğraflar, eski galerilerde aynı kareler tekrar eklenmeden birleştirilmiştir. Aynı fotoğraf hem bir proje hem de mimari seçkide yer alabilir; farklı fotoğraf sayısı dosya adresleri üzerinden hesaplanır.
 

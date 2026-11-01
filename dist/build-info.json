@@ -1,7 +1,7 @@
 {
   "environment": "preview",
   "site_url": "http://localhost:8080",
-  "canonical_pages": 124,
+  "canonical_pages": 126,
   "languages": [
     "en",
     "tr"
@@ -11,5 +11,5 @@
   "photography_collections": 19,
   "portfolio_photographs": 205,
   "films": 14,
-  "city_pages": 11
+  "city_pages": 12
 }

@@ -108,4 +108,12 @@ class SEO(unittest.TestCase):
   for city in json.loads(Path('data/portfolio-cities.json').read_text()):
    supported=any(city['key'] in p['cities'] and p['country']==city['country'] for p in data['projects']) or any(city['key']==f['city'] and city['country']==f['country'] for f in data['films'])
    self.assertTrue(supported,city['key'])
+ def test_antalya_region_includes_coastal_work(self):
+  for lang,country in [('en','turkey'),('tr','turkiye')]:
+   root='destinations' if lang=='en' else 'destinasyonlar'
+   html=(D/lang/root/country/'antalya/index.html').read_text()
+   for slug in ['balmy-beach-resort-kemer','rixos-premium-tekirova','gural-premier-belek','gural-premier-tekirova']:
+    self.assertIn('/'+slug+'/',html)
+   for place in ['kemer','tekirova','belek']:
+    self.assertIn('/'+root+'/'+country+'/'+place+'/',html)
 if __name__=='__main__':unittest.main()

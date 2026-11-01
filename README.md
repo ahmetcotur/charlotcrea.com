@@ -2,9 +2,9 @@
 
 Photography ve Film odaklı, Türkçe / İngilizce statik web sitesi demosu.
 
-- 124 sayfa ve sayfa bazında dil geçişi
+- 126 sayfa ve sayfa bazında dil geçişi
 - 19 fotoğraf koleksiyonu, 205 farklı fotoğraf ve klavyeyle kullanılabilen galeriler
-- 14 film ve 11 şehir destinasyonu; her biri Türkçe ve İngilizce sunulan 5 örnek blog yazısı
+- 14 film ve 12 şehir destinasyonu; her biri Türkçe ve İngilizce sunulan 5 örnek blog yazısı
 - Logo reveal, ticker, kayan referanslar ve kart geçişleri
 - İletişim bilgileri, Antalya adresine göre Google Maps haritası
 - Sayfaya özel metadata, Open Graph, JSON-LD, hreflang ve görselli sitemap

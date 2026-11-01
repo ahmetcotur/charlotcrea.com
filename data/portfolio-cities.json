@@ -6,13 +6,20 @@
     "country": "Türkiye",
     "en": {
       "name": "Antalya",
-      "intro": "From a home base in Antalya, Charlot Crea connects the character of a Mediterranean city with its interiors and everyday experiences. The Rixos Downtown Antalya gallery brings daylight, room details and views into one selected collection."
+      "intro": "Antalya is more than its city centre. Our selection spans the province, from Rixos Downtown Antalya to Balmy and Swandor in Kemer, Rixos Premium and Güral Premier in Tekirova, and the Güral Premier Belek film. Explore photography and films across the Mediterranean coast, or choose an individual destination below."
     },
     "tr": {
       "name": "Antalya",
-      "intro": "Antalya merkezli Charlot Crea, bir Akdeniz şehrinin karakterini iç mekânları ve günlük deneyimleriyle buluşturur. Rixos Downtown Antalya galerisi gün ışığını, oda ayrıntılarını ve manzaraları aynı seçkide bir araya getirir."
+      "intro": "Antalya seçkimiz şehir merkeziyle sınırlı değil. Rixos Downtown Antalya’dan Kemer’deki Balmy ve Swandor çalışmalarına, Tekirova’daki Rixos Premium ve Güral Premier projelerinden Güral Premier Belek filmine uzanıyor. Akdeniz kıyısındaki fotoğraf ve filmleri birlikte keşfedin veya aşağıdan ilgili destinasyona geçin."
     },
-    "published": "2026-11-01"
+    "published": "2026-11-01",
+    "includes": [
+      "Antalya",
+      "Kemer",
+      "Belek",
+      "Tekirova"
+    ],
+    "place_type": "AdministrativeArea"
   },
   {
     "country_slug": "turkey",
@@ -42,7 +49,12 @@
       "name": "Kemer",
       "intro": "Kemer seçkisi, Balmy Beach Resort fotoğraflarını Balmy ve Swandor filmleriyle buluşturur. Su, yeşil, ortak alanlar ve dinlenme anları, bir konaklama hikâyesini farklı anlatım biçimleriyle gösterir."
     },
-    "published": "2026-11-01"
+    "published": "2026-11-01",
+    "includes": [
+      "Kemer",
+      "Tekirova"
+    ],
+    "parent": "Antalya"
   },
   {
     "country_slug": "turkey",
@@ -56,6 +68,23 @@
     "tr": {
       "name": "Tekirova",
       "intro": "Rixos Premium Tekirova fotoğrafları ve Güral Premier Tekirova filmi, sabit ve hareketli görüntüleri bir araya getirir. Açık alanları, rengi ve suyun etrafındaki yaşamı keşfedin; ardından kendi projeniz için önemli açıları ve anları konuşalım."
+    },
+    "published": "2026-11-01",
+    "parent": "Kemer"
+  },
+  {
+    "country_slug": "turkey",
+    "slug": "belek",
+    "key": "Belek",
+    "country": "Türkiye",
+    "parent": "Antalya",
+    "en": {
+      "name": "Belek",
+      "intro": "The Güral Premier Belek film brings the property’s spaces, landscape and guest experience into a moving-image story. Discover this selection from the Antalya coast and explore related work in Antalya, Kemer and Tekirova."
+    },
+    "tr": {
+      "name": "Belek",
+      "intro": "Güral Premier Belek filmi; tesisin mekânlarını, peyzajını ve konaklama deneyimini hareketli bir anlatıda buluşturur. Antalya kıyısından bu film seçkisini izleyin; Antalya, Kemer ve Tekirova’daki diğer çalışmalarımıza da göz atın."
     },
     "published": "2026-11-01"
   },

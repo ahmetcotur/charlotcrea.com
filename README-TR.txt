@@ -109,7 +109,7 @@ DESTINASYON ICERIKLERI
 DRIVE PORTFOLYOSU — 1 KASIM 2026
 - 19 fotograf koleksiyonu, 205 farkli fotograf, 14 film.
 - 13 film web MP4 kopyasiyla, Ali Bey Hotels filmi Drive oynaticisiyla acilir.
-- 4 ulke ve 11 sehir destinasyonu; toplam 124 Turkce/Ingilizce sayfa.
+- 4 ulke ve 12 sehir destinasyonu; toplam 126 Turkce/Ingilizce sayfa.
 - data/portfolio.json katalog, data/portfolio-cities.json sehir metinleridir.
 - portfolio.py ve site_pages.py yeni sayfalari ve metadata/schema baglarini uretir.
 - Filmler fotograflara, projeler ulke/sehirlere karsilikli baglanir.
