@@ -5,7 +5,22 @@
  // Mobile browser chrome changes height while scrolling; keep trigger positions stable.
  ScrollTrigger.config({ignoreMobileResize:true});
  const mm=gsap.matchMedia();
- mm.add('(prefers-reduced-motion: no-preference)',()=>{
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let preference=null;
+ try{preference=sessionStorage.getItem('charlot-motion')}catch(e){}
+ const control=document.createElement('button');control.type='button';control.className='motion-preference';
+ document.querySelector('.footer-bottom')?.append(control);
+ const tr=document.documentElement.lang==='tr';
+ function configure(){
+  mm.revert();
+  const enabled=preference==='on'||(preference!=='off'&&!reduced.matches);
+  control.textContent=enabled?(tr?'Animasyonları duraklat':'Pause animations'):(tr?'Animasyonları aç':'Enable animations');
+  control.setAttribute('aria-pressed',String(enabled));
+  if(enabled)mm.add('all',animate);
+ }
+ control.addEventListener('click',()=>{preference=control.getAttribute('aria-pressed')==='true'?'off':'on';try{sessionStorage.setItem('charlot-motion',preference)}catch(e){}configure()});
+ if(reduced.addEventListener)reduced.addEventListener('change',configure);else reduced.addListener(configure);
+ function animate(){
   let active=true;
   const compact=matchMedia('(max-width: 760px)').matches;
   const distance=compact?16:24;
@@ -49,7 +64,10 @@
   document.querySelectorAll('#next,#back').forEach(b=>{b.addEventListener('click',step);cleanup.push(()=>b.removeEventListener('click',step))});
   document.querySelectorAll('img').forEach(im=>{if(!im.complete){im.addEventListener('load',refresh,{once:true});cleanup.push(()=>im.removeEventListener('load',refresh))}});
   window.addEventListener('load',refresh,{once:true});
-  window.addEventListener('pageshow',refresh);
+  const resume=()=>{gsap.ticker.wake();refresh();ScrollTrigger.update()};
+  window.addEventListener('pageshow',resume);
+  const visibility=()=>{if(!document.hidden)resume()};
+  document.addEventListener('visibilitychange',visibility);
   const orientation=()=>{const timer=setTimeout(refresh,250);cleanup.push(()=>clearTimeout(timer))};
   window.addEventListener('orientationchange',orientation);
   document.fonts?.ready.then(()=>{if(active)refresh()});
@@ -58,6 +76,7 @@
   const navObserver=nav?new MutationObserver(refresh):null;
   if(nav)navObserver.observe(nav,{attributes:true,attributeFilter:['class']});
   refresh();
-  return()=>{active=false;cancelAnimationFrame(refreshFrame);cleanup.forEach(fn=>fn());window.removeEventListener('load',refresh);window.removeEventListener('pageshow',refresh);window.removeEventListener('orientationchange',orientation);navObserver?.disconnect();progress.remove()};
- });
+  return()=>{active=false;cancelAnimationFrame(refreshFrame);cleanup.forEach(fn=>fn());window.removeEventListener('load',refresh);window.removeEventListener('pageshow',resume);document.removeEventListener('visibilitychange',visibility);window.removeEventListener('orientationchange',orientation);navObserver?.disconnect();progress.remove()};
+ }
+ configure();
 })();

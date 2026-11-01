@@ -223,3 +223,4 @@ import runpy
 runpy.run_path("polish.py")
 runpy.run_path("portfolio.py")
 runpy.run_path("destinations.py")
+runpy.run_path("icons.py")

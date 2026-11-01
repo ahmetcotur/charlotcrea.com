@@ -116,4 +116,12 @@ class SEO(unittest.TestCase):
     self.assertIn('/'+slug+'/',html)
    for place in ['kemer','tekirova','belek']:
     self.assertIn('/'+root+'/'+country+'/'+place+'/',html)
+ def test_safari_control_markup(self):
+  for lang in ['en','tr']:
+   html=(D/lang/'index.html').read_text()
+   self.assertIn('name="format-detection"',html)
+   self.assertIn('href="/icons.css?v=',html)
+   self.assertIn('src="/icons.js?v=',html)
+   self.assertRegex(html,r'class="mobile-toggle"[^>]*><svg class="ui-icon"')
+   self.assertRegex(html,r'class="film-play"[^>]*><svg class="ui-icon"')
 if __name__=='__main__':unittest.main()
