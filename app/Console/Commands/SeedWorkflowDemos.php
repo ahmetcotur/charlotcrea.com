@@ -38,7 +38,7 @@ class SeedWorkflowDemos extends Command
             }
             $manifest[$key] = DB::transaction(function () use ($key, $label, $company, $status, $workStatus, $locale) {
                 $email = 'workflow-'.$key.'@demo.example.test';
-                $customer = Customer::create(['title' => '[DEMO] '.$company, 'company_name' => $company, 'email' => $email, 'country' => $locale === 'tr' ? 'Türkiye' : 'United Kingdom', 'demo_key' => 'workflow-v2-'.$key, 'notes' => '[DEMO] Yerel test senaryosu; gerçek müşteri değildir.']);
+                $customer = Customer::create(['title' => '[DEMO] '.$company, 'company_name' => $company, 'email' => $email, 'country' => $locale === 'tr' ? 'Türkiye' : 'United Kingdom', 'preferred_locale' => $locale, 'demo_key' => 'workflow-v2-'.$key, 'notes' => '[DEMO] Yerel test senaryosu; gerçek müşteri değildir.']);
                 $password = Str::password(20, symbols: false);
                 CustomerAccount::create(['customer_id' => $customer->id, 'email' => $email, 'password' => $password, 'activated_at' => now(), 'enabled' => true]);
                 foreach (['contact', 'quote'] as $type) {

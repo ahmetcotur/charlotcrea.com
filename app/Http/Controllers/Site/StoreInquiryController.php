@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers\Site;
 
+use App\Mail\InquiryReceiptMail;
+use App\Mail\InquiryReceivedMail;
 use App\Models\Customer;
 use App\Models\Inquiry;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class StoreInquiryController
 {
@@ -38,24 +41,28 @@ class StoreInquiryController
             'website' => ['nullable', 'string', 'max:255'],
         ]);
 
+        $data['email'] = mb_strtolower(trim($data['email']));
         $data['type'] = $isQuote ? 'quote' : 'contact';
         DB::transaction(function () use ($data): void {
             $customer = Customer::firstOrCreate(
                 ['email' => mb_strtolower(trim($data['email']))],
                 [
                     'title' => $data['name'],
+                    'preferred_locale' => $data['locale'],
                     'company_name' => $data['property'] ?? null,
                     'country' => $data['country'] ?? null,
                     'phone' => $data['phone'] ?? null,
                 ]
             );
 
-            Inquiry::create([
+            $inquiry = Inquiry::create([
                 ...collect($data)->except(['consent', 'website'])->all(),
                 'customer_id' => $customer->id,
                 'status' => 'new',
                 'received_at' => now(),
             ]);
+            Mail::to($inquiry->email)->queue(new InquiryReceiptMail($inquiry));
+            Mail::to(config('charlot.admin_notification_email'))->queue(new InquiryReceivedMail($inquiry));
         });
 
         return $this->success($request);

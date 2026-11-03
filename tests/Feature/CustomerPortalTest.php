@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Mail\CustomerInvitationMail;
 use App\Mail\CustomerPasswordMail;
 use App\Models\Customer;
 use App\Models\CustomerAccount;
@@ -78,7 +79,7 @@ class CustomerPortalTest extends TestCase
         $this->assertStringContainsString('müşteri paneli', $event->note);
     }
 
-    public function test_admin_can_create_single_use_invitation_without_sending_mail(): void
+    public function test_admin_can_create_single_use_invitation_and_queue_invite_email(): void
     {
         Mail::fake();
         $this->actingAsAdmin();
@@ -95,7 +96,7 @@ class CustomerPortalTest extends TestCase
         $this->post('/panel/login', ['email' => $customer->email, 'password' => 'new-customer-password'])->assertRedirect(route('customer.dashboard'));
         $this->get('/panel')->assertOk();
         $this->assertDatabaseCount('customer_accounts', 1);
-        Mail::assertNothingQueued();
+        Mail::assertQueued(CustomerInvitationMail::class);
     }
 
     public function test_password_reset_expires_and_does_not_reveal_unknown_emails(): void

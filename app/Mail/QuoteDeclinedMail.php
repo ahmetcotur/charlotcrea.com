@@ -3,28 +3,16 @@
 namespace App\Mail;
 
 use App\Models\Quote;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
-class QuoteDeclinedMail extends Mailable implements ShouldQueue
+class QuoteDeclinedMail extends BrandedMail
 {
-    use Queueable, SerializesModels;
-
     public function __construct(public Quote $quote)
     {
+        $this->useLanguage('tr');
     }
 
-    public function envelope(): Envelope
+    protected function messageData(): array
     {
-        return new Envelope(subject: 'Teklif reddedildi — '.$this->quote->quote_number);
-    }
-
-    public function content(): Content
-    {
-        return new Content(markdown: 'mail.quotes.declined-admin');
+        return ['subject' => $this->mailText('quote_declined').' — '.$this->quote->quote_number, 'heading' => $this->mailText('quote_declined'), 'intro' => $this->mailText('declined_intro', ['name' => $this->quote->customer->title]), 'fields' => [$this->mailText('quote_number') => $this->quote->quote_number, $this->mailText('project') => $this->quote->title], 'actionUrl' => route('admin.quotes.edit', $this->quote), 'actionLabel' => $this->mailText('admin_quote')];
     }
 }

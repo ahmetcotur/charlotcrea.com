@@ -44,6 +44,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('logout', [AdminAuthController::class, 'destroy'])->name('logout');
         Route::get('/', AdminDashboardController::class)->name('dashboard');
         Route::get('demo-workflows', \App\Http\Controllers\Admin\DemoWorkflowsController::class)->name('demo-workflows');
+        Route::get('mail-previews', [\App\Http\Controllers\Admin\MailPreviewController::class, 'index'])->name('mail-previews.index');
+        Route::get('mail-previews/{type}', [\App\Http\Controllers\Admin\MailPreviewController::class, 'show'])->name('mail-previews.show');
         Route::get('crm', AdminCrmController::class)->name('crm.index');
         Route::resource('references', AdminReferenceController::class)->except('show');
         Route::resource('posts', AdminPostController::class)->except('show');

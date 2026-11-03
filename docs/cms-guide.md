@@ -156,8 +156,9 @@ yayımlanmamış teklif taslakları gösterilmez. Teklif kabul/ret, iş durumu, 
 Drive bağlantısı açma, teslimat onayı ve revizyon talebi buradan kullanılabilir.
 
 **Müşteriler → Müşteriyi düzenle → Müşteri paneli erişimi** bölümünde e-posta
-kaydedildikten sonra davet bağlantısı oluşturulur. Bu işlem kendiliğinden e-posta
-göndermez. Bağlantıyı ilgili müşteriye iletin: 60 dakika geçerli ve tek kullanımlıktır.
+kaydedildikten sonra **Panel erişimi aç / Davet gönder** ile bağlantı oluşturulur ve
+davet e-posta kuyruğuna alınır. SMTP hazır değilse bağlantıyı müşteriye kendiniz
+iletebilirsiniz. Bağlantı 60 dakika geçerli ve tek kullanımlıktır.
 Müşteri kendi parolasını belirler; yönetici parolayı görmez. Yeni davet önceki
 parola bağlantısını geçersizleştirir.
 
@@ -228,3 +229,35 @@ altyapısındadır. `legacy_html` public render sırasında kullanılmaz. Geçi�
 otomatik çağırır. CMS çevirileri, bölüm görünürlüğü/sırası, seçili kayıtlar ve
 kullanıcının metin değişiklikleri korunur. Başlıklar ve zengin metin gövdeleri
 sayfa düzenleme ekranından güncellenmeye devam eder.
+
+
+## E-posta akışları ve önizleme
+
+Dashboard → **E-posta önizlemeleri** (`/admin/mail-previews`) ekranından 14
+bildirim örneğini Türkçe/İngilizce inceleyin. Bu ekran mesaj göndermez ve müşteri,
+teklif veya iş kaydı oluşturmaz. Önizleme düğmeleri test adreslerine gider.
+
+Müşteri kartındaki **E-posta dili** müşteri bildirimlerinin dilini belirler.
+Yeni form müşterileri formun diliyle açılır; anonim bir form mevcut müşterinin
+dil tercihini değiştirmez. Yönetici bildirimleri Türkçedir. Parola ve davet
+mesajları da müşteri dilini kullanır. Teklif/teslimat bağlantıları müşterinin
+dilinde açılır; PDF aynı dilde hazırlanır.
+
+İletişim/teklif formu alındığında müşteriye talep numaralı alındı mesajı,
+yöneticiye ayrıntılı bildirim hazırlanır. Yönetici, bildirim e-postasını
+yanıtlayarak başvuran kişiye yazabilir. Müşteri mesajlarının yanıt adresi Site
+ayarlarındaki iletişim e-postasıdır. Form bot tuzağı/validasyonundan geçmeyen
+başvurularda kayıt veya bildirim üretilmez.
+
+Teklif gönderimi, teklif kabul/ret, teslimat, teslimat onayı, revizyon talebi ve
+revizyon yanıtları ortak logolu HTML + düz metin şablonuyla gönderilir.
+Teslimat mesajı “incelemeye hazır” der; iş müşterinin onayıyla tamamlanır.
+Revizyon kabulü, revizyonun teslimi anlamına gelmez; yeniden teslimde ayrı mesaj
+oluşur. Sonuçlandırılmış revizyona tekrar basmak ikinci bildirim üretmez.
+
+E-postalar veritabanı işlemi commit olduktan sonra kuyruğa alınır; worker en
+fazla 3 kez dener. `log/array` kanalında gerçek gönderim yapılmaz. SMTP bilgileri
+ve çalışan worker gerekir. Gönderen `MAIL_FROM_ADDRESS`, yönetici alıcısı
+`ADMIN_NOTIFICATION_EMAIL`, müşteri yanıt adresi ise Site ayarlarındaki e-postadır.
+Teklif PDF'i teklif sayfasından indirilir; Drive içerikleri teslimat sayfasından
+açılır. E-postaya medya dosyaları eklenmez.

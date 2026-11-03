@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\CustomerInvitationMail;
 use App\Models\Customer;
 use App\Models\CustomerAccount;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
@@ -34,10 +36,12 @@ class CustomerAccessController extends Controller
             $account->save();
             $token = Password::broker('customers')->createToken($account);
 
-            return route('customer.password.reset', ['token' => $token, 'email' => $email]);
+            return route('customer.password.reset', ['token' => $token, 'email' => $email, 'lang' => $customer->preferred_locale]);
         });
 
-        return back()->with('success', 'Panel erişimi hazır. Tek kullanımlık bağlantı 60 dakika geçerlidir; önceki davet bağlantısı geçersizleşti.')->with('customer_invite_url', $url);
+        Mail::to($email)->queue(new CustomerInvitationMail($customer, $url));
+
+        return back()->with('success', 'Panel erişimi hazır; davet e-posta kuyruğuna alındı. Tek kullanımlık bağlantı 60 dakika geçerlidir; önceki davet bağlantısı geçersizleşti.')->with('customer_invite_url', $url);
     }
 
     public function revoke(Customer $customer)

@@ -3,28 +3,25 @@
 namespace App\Mail;
 
 use App\Models\Work;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
-class WorkDeliveredMail extends Mailable implements ShouldQueue
+class WorkDeliveredMail extends BrandedMail
 {
-    use Queueable, SerializesModels;
-
     public function __construct(public Work $work, public string $signedUrl)
     {
+        $this->useLanguage($work->customer?->preferred_locale);
     }
 
-    public function envelope(): Envelope
+    protected function messageData(): array
     {
-        return new Envelope(subject: 'İşiniz teslim edildi — '.$this->work->title);
-    }
-
-    public function content(): Content
-    {
-        return new Content(markdown: 'mail.works.delivered');
+        return [
+            'subject' => $this->mailText('delivery_ready').' — '.$this->work->title,
+            'heading' => $this->mailText('delivery_ready'),
+            'name' => $this->work->customer->title,
+            'intro' => $this->mailText('delivery_intro'),
+            'fields' => [$this->mailText('project') => $this->work->title],
+            'notes' => array_values(array_filter([filled($this->work->delivery_note) ? ['label' => $this->mailText('delivery_note'), 'text' => $this->work->delivery_note] : null, ['text' => $this->mailText('delivery_hint')]])),
+            'actionUrl' => $this->signedUrl,
+            'actionLabel' => $this->mailText('view_delivery'),
+        ];
     }
 }

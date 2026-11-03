@@ -32,7 +32,8 @@ class CustomerAccount extends Authenticatable
         if (! $this->canAccess()) {
             return;
         }
-        $url = route('customer.password.reset', ['token' => $token, 'email' => $this->email, 'lang' => app()->getLocale()]);
-        Mail::to($this->email)->queue((new CustomerPasswordMail($url, app()->getLocale()))->afterCommit());
+        $language = $this->customer->preferred_locale ?: 'tr';
+        $url = route('customer.password.reset', ['token' => $token, 'email' => $this->email, 'lang' => $language]);
+        Mail::to($this->email)->queue((new CustomerPasswordMail($url, $language))->afterCommit());
     }
 }

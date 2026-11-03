@@ -57,6 +57,7 @@ class CustomerController extends Controller
         return $request->validate([
             'title' => ['required', 'string', 'max:200'], 'company_name' => ['nullable', 'string', 'max:200'],
             'email' => ['nullable', 'email', 'max:255', $emailRule], 'phone' => ['nullable', 'string', 'max:50'],
+            'preferred_locale' => ['sometimes', 'required', 'in:tr,en'],
             'country' => ['nullable', 'string', 'max:100'], 'notes' => ['nullable', 'string', 'max:10000'],
         ]);
     }

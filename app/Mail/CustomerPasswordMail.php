@@ -2,18 +2,15 @@
 
 namespace App\Mail;
 
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-
-class CustomerPasswordMail extends Mailable implements ShouldQueue
+class CustomerPasswordMail extends BrandedMail
 {
-    use Queueable;
-
-    public function __construct(public string $resetUrl, public string $language = 'tr') {}
-
-    public function build()
+    public function __construct(public string $resetUrl, string $language = 'tr')
     {
-        return $this->subject($this->language === 'tr' ? 'Müşteri paneli · Parolanızı belirleyin' : 'Client portal · Set your password')->view('mail.customer-password');
+        $this->useLanguage($language);
+    }
+
+    protected function messageData(): array
+    {
+        return ['subject' => $this->mailText('password_subject'), 'heading' => $this->mailText('password_subject'), 'intro' => $this->mailText('password_intro'), 'notes' => [['text' => $this->mailText('password_expiry')], ['text' => $this->mailText('password_ignore')]], 'actionUrl' => $this->resetUrl, 'actionLabel' => $this->mailText('password_action')];
     }
 }

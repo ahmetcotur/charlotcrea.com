@@ -3,28 +3,16 @@
 namespace App\Mail;
 
 use App\Models\RevisionRequest;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
-class RevisionRequestedMail extends Mailable implements ShouldQueue
+class RevisionRequestedMail extends BrandedMail
 {
-    use Queueable, SerializesModels;
-
     public function __construct(public RevisionRequest $revisionRequest)
     {
+        $this->useLanguage('tr');
     }
 
-    public function envelope(): Envelope
+    protected function messageData(): array
     {
-        return new Envelope(subject: 'Revizyon talebi — '.$this->revisionRequest->work->title);
-    }
-
-    public function content(): Content
-    {
-        return new Content(markdown: 'mail.works.revision-requested-admin');
+        return ['subject' => $this->mailText('revision_requested').' — '.$this->revisionRequest->work->title, 'heading' => $this->mailText('revision_requested'), 'intro' => $this->mailText('revision_intro', ['name' => $this->revisionRequest->work->customer->title]), 'fields' => [$this->mailText('project') => $this->revisionRequest->work->title], 'notes' => [['label' => $this->mailText('customer_note'), 'text' => $this->revisionRequest->customer_note]], 'actionUrl' => route('admin.works.edit', $this->revisionRequest->work), 'actionLabel' => $this->mailText('admin_work')];
     }
 }

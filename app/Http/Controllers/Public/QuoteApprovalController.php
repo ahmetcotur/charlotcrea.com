@@ -17,6 +17,9 @@ class QuoteApprovalController
     public function show(Quote $quote): View
     {
         $quote->load(['customer', 'items']);
+        if (! request()->routeIs('customer.*')) {
+            app()->setLocale($quote->customer?->preferred_locale ?: 'tr');
+        }
 
         if ($quote->status === 'sent' && $quote->isExpired()) {
             $quote->update(['status' => 'expired']);
@@ -38,6 +41,9 @@ class QuoteApprovalController
     public function pdf(Quote $quote): Response
     {
         $quote->load(['customer', 'items']);
+        if (! request()->routeIs('customer.*')) {
+            app()->setLocale($quote->customer?->preferred_locale ?: 'tr');
+        }
         $logo = 'data:image/png;base64,'.base64_encode(file_get_contents(public_path('assets/logo.png')));
         $pdf = new Dompdf(['isRemoteEnabled' => false, 'defaultFont' => 'DejaVu Sans']);
         $pdf->loadHtml(view('quotes.document', ['quote' => $quote, 'pdf' => true, 'logo' => $logo])->render());
@@ -77,6 +83,10 @@ class QuoteApprovalController
 
             return $quote;
         });
+
+        if (! request()->routeIs('customer.*')) {
+            app()->setLocale($quote->customer?->preferred_locale ?: 'tr');
+        }
 
         return view('public.quotes.result', ['quote' => $quote]);
     }

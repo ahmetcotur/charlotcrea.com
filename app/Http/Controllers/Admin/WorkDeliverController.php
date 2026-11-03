@@ -47,6 +47,6 @@ class WorkDeliverController extends Controller
 
         Mail::to($work->customer->email)->queue(new WorkDeliveredMail($work, $work->signedShowUrl()));
 
-        return back()->with('success', 'Teslimat müşteriye e-posta ile bildirildi.');
+        return back()->with('success', 'Teslimat kaydedildi; müşteri bildirimi e-posta kuyruğuna alındı.');
     }
 }

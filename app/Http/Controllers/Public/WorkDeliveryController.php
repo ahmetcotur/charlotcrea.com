@@ -6,8 +6,8 @@ use App\Mail\RevisionRequestedMail;
 use App\Mail\WorkApprovedMail;
 use App\Models\Work;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Illuminate\View\View;
 
@@ -16,6 +16,8 @@ class WorkDeliveryController
     public function show(Work $work): View
     {
         $work->load(['customer', 'revisionRequests', 'deliveryLinks' => fn ($q) => $q->whereNotNull('released_at')]);
+
+        app()->setLocale($work->customer?->preferred_locale ?: 'tr');
 
         $openRevision = $work->revisionRequests->first(fn ($r) => in_array($r->status, ['requested', 'in_review']));
 
@@ -44,6 +46,10 @@ class WorkDeliveryController
             return $work;
         });
 
+        if (! request()->routeIs('customer.*')) {
+            app()->setLocale($work->customer?->preferred_locale ?: 'tr');
+        }
+
         return view('public.works.result', ['work' => $work, 'action' => 'approved']);
     }
 
@@ -66,8 +72,13 @@ class WorkDeliveryController
             return $work;
         });
 
+        if (! request()->routeIs('customer.*')) {
+            app()->setLocale($work->customer?->preferred_locale ?: 'tr');
+        }
+
         return view('public.works.result', ['work' => $work, 'action' => 'revision-requested']);
     }
+
     private function assertActionable(Work $work): void
     {
         abort_unless($work->delivered_at && ! in_array($work->status, ['completed', 'cancelled']), 409, 'Bu teslimat şu anda yanıtlanamaz.');

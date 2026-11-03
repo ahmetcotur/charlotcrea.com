@@ -57,8 +57,7 @@ Doğrulama:
 Kalan işletim işleri:
 
 - Gerçek SMTP sağlayıcısı, gönderen alan adı doğrulaması ve gerçek alıcıyla gönderim.
-  Yerel varsayılan log mailer gerçek e-posta göndermez; davet bağlantısı panelden
-  manuel oluşturulup iletilebilir.
+  Yerel varsayılan log mailer gerçek e-posta göndermez; davet mesajları kuyruğa alınır, bağlantı panelden de iletilebilir.
 - Yayın sunucusu/alan adı, HTTPS ters proxy, yerel düzenlenmiş verilerin taşınması
   ve işletim ortamında zamanlanmış, sunucu dışında saklanan yedekler.
 - Üç ana sayfa, Hakkımızda ve Hizmetler tamamen yerel Blade şablonları kullanır.
@@ -74,3 +73,9 @@ Kurulum: [Ziyaretçi analizleri](visitor-analytics.md).
 Özel teslimat, sonuç, müşteri giriş/parola ve panel sayfaları ortak Charlot logosu,
 renkler ve iletişim footer'ı kullanır. Paneldeki tekliflerden de yetkili PDF
 indirmesi yapılabilir.
+
+
+E-posta güncellemesi: ortak logolu HTML ve düz metin şablonları, müşteri kartında
+TR/EN e-posta dili, form alındı + yönetici bildirimleri, panel daveti ve özel
+önizleme ekranı eklendi. Müşteri bağlantıları ve teklif PDF'i seçili dilde açılır.
+Gerçek gönderim için SMTP yapılandırması beklenir.

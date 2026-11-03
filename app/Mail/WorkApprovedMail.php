@@ -3,28 +3,16 @@
 namespace App\Mail;
 
 use App\Models\Work;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
-class WorkApprovedMail extends Mailable implements ShouldQueue
+class WorkApprovedMail extends BrandedMail
 {
-    use Queueable, SerializesModels;
-
     public function __construct(public Work $work)
     {
+        $this->useLanguage('tr');
     }
 
-    public function envelope(): Envelope
+    protected function messageData(): array
     {
-        return new Envelope(subject: 'Teslimat onaylandı — '.$this->work->title);
-    }
-
-    public function content(): Content
-    {
-        return new Content(markdown: 'mail.works.approved-admin');
+        return ['subject' => $this->mailText('work_approved').' — '.$this->work->title, 'heading' => $this->mailText('work_approved'), 'intro' => $this->mailText('approved_intro', ['name' => $this->work->customer->title]), 'fields' => [$this->mailText('project') => $this->work->title], 'actionUrl' => route('admin.works.edit', $this->work), 'actionLabel' => $this->mailText('admin_work')];
     }
 }

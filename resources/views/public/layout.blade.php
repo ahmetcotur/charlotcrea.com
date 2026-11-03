@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="{{ app()->getLocale() }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,11 @@
 </head>
 <body>
 <div class="portal-shell">
-<header class="portal-top">@include('site.partials.client-brand',['brandUrl'=>'/','brandCaption'=>'Müşteri deneyimi'])</header>
+<header class="portal-top">@include('site.partials.client-brand',['brandUrl'=>'/','brandCaption'=>__('Customer experience')])</header>
 <main class="portal-main">
 @yield('content')
 </main>
-@include('site.partials.client-footer',['clientLocale'=>'tr'])
+@include('site.partials.client-footer',['clientLocale'=>app()->getLocale()])
 </div>
 </body>
 </html>

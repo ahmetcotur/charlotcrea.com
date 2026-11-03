@@ -3,30 +3,19 @@
 namespace App\Mail;
 
 use App\Models\RevisionRequest;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
-class RevisionResolvedMail extends Mailable implements ShouldQueue
+class RevisionResolvedMail extends BrandedMail
 {
-    use Queueable, SerializesModels;
-
     public function __construct(public RevisionRequest $revisionRequest, public string $signedUrl)
     {
+        $this->useLanguage($revisionRequest->work->customer?->preferred_locale);
     }
 
-    public function envelope(): Envelope
+    protected function messageData(): array
     {
-        $label = $this->revisionRequest->status === 'approved' ? 'kabul edildi' : 'reddedildi';
+        $accepted = $this->revisionRequest->status === 'approved';
+        $heading = $this->mailText($accepted ? 'revision_accepted' : 'revision_rejected');
 
-        return new Envelope(subject: 'Revizyon talebiniz '.$label.' — '.$this->revisionRequest->work->title);
-    }
-
-    public function content(): Content
-    {
-        return new Content(markdown: 'mail.works.revision-resolved');
+        return ['subject' => $heading.' — '.$this->revisionRequest->work->title, 'heading' => $heading, 'name' => $this->revisionRequest->work->customer->title, 'intro' => $this->mailText($accepted ? 'revision_accepted_intro' : 'revision_rejected_intro'), 'fields' => [$this->mailText('project') => $this->revisionRequest->work->title], 'notes' => [['label' => $this->mailText('studio_response'), 'text' => $this->revisionRequest->admin_response]], 'actionUrl' => $this->signedUrl, 'actionLabel' => $this->mailText('view_work')];
     }
 }

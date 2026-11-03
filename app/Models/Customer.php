@@ -13,6 +13,7 @@ class Customer extends Model
 
     protected $fillable = [
         'published',
+        'preferred_locale',
         'title',
         'company_name',
         'email',
@@ -22,7 +23,7 @@ class Customer extends Model
         'demo_key',
     ];
 
-    protected $attributes = ['published' => true];
+    protected $attributes = ['published' => true, 'preferred_locale' => 'tr'];
 
     public function account()
     {

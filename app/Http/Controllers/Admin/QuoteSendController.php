@@ -28,6 +28,6 @@ class QuoteSendController extends Controller
 
         Mail::to($quote->customer->email)->queue(new QuoteSentMail($quote, $quote->signedShowUrl()));
 
-        return back()->with('success', 'Teklif müşteriye e-posta ile gönderildi.');
+        return back()->with('success', 'Teklif e-postası gönderim kuyruğuna alındı.');
     }
 }

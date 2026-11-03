@@ -3,28 +3,16 @@
 namespace App\Mail;
 
 use App\Models\Quote;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
 
-class QuoteAcceptedMail extends Mailable implements ShouldQueue
+class QuoteAcceptedMail extends BrandedMail
 {
-    use Queueable, SerializesModels;
-
     public function __construct(public Quote $quote)
     {
+        $this->useLanguage('tr');
     }
 
-    public function envelope(): Envelope
+    protected function messageData(): array
     {
-        return new Envelope(subject: 'Teklif kabul edildi — '.$this->quote->quote_number);
-    }
-
-    public function content(): Content
-    {
-        return new Content(markdown: 'mail.quotes.accepted-admin');
+        return ['subject' => $this->mailText('quote_accepted').' — '.$this->quote->quote_number, 'heading' => $this->mailText('quote_accepted'), 'intro' => $this->mailText('accepted_intro', ['name' => $this->quote->customer->title]), 'fields' => [$this->mailText('quote_number') => $this->quote->quote_number, $this->mailText('project') => $this->quote->title, $this->mailText('total') => $this->money((float) $this->quote->amount).' '.$this->quote->currency, $this->mailText('accepted_at') => $this->quote->accepted_at?->format('d.m.Y H:i')], 'actionUrl' => route('admin.quotes.edit', $this->quote), 'actionLabel' => $this->mailText('admin_quote')];
     }
 }

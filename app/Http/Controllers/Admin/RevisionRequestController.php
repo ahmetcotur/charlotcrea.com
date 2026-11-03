@@ -7,6 +7,7 @@ use App\Mail\RevisionResolvedMail;
 use App\Models\RevisionRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Illuminate\View\View;
@@ -30,18 +31,25 @@ class RevisionRequestController extends Controller
             'admin_response' => ['required', 'string', 'max:20000'],
         ]);
 
-        $revisionRequest->load('work.customer');
+        $updated = DB::transaction(function () use ($revisionRequest, $data) {
+            $revisionRequest = RevisionRequest::with('work.customer')->whereKey($revisionRequest->id)->lockForUpdate()->firstOrFail();
+            if (! in_array($revisionRequest->status, ['requested', 'in_review'], true)) {
+                return false;
+            }
+            $revisionRequest->update([
+                'status' => $data['status'],
+                'admin_response' => $data['admin_response'],
+                'resolved_at' => now(),
+            ]);
+            if (filled($revisionRequest->work->customer->email)) {
+                $signedUrl = URL::temporarySignedRoute('public.works.show', now()->addDays(30), ['work' => $revisionRequest->work_id]);
+                Mail::to($revisionRequest->work->customer->email)->queue(new RevisionResolvedMail($revisionRequest, $signedUrl));
+            }
 
-        $revisionRequest->update([
-            'status' => $data['status'],
-            'admin_response' => $data['admin_response'],
-            'resolved_at' => now(),
-        ]);
-
-        if (filled($revisionRequest->work->customer->email)) {
-            $signedUrl = URL::temporarySignedRoute('public.works.show', now()->addDays(30), ['work' => $revisionRequest->work_id]);
-
-            Mail::to($revisionRequest->work->customer->email)->queue(new RevisionResolvedMail($revisionRequest, $signedUrl));
+            return true;
+        });
+        if (! $updated) {
+            return back()->with('success', 'Bu revizyon talebi zaten sonuçlandırılmış. Tekrar bildirim gönderilmedi.');
         }
 
         return back()->with('success', 'Revizyon talebi güncellendi.');

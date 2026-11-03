@@ -1,5 +1,8 @@
+@php
+$money = fn($amount) => app()->getLocale()==='tr' ? number_format((float)$amount,2,',','.') : number_format((float)$amount,2,'.',',');
+@endphp
 <!doctype html>
-<html lang="tr">
+<html lang="{{ app()->getLocale() }}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
 <title>{{ $quote->quote_number }} · {{ $quote->title }} · Charlot Crea</title>
@@ -12,23 +15,23 @@
 </head>
 <body @if($pdf) class="pdf" @endif>
 <div class="shell">
-@if(!$pdf)<nav class="toolbar" aria-label="Teklif işlemleri"><a href="/">Charlot Crea / Teklif</a><a class="button secondary" href="{{ $pdfUrl }}">PDF indir ↓</a></nav>@endif
+@if(!$pdf)<nav class="toolbar" aria-label="{{ __('Quote actions') }}"><a href="/">Charlot Crea / {{ __('Quote') }}</a><a class="button secondary" href="{{ $pdfUrl }}">{{ __("Download PDF") }} ↓</a></nav>@endif
 <main class="document">
 <table class="brand-table" role="presentation"><tr><td><img class="logo" src="{{ $logo }}" alt="Charlot Crea"></td><td class="brand-note">PHOTOGRAPHY & FILM<br>CHARLOT CREA</td></tr></table>
-<p class="eyebrow">Size özel teklif · {{ $quote->quote_number }}</p>
+<p class="eyebrow">{{ __("Your quote") }} · {{ $quote->quote_number }}</p>
 <h1>{{ $quote->title }}</h1>
-<span class="status">{{ ['draft'=>'Taslak','sent'=>'Onay bekliyor','accepted'=>'Kabul edildi','declined'=>'Reddedildi','expired'=>'Süresi doldu'][$quote->status] ?? $quote->status }}</span>
-<table class="meta-table" role="presentation"><tr><td><span class="label">Hazırlanan müşteri</span><div class="meta-value"><strong>{{ $quote->customer?->company_name ?: $quote->customer?->title }}</strong>@if($quote->customer?->company_name)<br>{{ $quote->customer?->title }}@endif</div></td><td><span class="label">Teklif bilgileri</span><div class="meta-value">{{ $quote->quote_number }}<br>Tarih: {{ ($quote->sent_at ?? $quote->created_at)?->format('d.m.Y') }}@if($quote->valid_until)<br>Geçerlilik: {{ $quote->valid_until->format('d.m.Y') }}@endif</div></td></tr></table>
-@if($quote->scope)<h2>Proje kapsamı</h2><div class="scope">{{ $quote->scope }}</div>@endif
-@if($quote->items->isNotEmpty())<h2>Hizmetler ve yatırım</h2><table class="items"><thead><tr><th>Hizmet / açıklama</th><th>Adet</th><th>Birim fiyat</th><th>Tutar</th></tr></thead><tbody>
-@foreach($quote->items as $item)<tr><td><strong>{{ $item->title }}</strong>@if($item->description)<span class="description">{{ $item->description }}</span>@endif</td><td>{{ rtrim(rtrim(number_format((float)$item->quantity,2,'.',''), '0'),'.') }}</td><td>{{ number_format((float)$item->unit_price,2,',','.') }} {{ $quote->currency }}</td><td>{{ number_format($item->line_total,2,',','.') }} {{ $quote->currency }}</td></tr>@endforeach
+<span class="status">{{ ['draft'=>__('Draft'),'sent'=>__('Awaiting approval'),'accepted'=>__('Accepted'),'declined'=>__('Declined'),'expired'=>__('Expired')][$quote->status] ?? $quote->status }}</span>
+<table class="meta-table" role="presentation"><tr><td><span class="label">{{ __("Prepared for") }}</span><div class="meta-value"><strong>{{ $quote->customer?->company_name ?: $quote->customer?->title }}</strong>@if($quote->customer?->company_name)<br>{{ $quote->customer?->title }}@endif</div></td><td><span class="label">{{ __("Quote details") }}</span><div class="meta-value">{{ $quote->quote_number }}<br>{{ __("Date") }}: {{ ($quote->sent_at ?? $quote->created_at)?->format('d.m.Y') }}@if($quote->valid_until)<br>{{ __("Validity") }}: {{ $quote->valid_until->format('d.m.Y') }}@endif</div></td></tr></table>
+@if($quote->scope)<h2>{{ __("Project scope") }}</h2><div class="scope">{{ $quote->scope }}</div>@endif
+@if($quote->items->isNotEmpty())<h2>{{ __("Services and investment") }}</h2><table class="items"><thead><tr><th>{{ __("Service / description") }}</th><th>{{ __("Quantity") }}</th><th>{{ __("Unit price") }}</th><th>{{ __("Amount") }}</th></tr></thead><tbody>
+@foreach($quote->items as $item)<tr><td><strong>{{ $item->title }}</strong>@if($item->description)<span class="description">{{ $item->description }}</span>@endif</td><td>{{ rtrim(rtrim(number_format((float)$item->quantity,2,'.',''), '0'),'.') }}</td><td>{{ $money($item->unit_price) }} {{ $quote->currency }}</td><td>{{ $money($item->line_total) }} {{ $quote->currency }}</td></tr>@endforeach
 </tbody></table>@endif
-<div class="total"><span>Toplam</span><strong>{{ number_format((float)$quote->amount,2,',','.') }} {{ $quote->currency }}</strong></div>
-<div class="closing"><strong>Birlikte güçlü bir hikâye anlatalım.</strong><br>{{ config('site.email') }} · {{ config('site.telephone') }}<br>{{ config('site.address') }}</div>
+<div class="total"><span>{{ __("Total") }}</span><strong>{{ $money($quote->amount) }} {{ $quote->currency }}</strong></div>
+<div class="closing"><strong>{{ __('Let’s tell a remarkable story together.') }}</strong><br>{{ config('site.email') }} · {{ config('site.telephone') }}<br>{{ config('site.address') }}</div>
 </main>
 @if(!$pdf)
-@if($actionable)<div class="actions"><form method="POST" action="{{ $acceptUrl }}">@csrf<button class="button" type="submit">Teklifi kabul et</button></form><form method="POST" action="{{ $declineUrl }}">@csrf<button class="button secondary" type="submit">Teklifi reddet</button></form></div><p class="note">Onayınızla projeniz otomatik olarak oluşturulur.</p>
-@elseif($quote->status==='expired')<p class="note">Bu teklifin geçerlilik süresi doldu. Güncel bir teklif için bizimle iletişime geçebilirsiniz.</p>
-@else<p class="note">Bu teklif için yanıtınız kaydedildi, tekrar işlem yapmanıza gerek yok.</p>@endif
+@if($actionable)<div class="actions"><form method="POST" action="{{ $acceptUrl }}">@csrf<button class="button" type="submit">{{ __("Accept quote") }}</button></form><form method="POST" action="{{ $declineUrl }}">@csrf<button class="button secondary" type="submit">{{ __("Decline quote") }}</button></form></div><p class="note">{{ __("Your approval creates your project automatically.") }}</p>
+@elseif($quote->status==='expired')<p class="note">{{ __("This quote has expired. Please contact us for an updated quote.") }}</p>
+@else<p class="note">{{ __("Your response has been recorded. No further action is needed.") }}</p>@endif
 @endif
 </div></body></html>
