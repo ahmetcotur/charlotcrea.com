@@ -1,0 +1,7 @@
+@extends('admin.layout')
+@section('title','Teklifler')
+@section('content')
+<div class="admin-heading"><div><span class="eyebrow">Satış süreci</span><h1>Teklifler · liste görünümü</h1><p>Müşterilere gönderilen ve hazırlanan teklifleri durumlarıyla takip edin.</p></div><div style="display:flex;gap:10px"><a class="button secondary" href="{{ route('admin.crm.index') }}">← Kanban görünümü</a><a class="button" href="{{ route('admin.quotes.create') }}">+ Teklif oluştur</a></div></div>
+<form class="toolbar" method="GET"><div class="search"><input name="q" value="{{ request('q') }}" placeholder="Teklif adı veya numarası ara"><button class="button secondary">Ara</button></div><span class="muted">{{ $quotes->total() }} kayıt</span></form>
+<div class="table-wrap"><table><thead><tr><th>Teklif</th><th>Müşteri</th><th>Durum</th><th>Tutar</th><th>Son tarih</th><th></th></tr></thead><tbody>@forelse($quotes as $quote)<tr><td><strong>{{ $quote->title }}</strong><br><small>{{ $quote->quote_number }}@if($quote->demo_key) · [ÖRNEK]@endif</small></td><td>{{ $quote->customer?->title }}</td><td><span class="status">{{ $quote->status }}</span></td><td>{{ number_format((float)$quote->amount,2) }} {{ $quote->currency }}</td><td>{{ $quote->valid_until?->format('d.m.Y') ?: '—' }}</td><td><a class="button secondary" href="{{ route('admin.quotes.edit',$quote) }}">Aç</a></td></tr>@empty<tr><td colspan="6" class="muted">Henüz teklif yok.</td></tr>@endforelse</tbody></table></div><div class="pagination">{{ $quotes->links() }}</div>
+@endsection

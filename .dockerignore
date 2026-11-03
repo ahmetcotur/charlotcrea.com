@@ -9,3 +9,17 @@
 venv
 *.log
 deployment/redirects.conf
+vendor
+node_modules
+.tools
+storage
+bootstrap/cache/*.php
+public/assets
+public/storage
+public/vendor
+public/*.css
+public/*.js
+database/*.sqlite*
+**/.env
+**/.env.*
+.phpunit.result.cache

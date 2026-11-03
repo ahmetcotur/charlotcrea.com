@@ -1,0 +1,137 @@
+{
+    "/en/": {
+        "variant": "classic",
+        "body": {
+            "en": "<h2>Beyond the frame.<br>Into the moment.</h2>\n<h3><a href=\"/en/films/sofitel-winter-palace-luxor/\">Sofitel Winter Palace</a></h3>\n<p>Luxor</p>\n<h3><a href=\"/en/films/balmy-beach-resort-kemer/\">Balmy Beach Resort Kemer</a></h3>\n<p>Kemer</p>\n<h2>Photography &amp; Film.</h2>\n<h3>Photography</h3>\n<p>People, places and the details that tell a story.</p>\n<h3>Film</h3>\n<p>Commercial films for brands, products and services.</p>\n<h2>In good company.</h2>\n<h2>Selected work.</h2>\n<h3>Balmy Beach Resort Kemer</h3>\n<p>Kemer · Türkiye</p>\n<h3>Raffles The Palm</h3>\n<p>Dubai · UAE</p>\n<h3>Sofitel Legend Old Cataract</h3>\n<p>Aswan · Egypt</p>\n<h3>Rixos JBR Dubai</h3>\n<p>Dubai · UAE</p>\n<h3>Sofitel Winter Palace</h3>\n<p>Luxor · Egypt</p>\n<h3>Architecture &amp; Interiors</h3>\n<p>Selected spaces · Collection</p>\n<h2>Your story.<br>Our perspective.</h2>\n<p>From portraits and fashion to nature and architecture, our photography explores people and places. Our commercial films bring products, services and brand stories to life.</p>\n<h2>Different places.<br>One considered eye.</h2>\n<h3>Türkiye</h3>\n<p>Antalya · Istanbul · Kemer · Tekirova · Belek</p>\n<h3>United Arab Emirates</h3>\n<p>Dubai · Abu Dhabi</p>\n<h3>Egypt</h3>\n<p>Cairo · El Quseir · Luxor · Aswan · Sharm El Sheikh</p>\n<h3>Saudi Arabia</h3>\n<p>Makkah</p>\n<h2>Let’s frame your<br>next chapter.</h2>\n<p>Tell us about your project, your vision and what comes next.</p>",
+            "tr": "<h2>Kadrajın ötesinde,<br>hareketin içinde.</h2>\n<h3><a href=\"/tr/filmler/sofitel-winter-palace-luxor/\">Sofitel Winter Palace</a></h3>\n<p>Luksor</p>\n<h3><a href=\"/tr/filmler/balmy-beach-resort-kemer/\">Balmy Beach Resort Kemer</a></h3>\n<p>Kemer</p>\n<h2>Fotoğraf &amp; Film.</h2>\n<h3>Fotoğraf</h3>\n<p>İnsanlar, mekânlar ve hikâyeyi anlatan ayrıntılar.</p>\n<h3>Film</h3>\n<p>Markalar, ürünler ve hizmetler için tanıtım filmleri.</p>\n<h2>Güçlü birliktelikler.</h2>\n<h2>Seçili işler.</h2>\n<h3>Balmy Beach Resort Kemer</h3>\n<p>Kemer · Türkiye</p>\n<h3>Raffles The Palm</h3>\n<p>Dubai · BAE</p>\n<h3>Sofitel Legend Old Cataract</h3>\n<p>Asvan · Mısır</p>\n<h3>Rixos JBR Dubai</h3>\n<p>Dubai · BAE</p>\n<h3>Sofitel Winter Palace</h3>\n<p>Luksor · Mısır</p>\n<h3>Mimari &amp; İç Mekân</h3>\n<p>Seçili mekânlar · Koleksiyon</p>\n<h2>Sizin hikâyeniz.<br>Bizim bakışımız.</h2>\n<p>Portreden modaya, doğadan mimariye uzanan fotoğraflarımız insanları ve mekânları keşfeder. Tanıtım filmlerimiz ürünleri, hizmetleri ve marka hikâyelerini hayata taşır.</p>\n<h2>Farklı yerler.<br>Aynı özenli bakış.</h2>\n<h3>Türkiye</h3>\n<p>Antalya · İstanbul · Kemer · Tekirova · Belek</p>\n<h3>Birleşik Arap Emirlikleri</h3>\n<p>Dubai · Abu Dhabi</p>\n<h3>Mısır</h3>\n<p>Kahire · El Quseir · Luksor · Asvan · Şarm El Şeyh</p>\n<h3>Suudi Arabistan</h3>\n<p>Mekke</p>\n<h2>Bir sonraki hikâyenize<br>birlikte odaklanalım.</h2>\n<p>Projenizi, vizyonunuzu ve sonraki adımınızı bizimle paylaşın.</p>"
+        },
+        "labels": [],
+        "hero_projects": [
+            {
+                "identity": "/en/projects/balmy-beach-resort-kemer/",
+                "image": "/assets/portfolio/balmy-beach-resort-kemer/01-800.jpg"
+            },
+            {
+                "identity": "/en/projects/sofitel-old-cataract-aswan/",
+                "image": "/assets/portfolio/sofitel-old-cataract-aswan/06-800.jpg"
+            },
+            {
+                "identity": "/en/projects/raffles-the-palm-dubai/",
+                "image": "/assets/portfolio/raffles-the-palm-dubai/03-800.jpg"
+            }
+        ],
+        "sections": []
+    },
+    "/en/home-2/": {
+        "variant": "filmstrip",
+        "body": {
+            "en": "<p></p>\n<h2>A considered eye,<br>proven over time.</h2>\n<h2>Selected work.</h2>\n<h3>Mövenpick Resort El Quseir</h3>\n<p>El Quseir · Egypt</p>\n<h3>Rixos The Palm</h3>\n<p>Dubai · UAE</p>\n<h3>25 Hours Dubai</h3>\n<p>Dubai · UAE</p>\n<h3>Fairmont Cairo</h3>\n<p>Cairo · Egypt</p>\n<h2>Different places.<br>One considered eye.</h2>\n<h3>Türkiye</h3>\n<p>Antalya · Istanbul · Göcek</p>\n<h3>United Arab Emirates</h3>\n<p>Dubai · Abu Dhabi</p>\n<h3>Egypt</h3>\n<p>Cairo · El Quseir · Sharm El Sheikh</p>\n<h3>Saudi Arabia</h3>\n<p>Makkah</p>\n<h2>Let’s frame your<br>next chapter.</h2>\n<p>Tell us about your project, your vision and what comes next.</p>",
+            "tr": "<p></p>\n<h2>A considered eye,<br>proven over time.</h2>\n<h2>Seçili işler.</h2>\n<h3>Mövenpick Resort El Quseir</h3>\n<p>El Quseir · Mısır</p>\n<h3>Rixos The Palm</h3>\n<p>Dubai · BAE</p>\n<h3>25 Hours Dubai</h3>\n<p>Dubai · BAE</p>\n<h3>Fairmont Cairo</h3>\n<p>Kahire · Mısır</p>\n<h2>Farklı yerler.<br>Aynı özenli bakış.</h2>\n<h3>Türkiye</h3>\n<p>Antalya · İstanbul · Göcek</p>\n<h3>Birleşik Arap Emirlikleri</h3>\n<p>Dubai · Abu Dhabi</p>\n<h3>Mısır</h3>\n<p>Kahire · El Quseir · Sharm El Sheikh</p>\n<h3>Suudi Arabistan</h3>\n<p>Mekke</p>\n<h2>Bir sonraki hikâyenize<br>birlikte odaklanalım.</h2>\n<p>Projenizi, vizyonunuzu ve sonraki adımınızı bizimle paylaşın.</p>"
+        },
+        "labels": [],
+        "sections": []
+    },
+    "/en/home-3/": {
+        "variant": "video",
+        "body": {
+            "en": "<h2>Different mediums.<br>The same attention.</h2>\n<h3>The atmosphere.<br>The architecture.<br>The experience.</h3>\n<p>Photography spanning hotels, architecture, portraits, fashion and nature.</p>\n<h3>Give your<br>brand story<br>a moving image.</h3>\n<p>Commercial films that introduce your product or service.</p>\n<h2>Selected work.</h2>\n<h3>Fairmont Istanbul</h3>\n<p>Istanbul · Türkiye</p>\n<h3>Raffles The Palm</h3>\n<p>Dubai · UAE</p>\n<h3>Fairmont Makkah</h3>\n<p>Makkah · Saudi Arabia</p>\n<h3>Rixos Premium Saadiyat</h3>\n<p>Abu Dhabi · UAE</p>\n<h2>Different places.<br>One considered eye.</h2>\n<h3>Türkiye</h3>\n<p>Antalya · Istanbul · Göcek</p>\n<h3>United Arab Emirates</h3>\n<p>Dubai · Abu Dhabi</p>\n<h3>Egypt</h3>\n<p>Cairo · El Quseir · Sharm El Sheikh</p>\n<h3>Saudi Arabia</h3>\n<p>Makkah</p>\n<h2>Let’s frame your<br>next chapter.</h2>\n<p>Tell us about your project, your vision and what comes next.</p>",
+            "tr": "<h2>Farklı anlatım biçimleri.<br>Aynı özen.</h2>\n<h3>Atmosfer.<br>Mimari.<br>Deneyim.</h3>\n<p>Oteller, mimari, portre, moda ve doğaya uzanan fotoğraflar.</p>\n<h3>Marka hikâyenizi<br>hareketli görüntüyle<br>hayata taşıyın.</h3>\n<p>Ürününüzü veya hizmetinizi tanıtan filmler.</p>\n<h2>Seçili işler.</h2>\n<h3>Fairmont Istanbul</h3>\n<p>İstanbul · Türkiye</p>\n<h3>Raffles The Palm</h3>\n<p>Dubai · BAE</p>\n<h3>Fairmont Makkah</h3>\n<p>Mekke · Suudi Arabistan</p>\n<h3>Rixos Premium Saadiyat</h3>\n<p>Abu Dhabi · BAE</p>\n<h2>Farklı yerler.<br>Aynı özenli bakış.</h2>\n<h3>Türkiye</h3>\n<p>Antalya · İstanbul · Göcek</p>\n<h3>Birleşik Arap Emirlikleri</h3>\n<p>Dubai · Abu Dhabi</p>\n<h3>Mısır</h3>\n<p>Kahire · El Quseir · Sharm El Sheikh</p>\n<h3>Suudi Arabistan</h3>\n<p>Mekke</p>\n<h2>Bir sonraki hikâyenize<br>birlikte odaklanalım.</h2>\n<p>Projenizi, vizyonunuzu ve sonraki adımınızı bizimle paylaşın.</p>"
+        },
+        "labels": [],
+        "sections": []
+    },
+    "/en/about/": {
+        "variant": "about",
+        "body": {
+            "en": "<h2>Experience that sees<br>beyond the surface.</h2>\n<p>Across hundreds of hotels and travel destinations on four continents, Charlot Crea’s photographic practice has grown through work for local and international clients.</p>\n<p>Each commission is shaped around the client’s audience, ambitions and individual needs. New concepts bring a distinct perspective to the work.</p>\n<p>The practice extends beyond hotels into portraiture, fashion, nature and architecture, with consultation before and after the shoot.</p>\n<p>Client satisfaction remains central to an approach that brings artistic expression and experience together.</p>\n<h2>Every project starts<br>with understanding.</h2>\n<p>A clear perspective.<br>From the first conversation<br>to the final image.</p>\n<h3>Begin with your vision.</h3>\n<p>Understand the audience, the brief and the expectations behind the project.</p>\n<h3>Find its own perspective.</h3>\n<p>Develop a visual concept that reflects the subject and the needs of the commission.</p>\n<h3>Stay connected.</h3>\n<p>Keep consultation part of the process, before and after the shoot.</p>\n<h2>Different mediums.<br>The same attention.</h2>\n<h3>The atmosphere.<br>The architecture.<br>The experience.</h3>\n<p>Photography spanning hotels, architecture, portraits, fashion and nature.</p>\n<h3>Give your<br>brand story<br>a moving image.</h3>\n<p>Commercial films that introduce your product or service.</p>\n<h2>Let’s frame your<br>next chapter.</h2>\n<p>Tell us about your project, your vision and what comes next.</p>",
+            "tr": "<h2>Görünenin ötesini<br>gören deneyim.</h2>\n<p>Dört kıtada yüzlerce otel ve seyahat destinasyonunda çalışan Charlot Crea’nın fotoğraf pratiği, yerel ve uluslararası müşteriler için üretilen projelerle gelişti.</p>\n<p>Her proje, müşterinin hedef kitlesi, amaçları ve özel ihtiyaçlarına göre şekillenir. Yeni konseptler çalışmaya kendine özgü bir bakış kazandırır.</p>\n<p>Çalışmalar otellerin ötesinde portre, moda, doğa ve mimariye uzanır; çekim öncesi ve sonrasında danışmanlıkla desteklenir.</p>\n<p>Sanatsal ifadeyle deneyimi birleştiren bu yaklaşımın merkezinde müşteri memnuniyeti yer alır.</p>\n<h2>Her proje<br>anlamakla başlar.</h2>\n<p>Net bir bakış.<br>İlk görüşmeden<br>son kareye.</p>\n<h3>Vizyonunuzdan başlayın.</h3>\n<p>Hedef kitleyi, brief’i ve projenin arkasındaki beklentileri anlayın.</p>\n<h3>Kendine özgü bakışını bulun.</h3>\n<p>Konuyu ve projenin ihtiyaçlarını yansıtan görsel bir konsept geliştirin.</p>\n<h3>İletişimde kalın.</h3>\n<p>Çekim öncesinde ve sonrasında danışmanlığı sürecin parçası yapın.</p>\n<h2>Farklı anlatım biçimleri.<br>Aynı özen.</h2>\n<h3>Atmosfer.<br>Mimari.<br>Deneyim.</h3>\n<p>Oteller, mimari, portre, moda ve doğaya uzanan fotoğraflar.</p>\n<h3>Marka hikâyenizi<br>hareketli görüntüyle<br>hayata taşıyın.</h3>\n<p>Ürününüzü veya hizmetinizi tanıtan filmler.</p>\n<h2>Bir sonraki hikâyenize<br>birlikte odaklanalım.</h2>\n<p>Projenizi, vizyonunuzu ve sonraki adımınızı bizimle paylaşın.</p>"
+        },
+        "labels": {
+            "en": [
+                "About Charlot Crea",
+                "Our story",
+                "A considered approach",
+                "01 / Listen",
+                "02 / Create",
+                "03 / Collaborate",
+                "Photography · Film",
+                "01 / Photography",
+                "02 / Film",
+                "Selected references",
+                "Your next project"
+            ],
+            "tr": [
+                "Charlot Crea hakkında",
+                "Hikâyemiz",
+                "Özenli bir yaklaşım",
+                "01 / Dinle",
+                "02 / Üret",
+                "03 / Birlikte çalış",
+                "Fotoğraf · Film",
+                "01 / Fotoğraf",
+                "02 / Film",
+                "Seçili referanslar",
+                "Sıradaki projeniz"
+            ]
+        },
+        "facts": {
+            "en": [
+                {
+                    "value": "25+",
+                    "label": "Years of experience"
+                },
+                {
+                    "value": "4",
+                    "label": "Continents photographed"
+                }
+            ],
+            "tr": [
+                {
+                    "value": "25+",
+                    "label": "Yıllık deneyim"
+                },
+                {
+                    "value": "4",
+                    "label": "Kıtada çekim"
+                }
+            ]
+        },
+        "captions": {
+            "en": [
+                "The Charlot Crea perspective",
+                "Light. Space. Atmosphere."
+            ],
+            "tr": [
+                "Charlot Crea’nın bakışı",
+                "Işık. Mekân. Atmosfer."
+            ]
+        }
+    },
+    "/en/services/": {
+        "variant": "services",
+        "body": {
+            "en": "<h2>Photography</h2>\n<p>Hotel photography, architecture, portraits, fashion and nature. Each commission is shaped around the client’s audience and individual needs.</p>\n<h2>Film</h2>\n<p>Commercial films that communicate the features of a product or service and bring a brand’s story to the screen.</p>\n<p>Each commission starts with a conversation about scope, production and the intended use of the final work.</p>\n<h2>Let’s frame your<br>next chapter.</h2>\n<p>Tell us about your project, your vision and what comes next.</p>",
+            "tr": "<h2>Fotoğraf</h2>\n<p>Otel fotoğrafçılığı, mimari, portre, moda ve doğa. Her proje, müşterinin hedef kitlesine ve ihtiyaçlarına göre şekillenir.</p>\n<h2>Film</h2>\n<p>Bir ürünün veya hizmetin özelliklerini anlatan ve marka hikâyesini ekrana taşıyan tanıtım filmleri.</p>\n<p>Her proje, kapsam, prodüksiyon ve tamamlanan işin kullanım alanları üzerine bir görüşmeyle başlar.</p>\n<h2>Bir sonraki hikâyenize<br>birlikte odaklanalım.</h2>\n<p>Projenizi, vizyonunuzu ve sonraki adımınızı bizimle paylaşın.</p>"
+        },
+        "labels": {
+            "en": [
+                "Our expertise",
+                "What we create",
+                "Your next project"
+            ],
+            "tr": [
+                "Uzmanlığımız",
+                "Ürettiklerimiz",
+                "Sıradaki projeniz"
+            ]
+        },
+        "facts": {
+            "en": [],
+            "tr": []
+        },
+        "captions": {
+            "en": [],
+            "tr": []
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@extends('customer.layout')
+@section('title',__('Sign in'))
+@section('content')
+<div class="portal-card customer-auth"><p class="portal-eyebrow">{{ __('Your projects, in one place') }}</p><h1>{{ __('Welcome back') }}</h1><p class="portal-copy">{{ app()->getLocale()==='en' ? 'Sign in to view your quotes, projects and Google Drive deliveries.' : 'Tekliflerinizi, projelerinizi ve Google Drive teslimat bağlantılarınızı görmek için giriş yapın.' }}</p><form method="POST" action="{{ route('customer.login.store') }}" class="portal-field">@csrf<label for="email">{{ __('Email') }}</label><input id="email" name="email" type="email" required autocomplete="username" value="{{ old('email') }}"><label for="password">{{ __('Password') }}</label><input id="password" name="password" type="password" required autocomplete="current-password"><button class="portal-btn" type="submit">{{ __('Sign in') }}</button></form><p class="portal-note"><a href="{{ route('customer.password.request') }}">{{ __('Forgot your password?') }}</a></p><p class="portal-note">{{ __('Access is provided by the studio. Please contact us if you need an invitation.') }}</p></div>
+@endsection

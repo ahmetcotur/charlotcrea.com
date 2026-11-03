@@ -1,0 +1,1 @@
+<a class="portal-brand" href="{{ $brandUrl }}" aria-label="{{ config('site.name') }}"><img class="portal-logo" src="{{ asset('assets/logo.png') }}" alt="{{ config('site.name') }}" width="1000" height="636"><span class="portal-brand-caption">PHOTOGRAPHY &amp; FILM<span>{{ $brandCaption }}</span></span></a>

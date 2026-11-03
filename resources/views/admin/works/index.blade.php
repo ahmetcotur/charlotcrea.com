@@ -1,0 +1,7 @@
+@extends('admin.layout')
+@section('title','İşler')
+@section('content')
+<div class="admin-heading"><div><span class="eyebrow">Prodüksiyon</span><h1>İşler · liste görünümü</h1><p>Müşteri ve teklif bağlantısıyla çekim/prodüksiyon akışını izleyin.</p></div><div style="display:flex;gap:10px"><a class="button secondary" href="{{ route('admin.crm.index') }}">← Kanban görünümü</a><a class="button" href="{{ route('admin.works.create') }}">+ İş oluştur</a></div></div>
+<form class="toolbar" method="GET"><div class="search"><input name="q" value="{{ request('q') }}" placeholder="İş adı ara"><button class="button secondary">Ara</button></div><span class="muted">{{ $works->total() }} kayıt</span></form>
+<div class="table-wrap"><table><thead><tr><th>İş</th><th>Müşteri</th><th>Teklif</th><th>Durum</th><th>Hedef teslim</th><th></th></tr></thead><tbody>@forelse($works as $work)<tr><td><strong>{{ $work->title }}</strong>@if($work->demo_key)<br><small>[ÖRNEK]</small>@endif</td><td>{{ $work->customer?->title }}</td><td>{{ $work->quote?->quote_number ?: '—' }}</td><td><span class="status">{{ str_replace('_',' ',$work->status) }}</span></td><td>{{ $work->due_at?->format('d.m.Y') ?: '—' }}</td><td><a class="button secondary" href="{{ route('admin.works.edit',$work) }}">Aç</a></td></tr>@empty<tr><td colspan="6" class="muted">Henüz iş yok.</td></tr>@endforelse</tbody></table></div><div class="pagination">{{ $works->links() }}</div>
+@endsection

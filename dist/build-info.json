@@ -1,7 +1,7 @@
 {
   "environment": "preview",
   "site_url": "http://localhost:8080",
-  "canonical_pages": 126,
+  "canonical_pages": 130,
   "languages": [
     "en",
     "tr"

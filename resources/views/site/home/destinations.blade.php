@@ -1,0 +1,1 @@
+<section class="section destinations" data-home-section="destinations"><div class="section-head"><div><span class="label">{{ $plain(0) }}</span><h2>{!! $text(1) !!}</h2></div></div>@include('site.partials.home-items',['key'=>'destinations'])</section>

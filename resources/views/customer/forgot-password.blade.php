@@ -1,0 +1,3 @@
+@extends('customer.layout')
+@section('title',__('Reset password'))
+@section('content')<div class="portal-card customer-auth"><h1>{{ __('Reset password') }}</h1><p class="portal-copy">{{ __('Enter your account email to request a password link.') }}</p><form method="POST" action="{{ route('customer.password.email') }}" class="portal-field">@csrf<label for="email">{{ __('Email') }}</label><input id="email" name="email" type="email" required autocomplete="email" value="{{ old('email') }}"><button class="portal-btn">{{ __('Send password link') }}</button></form><p class="portal-note"><a href="{{ route('customer.login') }}">{{ __('Back to sign in') }}</a></p></div>@endsection

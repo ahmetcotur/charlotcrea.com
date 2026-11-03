@@ -1,0 +1,1 @@
+<section class="cta" data-home-section="cta"><span class="label">{{ $plain(0) }}</span><h2>{!! $text(1) !!}</h2><p>{{ $plain(2) }}</p>@if($path=$site->route('/en/request-a-quote/')?:$site->route('/en/contact/'))<a class="btn" href="{{ $path }}">{{ __('Request a quote') }} @include('site.partials.icon')</a>@endif</section>

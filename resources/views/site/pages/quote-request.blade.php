@@ -1,0 +1,27 @@
+@extends('site.layout')
+@section('content')
+@include('site.partials.intro', ['label' => __('Tell us about your project')])
+<section class="form-shell quote-request-shell"><div><h2>{{ __('A quote shaped around your project') }}</h2><p class="bodytext">{{ __('Share the location, scope and intended use. We will review your brief and get in touch to discuss production and pricing.') }}</p><p class="form-note">01 · {{ __('Your project') }}<br>02 · {{ __('Scope and timing') }}<br>03 · {{ __('Your contact details') }}</p><a class="text-link" href="{{ $site->route('/en/contact/') }}">{{ __('Just have a question? Contact us') }} @include('site.partials.icon')</a></div>
+<div class="formbox"><form method="POST" action="{{ route('quote-requests.store') }}" data-enquiry-form data-quote-form>@csrf<input type="hidden" name="locale" value="{{ $locale }}"><label class="contact-honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+<fieldset><legend>01 · {{ __('Your project') }}</legend>
+<label>{{ __('Company or project name') }} *<input name="property" required maxlength="200" autocomplete="organization" value="{{ old('property') }}"></label>
+<label>{{ __('Project type') }} *<select name="project_type" required><option value="">{{ __('Select an option') }}</option>@foreach(['Hotel / Hospitality','Architecture / Interiors','Product / Brand','Portrait / Fashion','Other'] as $option)<option value="{{ $option }}" @selected(old('project_type')===$option)>{{ __($option) }}</option>@endforeach</select></label>
+<div class="enquiry-grid"><label>{{ __('Country') }} *<select name="country" required><option value="">{{ __('Select country') }}</option>@foreach($site->catalog(\App\Models\Destination::class)->whereNull('parent_id') as $country)<option value="{{ $country->translate('en')->title }}" @selected(old('country')===$country->translate('en')->title)>{{ $country->title }}</option>@endforeach<option value="Other" @selected(old('country')==='Other')>{{ __('Other') }}</option></select></label><label>{{ __('City or location') }} *<input name="city" required maxlength="120" value="{{ old('city') }}"></label></div>
+</fieldset>
+<fieldset><legend>02 · {{ __('Scope and timing') }}</legend>
+<label>{{ __('Service') }} *<select name="service" required data-service-select><option value="">{{ __('Select a service') }}</option>@foreach(['Photography','Film production','Photography & film'] as $service)<option value="{{ $service }}" @selected(old('service')===$service)>{{ __($service) }}</option>@endforeach</select></label>
+<p class="enquiry-service-help" data-service-help data-photo="{{ __('For photography, include the spaces or products to shoot and the approximate number of final images.') }}" data-film="{{ __('For film, include the story, estimated duration, formats and any voice-over or interview needs.') }}" data-both="{{ __('For both, include the photo selection and film deliverables so we can plan a shared production.') }}">{{ __('Select a service to see what details will help us plan your project.') }}</p>
+<label>{{ __('What should we deliver?') }} *<textarea name="deliverables" required maxlength="5000" rows="3" placeholder="{{ __('For example: 30 edited photographs, a 60-second film and vertical social cuts.') }}">{{ old('deliverables') }}</textarea></label>
+<label>{{ __('Where will the content be used?') }} *<input name="usage" required maxlength="1000" placeholder="{{ __('Website, booking channels, social media, advertising, print…') }}" value="{{ old('usage') }}"></label>
+<div class="enquiry-grid"><label>{{ __('Preferred timing') }}<input name="timing" maxlength="160" placeholder="{{ __('Dates or estimated month') }}" value="{{ old('timing') }}"></label><label>{{ __('Indicative budget') }} <span class="optional">({{ __('optional') }})</span><input name="budget" maxlength="120" placeholder="{{ __('Amount and currency, or not yet decided') }}" value="{{ old('budget') }}"></label></div>
+<label>{{ __('Tell us about the project') }} *<textarea name="details" required maxlength="20000" rows="5" placeholder="{{ __('Your goals, spaces, audience, references and any production requirements.') }}">{{ old('details') }}</textarea></label>
+</fieldset>
+<fieldset><legend>03 · {{ __('Your contact details') }}</legend>
+<label>{{ __('Your name') }} *<input name="name" required maxlength="200" autocomplete="name" value="{{ old('name') }}"></label><label>{{ __('Work email') }} *<input name="email" type="email" required maxlength="255" autocomplete="email" value="{{ old('email') }}"></label><label>{{ __('Phone') }} <span class="optional">({{ __('optional') }})</span><input name="phone" type="tel" maxlength="60" autocomplete="tel" value="{{ old('phone') }}"></label>
+<label class="consent"><input type="checkbox" name="consent" value="1" required @checked(old('consent'))><span>{{ __('I agree to the use of my details to respond to this project enquiry.') }}</span></label>
+</fieldset>
+@if(session('inquiry-success'))<p class="form-success" role="status">{{ session('inquiry-success') }}</p>@endif
+@if($errors->any())<div class="form-error" role="alert">@foreach($errors->all() as $error)<p>{{ $error }}</p>@endforeach</div>@endif
+<button class="btn" type="submit">{{ __('Request a quote') }} ↗</button><p class="form-success" data-form-success role="status" hidden></p><p class="form-error" data-form-error role="alert" hidden></p>
+</form></div></section>
+@endsection

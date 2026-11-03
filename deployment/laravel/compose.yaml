@@ -1,0 +1,97 @@
+name: charlot-cms
+x-runtime: &runtime
+  APP_NAME: Charlot Crea
+  APP_ENV: production
+  APP_DEBUG: "false"
+  APP_KEY: ${APP_KEY:?Set APP_KEY in the deployment environment file}
+  APP_URL: ${APP_URL:?Set APP_URL}
+  SITE_INDEXABLE: ${SITE_INDEXABLE:-false}
+  DB_CONNECTION: pgsql
+  DB_HOST: database
+  DB_PORT: "5432"
+  DB_DATABASE: ${POSTGRES_DB:-charlot}
+  DB_USERNAME: ${POSTGRES_USER:-charlot}
+  DB_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+  SESSION_DRIVER: database
+  SESSION_SECURE_COOKIE: ${SESSION_SECURE_COOKIE:-true}
+  CACHE_STORE: database
+  QUEUE_CONNECTION: database
+  DB_QUEUE_RETRY_AFTER: "120"
+  ANALYTICS_ENABLED: ${ANALYTICS_ENABLED:-true}
+  ANALYTICS_RETENTION_DAYS: ${ANALYTICS_RETENTION_DAYS:-90}
+  TRUSTED_PROXIES: ${TRUSTED_PROXIES:-}
+  LOG_CHANNEL: stderr
+  MAIL_MAILER: ${MAIL_MAILER:-log}
+  MAIL_SCHEME: ${MAIL_SCHEME:-smtp}
+  MAIL_HOST: ${MAIL_HOST:-localhost}
+  MAIL_PORT: ${MAIL_PORT:-587}
+  MAIL_USERNAME: ${MAIL_USERNAME:-}
+  MAIL_PASSWORD: ${MAIL_PASSWORD:-}
+  MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS:-info@charlotcrea.com}
+  MAIL_FROM_NAME: Charlot Crea
+  ADMIN_NOTIFICATION_EMAIL: ${ADMIN_NOTIFICATION_EMAIL:-info@charlotcrea.com}
+services:
+  database:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-charlot}
+      POSTGRES_USER: ${POSTGRES_USER:-charlot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+  app:
+    image: charlot-cms-app:${IMAGE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: deployment/laravel/Dockerfile
+      target: application
+    environment: *runtime
+    volumes:
+      - storage:/var/www/html/storage
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+  worker:
+    image: charlot-cms-app:${IMAGE_TAG:-local}
+    environment: *runtime
+    command: [php, artisan, queue:work, --sleep=3, --tries=3, --timeout=90, --max-time=3600]
+    volumes:
+      - storage:/var/www/html/storage
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+    stop_grace_period: 100s
+  scheduler:
+    image: charlot-cms-app:${IMAGE_TAG:-local}
+    environment: *runtime
+    command: [php, artisan, schedule:work]
+    volumes:
+      - storage:/var/www/html/storage
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+  web:
+    image: charlot-cms-web:${IMAGE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: deployment/laravel/Dockerfile
+      target: web
+    ports:
+      - '127.0.0.1:${HTTP_PORT:-8092}:8080'
+    volumes:
+      - storage:/var/www/html/storage:ro
+    depends_on:
+      - app
+    restart: unless-stopped
+volumes:
+  database:
+  storage:

@@ -1,0 +1,1 @@
+<div class="editorial-ticker" tabindex="0" data-home-section="ticker"><div class="ticker-track">@for($copy=0;$copy<2;$copy++)<div class="ticker-group" @if($copy) aria-hidden="true" @endif>@for($i=0;$i<3;$i++)<span>{{ $plain($i+$copy*3) }}</span><span class="ticker-star" aria-hidden="true">✳</span>@endfor</div>@endfor</div></div>

@@ -1,0 +1,11 @@
+@extends('customer.layout')
+@section('title',$work->title)
+@section('content')
+<a class="customer-back" href="{{ route('customer.dashboard') }}">← {{ __('Overview') }}</a><section class="portal-card"><p class="portal-eyebrow">{{ __('Project') }}</p><span class="portal-status">{{ \App\Services\CustomerPortalLabels::status($work->status) }}</span><h1>{{ $work->title }}</h1><div class="portal-meta">@if($work->starts_at)<div class="portal-meta-row"><span>{{ __('Start date') }}</span><strong>{{ $work->starts_at->format('d.m.Y') }}</strong></div>@endif @if($work->due_at)<div class="portal-meta-row"><span>{{ __('Target delivery') }}</span><strong>{{ $work->due_at->format('d.m.Y') }}</strong></div>@endif</div>
+@if($work->brief)<h2>{{ __('Project scope') }}</h2><p class="portal-copy preserve-lines">{{ $work->brief }}</p>@endif
+@if($work->delivered_at && $work->status!=='cancelled')
+<h2>{{ __('Your delivery') }}</h2><p class="portal-note">{{ $work->delivered_at->format('d.m.Y') }}</p><p class="portal-copy preserve-lines">{{ $work->delivery_note }}</p><div class="portal-files">@forelse($work->deliveryLinks as $link)<a class="portal-file" href="{{ $link->url }}" target="_blank" rel="noopener noreferrer"><strong>{{ $link->title }}</strong><span>{{ app()->getLocale()==='tr' ? "Google Drive'da aç" : 'Open in Google Drive' }} ↗</span></a>@empty<p class="portal-note">{{ __('Delivery details are provided in the note above.') }}</p>@endforelse</div>
+@if($openRevision)<p class="customer-notice">{{ __('Your revision request is being reviewed.') }}</p>@elseif($work->status!=='completed')<div class="portal-actions"><form method="POST" action="{{ route('customer.works.approve',$work->id) }}">@csrf<button class="portal-btn">{{ __('Approve delivery') }}</button></form></div><form method="POST" action="{{ route('customer.works.revision',$work->id) }}" class="portal-field">@csrf<label for="customer_note">{{ __('Request a revision') }}</label><textarea id="customer_note" name="customer_note" required maxlength="5000">{{ old('customer_note') }}</textarea><button class="portal-btn ghost">{{ __('Send revision request') }}</button></form>@endif
+@else<p class="portal-note">{{ __('Your delivery will appear here when it is ready.') }}</p>@endif
+</section>
+@endsection

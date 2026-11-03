@@ -56,7 +56,11 @@ metadata={
  '/en/services/':('Photography & Film Services | Charlot Crea','Explore photography and commercial film services from Charlot Crea, including architecture, portraits, fashion, nature and hotel photography.','/assets/hero.jpg','WebPage','Services'),
  '/en/contact/':('Discuss a Photography or Film Project | Charlot Crea','Plan your next photography or commercial film project with Charlot Crea. Share your location, preferred timing and creative brief.','/assets/logo.png','ContactPage','Contact'),
  '/en/destinations/':('International Photography Projects | Charlot Crea','Discover Charlot Crea’s selected photography projects by destination: Türkiye, the United Arab Emirates, Egypt and Saudi Arabia.','/assets/hero.jpg','CollectionPage','Destinations'),
- '/en/destinations/uae/dubai/':('Photography in Dubai | Charlot Crea','Explore Charlot Crea’s Dubai photography portfolio, including 25 Hours Dubai, Raffles The Palm and Rixos The Palm. Discuss your next Dubai project.','/assets/raffles-the-palm-dubai-cover.jpg','CollectionPage','Dubai')}
+ '/en/destinations/uae/dubai/':('Photography in Dubai | Charlot Crea','Explore Charlot Crea’s Dubai photography portfolio, including 25 Hours Dubai, Raffles The Palm and Rixos The Palm. Discuss your next Dubai project.','/assets/raffles-the-palm-dubai-cover.jpg','CollectionPage','Dubai'),
+ '/en/home-2/':('Photography & Film — Home 2 | Charlot Crea','An alternative Charlot Crea homepage concept with a full-bleed, cinematic hero treatment.','/assets/fairmont-istanbul-cover.jpg','WebPage','Home 2'),
+ '/en/home-3/':('Photography & Film — Home 3 | Charlot Crea','An alternative Charlot Crea homepage concept with the showreel film playing as a full-bleed video hero.','/assets/films/charlot-crea-showreel.jpg','WebPage','Home 3')}
+# Alternative homepage concepts stay unbranded in the visible breadcrumb; they are variants of the same page, not sub-pages.
+home_variants=('/en/home-2/','/en/home-3/')
 country_slugs={'Türkiye':'turkey','UAE':'uae','Egypt':'egypt','Saudi Arabia':'saudi-arabia'}
 country_names={'Türkiye':'Türkiye','UAE':'United Arab Emirates','Egypt':'Egypt','Saudi Arabia':'Saudi Arabia'}
 for country,slug in country_slugs.items():
@@ -122,7 +126,7 @@ for path,meta in metadata.items():
   crumbs.append((label,path))
  elif path!='/en/':crumbs.append((label,path))
  breadcrumb={'@type':'BreadcrumbList','@id':base+path+'#breadcrumb','itemListElement':[{'@type':'ListItem','position':i+1,'name':n,'item':base+u} for i,(n,u) in enumerate(crumbs)]}
- if path!='/en/':
+ if path!='/en/' and path not in home_variants:
   html='<nav class="seo-breadcrumb" aria-label="Breadcrumb">'+'<span aria-hidden="true"> / </span>'.join(f'<a href="{u}">{escape(n)}</a>' if u!=path else f'<span aria-current="page">{escape(n)}</span>' for n,u in crumbs)+'</nav>'
   s=re.sub(r'<div class="breadcrumb">.*?</div>','',s)
   s=s.replace('<main>','<main>'+html,1)

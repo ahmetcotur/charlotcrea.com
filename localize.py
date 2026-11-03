@@ -124,7 +124,9 @@ trmeta={
 '/en/services/':('Fotoğraf ve Film Hizmetleri | Charlot Crea','Charlot Crea’nın mimari, portre, moda, doğa ve otel fotoğrafçılığı ile tanıtım filmi hizmetlerini keşfedin.'),
 '/en/contact/':('İletişim ve Proje Talebi | Charlot Crea','Fotoğraf veya tanıtım filmi projenizi Charlot Crea ile planlayın. Antalya iletişim bilgilerimize ulaşın; konum, tarih ve yaratıcı brief’inizi paylaşın.'),
 '/en/destinations/':('Uluslararası Fotoğraf Projeleri | Charlot Crea','Charlot Crea’nın Türkiye, Birleşik Arap Emirlikleri, Mısır ve Suudi Arabistan’daki seçili fotoğraf projelerini destinasyonlara göre keşfedin.'),
-'/en/destinations/uae/dubai/':('Dubai Fotoğraf Çalışmaları | Charlot Crea','25 Hours Dubai, Raffles The Palm ve Rixos The Palm dâhil Charlot Crea’nın Dubai fotoğraf projelerini keşfedin; sıradaki projenizi konuşalım.')}
+'/en/destinations/uae/dubai/':('Dubai Fotoğraf Çalışmaları | Charlot Crea','25 Hours Dubai, Raffles The Palm ve Rixos The Palm dâhil Charlot Crea’nın Dubai fotoğraf projelerini keşfedin; sıradaki projenizi konuşalım.'),
+'/en/home-2/':('Fotoğraf & Film — Ana Sayfa 2 | Charlot Crea','Charlot Crea için sinematik, tam ekran bir hero kullanan alternatif bir ana sayfa konsepti.'),
+'/en/home-3/':('Fotoğraf & Film — Ana Sayfa 3 | Charlot Crea','Showreel filminin tam ekran video hero olarak oynatıldığı alternatif bir ana sayfa konsepti.')}
 for country,slug in seo['country_slugs'].items():
  en='/en/destinations/'+slug+'/';ps=[p for p in projects if p[2]==country];name=place(seo['country_names'][country]);trmeta[en]=(name+' Fotoğraf Çalışmaları | Charlot Crea','Charlot Crea’nın '+name+' konumundaki fotoğraf çalışmalarını keşfedin. '+', '.join(dict.fromkeys(place(p[1]) for p in ps))+' projelerinin galerilerini inceleyin ve yeni projenizi konuşalım.')
 for p in projects:

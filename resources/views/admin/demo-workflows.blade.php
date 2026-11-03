@@ -1,0 +1,7 @@
+@extends('admin.layout')
+@section('title','Demo iş akışları')
+@section('content')
+<div class="admin-heading"><div><span class="eyebrow">Yerel test ortamı</span><h1>Demo iş akışları</h1><p>İletişim → teklif → otomatik iş → Drive teslimatı → onay / revizyon senaryoları.</p></div><a class="button secondary" href="{{ route('admin.dashboard') }}">Genel bakış</a></div>
+<p class="notice">Bu kayıtlar test içindir. Drive bağlantıları yer tutucudur, gerçek dosya içermez. Form örnekleri iletişim taleplerinde görünür. Müşteri girişini ayrı / gizli pencerede açabilirsiniz.</p>
+@forelse($demos as $demo)<section class="panel"><h2 class="panel-title">{{ $demo['label'] }}</h2><div class="quicklinks"><a class="button secondary" href="{{ route('admin.customers.edit',$demo['customer_id']) }}">Müşteri</a><a class="button secondary" href="{{ route('admin.quotes.edit',$demo['quote_id']) }}">Teklif</a>@if($demo['work_id'])<a class="button secondary" href="{{ route('admin.works.edit',$demo['work_id']) }}">İş / teslimat</a>@endif<a class="button" href="{{ route('customer.login',['lang'=>$demo['locale']]) }}" target="_blank" rel="noopener">Müşteri paneli girişi ↗</a></div><p>{{ $demo['email'] }}</p><details><summary>Demo giriş parolasını göster</summary><p><code>{{ $demo['password'] }}</code></p><small class="muted">Yalnızca yerel demo hesabı. Parola sonradan değiştirilirse bu kayıt otomatik güncellenmez.</small></details></section>@empty<p class="muted">Henüz demo iş akışı oluşturulmadı.</p>@endforelse
+@endsection

@@ -1,0 +1,22 @@
+# Local SMTP capture only. Never use this override for a public deployment.
+services:
+  app:
+    environment:
+      MAIL_MAILER: smtp
+      MAIL_SCHEME: smtp
+      MAIL_HOST: mailpit
+      MAIL_PORT: "1025"
+      MAIL_USERNAME: ""
+      MAIL_PASSWORD: ""
+  worker:
+    environment:
+      MAIL_MAILER: smtp
+      MAIL_SCHEME: smtp
+      MAIL_HOST: mailpit
+      MAIL_PORT: "1025"
+      MAIL_USERNAME: ""
+      MAIL_PASSWORD: ""
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - '127.0.0.1:8093:8025'

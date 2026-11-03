@@ -1,0 +1,11 @@
+<section class="form-shell" id="contact-form"><div><span class="label">{{ __('Contact us') }}</span><h2>{{ __('How can we help?') }}</h2><p class="bodytext">{{ __('For general questions, collaborations or a quick introduction, send us a message.') }}</p>@if($quotePath = $site->route('/en/request-a-quote/'))<div class="quote-invitation"><h3>{{ __('Planning a project?') }}</h3><p>{{ __('Use our project form to share your brief and request a tailored quote.') }}</p><a class="text-link" href="{{ $quotePath }}">{{ __('Request a quote') }} @include('site.partials.icon')</a></div>@endif</div>
+<div class="formbox">@if(session('inquiry-success'))<p class="form-success" role="status">{{ session('inquiry-success') }}</p>@endif
+<form id="brief" method="POST" action="{{ route('contact-inquiries.store') }}" data-enquiry-form>@csrf<input type="hidden" name="locale" value="{{ $locale }}"><label class="contact-honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+<label for="contact-name">{{ __('Your name') }} *<input id="contact-name" name="name" required maxlength="200" autocomplete="name" value="{{ old('name') }}"></label>
+<label for="contact-email">{{ __('Email') }} *<input id="contact-email" name="email" type="email" required maxlength="255" autocomplete="email" value="{{ old('email') }}"></label>
+<label for="contact-phone">{{ __('Phone') }} <span class="optional">({{ __('optional') }})</span><input id="contact-phone" name="phone" type="tel" maxlength="60" autocomplete="tel" value="{{ old('phone') }}"></label>
+<label for="contact-message">{{ __('Your message') }} *<textarea id="contact-message" name="details" required maxlength="20000" rows="5">{{ old('details') }}</textarea></label>
+<label class="consent"><input type="checkbox" name="consent" value="1" required @checked(old('consent'))><span>{{ __('I agree to the use of my details to respond to this message.') }}</span></label>
+@if($errors->any())<div class="form-error" role="alert">@foreach($errors->all() as $error)<p>{{ $error }}</p>@endforeach</div>@endif
+<button class="btn" type="submit">{{ __('Send message') }} ↗</button><p class="form-success" data-form-success role="status" hidden></p><p class="form-error" data-form-error role="alert" hidden></p>
+</form></div></section>
