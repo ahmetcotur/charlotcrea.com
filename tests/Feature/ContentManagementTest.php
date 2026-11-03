@@ -21,7 +21,8 @@ class ContentManagementTest extends TestCase
         $this->assertDatabaseCount('projects', 19);
         $this->assertDatabaseCount('films', 14);
         $this->assertDatabaseCount('posts', 5);
-        $this->assertDatabaseCount('destinations', 16);
+        $this->assertDatabaseCount('destinations', 17);
+        $this->assertDatabaseHas('destinations', ['import_key' => '/en/destinations/saudi-arabia/makkah/']);
         $this->assertDatabaseCount('pages', 11);
         $post = Post::first();
         $post->translate('tr')->heading = 'Panelden düzenlenen başlık';

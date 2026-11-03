@@ -121,6 +121,7 @@ class ImportLegacyContent extends Command
         $this->call('charlot:import-references');
         $this->call('charlot:seed-settings');
         $this->call('charlot:prepare-native-pages');
+        $this->call('charlot:prepare-makkah');
 
         return self::SUCCESS;
     }

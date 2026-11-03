@@ -16,11 +16,7 @@ class DestinationSeoContentTest extends TestCase
         Storage::fake('local');
         $this->artisan('charlot:import')->assertSuccessful();
         $this->artisan('charlot:prepare-enquiry-pages')->assertSuccessful();
-        $country = Destination::where('import_key', '/en/destinations/saudi-arabia/')->firstOrFail();
-        $city = Destination::create(['parent_id' => $country->id, 'published' => true, 'country' => 'Saudi Arabia', 'city' => 'Makkah']);
-        foreach (['en' => ['Makkah', '/en/destinations/saudi-arabia/makkah/'], 'tr' => ['Mekke', '/tr/destinasyonlar/suudi-arabistan/mekke/']] as $locale => [$title,$path]) {
-            $city->translations()->create(['locale' => $locale, 'title' => $title, 'path' => $path, 'active' => true]);
-        }
+        $this->assertNotNull(Destination::where('import_key', '/en/destinations/saudi-arabia/makkah/')->first());
     }
 
     public function test_all_locations_receive_bilingual_unique_metadata_copy_faq_and_keyword_plan_without_changing_paths(): void

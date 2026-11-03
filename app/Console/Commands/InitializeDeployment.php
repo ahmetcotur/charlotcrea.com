@@ -24,7 +24,7 @@ class InitializeDeployment extends Command
         if ($fresh) {
             $commands['charlot:import'] = [];
         }
-        foreach (['charlot:import-media', 'charlot:prepare-portfolio-content', 'charlot:link-project-brands', 'charlot:prepare-enquiry-pages', 'charlot:prepare-destination-seo', 'charlot:prepare-native-pages'] as $command) {
+        foreach (['charlot:prepare-makkah', 'charlot:import-media', 'charlot:prepare-portfolio-content', 'charlot:link-project-brands', 'charlot:prepare-enquiry-pages', 'charlot:prepare-destination-seo', 'charlot:prepare-native-pages'] as $command) {
             $commands[$command] = [];
         }
         foreach ($commands as $command => $arguments) {
