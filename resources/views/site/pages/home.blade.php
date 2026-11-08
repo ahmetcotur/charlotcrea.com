@@ -20,5 +20,5 @@ $items = $homeManager->items($model, $sectionKey, $locale);
 @push('site_scripts')
 <script src="/home.js"></script>
 @if(($variant ?? null) === 'filmstrip')<script src="/hero-filmstrip.js"></script>@endif
-@if(($variant ?? null) === 'video')<script>if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelector('.hero-bg-video')?.pause();</script>@endif
+@if(($variant ?? null) === 'video')<script src="/hero-video.js?v=1"></script>@endif
 @endpush

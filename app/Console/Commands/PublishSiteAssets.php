@@ -36,6 +36,7 @@ class PublishSiteAssets extends Command
         File::copy(resource_path('css/admin-location-picker.css'), public_path('admin-location-picker.css'));
         File::copy(resource_path('css/admin-pages.css'), public_path('admin-pages.css'));
         File::copy(resource_path('js/admin-pages.js'), public_path('admin-pages.js'));
+        File::copy(resource_path('js/hero-video.js'), public_path('hero-video.js'));
         File::copy(resource_path('js/hero-filmstrip.js'), public_path('hero-filmstrip.js'));
         File::copy(resource_path('js/contact-form.js'), public_path('contact-form.js'));
         File::copy(resource_path('css/client-portal.css'), public_path('client-portal.css'));
