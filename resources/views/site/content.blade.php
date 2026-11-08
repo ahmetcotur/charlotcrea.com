@@ -20,7 +20,7 @@
 <section class="section full-project work-gallery-section"><div class="photo-gallery"></div></section>
 <dialog class="gallery-dialog" aria-label="Photo viewer"><button class="gallery-close">×</button><button class="gallery-prev">←</button><img alt=""><button class="gallery-next">→</button><p class="gallery-count" aria-live="polite"></p></dialog>
 @elseif ($model instanceof \App\Models\Film)
-<section class="section"><button class="film-poster" data-video-src="{{ $model->video_url }}">{{ $locale === 'tr' ? 'Filmi izle' : 'Watch film' }}</button></section>
+<section class="section"><button class="film-poster" data-video-src="{{ app(\App\Services\Site\PublicSite::class)->videoUrl($model->video_url) }}">{{ $locale === 'tr' ? 'Filmi izle' : 'Watch film' }}</button></section>
 @elseif ($model instanceof \App\Models\Post)
 <article class="journal-article"><div class="article-body">{!! \App\Services\RichText::clean($translation->body) !!}</div></article>
 @elseif ($model instanceof \App\Models\Destination)

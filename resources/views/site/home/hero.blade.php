@@ -1,6 +1,6 @@
 <section @class(['hero','hero-filmstrip'=>$variant==='filmstrip','hero-video'=>$variant==='video']) data-home-section="hero">
 @if($variant === 'video')
-<div class="hero-image"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" @if($poster=$model->coverImage(1600)) poster="{{ $poster['src'] }}" @endif aria-hidden="true">@if($model->video_url)<source src="{{ $model->video_url }}" type="video/mp4">@endif</video></div>
+<div class="hero-image"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" @if($poster=$model->coverImage(1600)) poster="{{ $poster['src'] }}" @endif aria-hidden="true">@if($model->video_url)<source src="{{ app(\App\Services\Site\PublicSite::class)->videoUrl($model->video_url) }}" type="video/mp4">@endif</video></div>
 @endif
 <div class="hero-top"><div><span class="label">{{ $plain(0) }}</span><h1>{!! $text(1) !!}</h1></div><p>{{ $plain(2) }} <a href="{{ $site->route($variant==='video'?'/en/film/':'/en/photography/') }}">{{ $variant==='video' ? __('Watch the full film') : __('Discover our work') }} @include('site.partials.icon')</a></p></div>
 @if($variant === 'classic')

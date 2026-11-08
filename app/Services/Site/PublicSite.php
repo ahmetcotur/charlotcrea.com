@@ -30,6 +30,17 @@ class PublicSite
         return preg_match('~^https?://~', $path) ? $path : rtrim(config('app.url'), '/').'/'.ltrim($path, '/');
     }
 
+    public function videoUrl(?string $url): ?string
+    {
+        // Refresh only first-party media so old compressed CDN objects are not reused.
+        if (! $url || ! str_starts_with($url, '/assets/films/')) {
+            return $url;
+        }
+        [$path, $fragment] = array_pad(explode('#', $url, 2), 2, null);
+
+        return $path.(str_contains($path, '?') ? '&' : '?').'delivery=2'.($fragment !== null ? '#'.$fragment : '');
+    }
+
     public function countryName(?string $country): string
     {
         return __($country ?: 'International');
@@ -42,7 +53,9 @@ class PublicSite
 
     public function data($model, string $locale): array
     {
-        if ($model instanceof Project) $model->loadMissing(['reference.translations', 'reference.medias', 'countries.translations']);
+        if ($model instanceof Project) {
+            $model->loadMissing(['reference.translations', 'reference.medias', 'countries.translations']);
+        }
         $translation = $model->translate($locale);
         $kind = match (true) {
             $model instanceof Project => 'project', $model instanceof Film => 'film',
