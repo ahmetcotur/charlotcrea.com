@@ -38,7 +38,7 @@ class PublicSite
         }
         [$path, $fragment] = array_pad(explode('#', $url, 2), 2, null);
 
-        return $path.(str_contains($path, '?') ? '&' : '?').'delivery=2'.($fragment !== null ? '#'.$fragment : '');
+        return $path.(str_contains($path, '?') ? '&' : '?').'delivery=3'.($fragment !== null ? '#'.$fragment : '');
     }
 
     public function countryName(?string $country): string
