@@ -44,3 +44,24 @@
 [data-home-section="destinations"] .destination-row:hover{background:rgba(255,255,255,.035)}
 
 .native-visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.native-service-copy{margin-bottom:35px}.native-service-copy .text-link{margin:14px 0}.about-services .bodytext{font-size:inherit}.about-opening-photo{margin:0}
+
+/* Country collages use only the photography linked to that destination. */
+.destination-index-grid .destination-collage{display:grid;align-items:stretch;justify-items:stretch;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:6px;height:auto;aspect-ratio:1.45;overflow:hidden;background:#e4e6df}
+.destination-collage .destination-collage-tile{position:relative;display:block;min-width:0;min-height:0;overflow:hidden}
+.destination-collage .destination-collage-tile:first-child{grid-row:1 / -1}
+.destination-collage.destination-collage--1{grid-template-columns:1fr}
+.destination-collage.destination-collage--2{grid-template-rows:1fr}
+.destination-collage .destination-collage-tile img{position:absolute;inset:0;display:block;width:100%!important;height:100%!important;max-height:none!important;object-fit:cover;transition:filter .2s ease}
+.destination-country-card .section-head h2 a{display:inline-flex;align-items:center;gap:14px;transition:color .2s ease}
+.destination-country-card .section-head h2 a:hover,.destination-country-card .section-head h2 a:focus-visible{color:var(--green,#485a40);text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:1px}
+.destination-collage:hover img,.destination-collage:focus-visible img{filter:brightness(.86)}
+.destination-collage:focus-visible{outline:3px solid var(--green,#485a40);outline-offset:5px}
+.destination-country-card .destination-tree{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0 0}
+.destination-country-card .destination-tree li{margin:0}
+.destination-country-card .destination-tree a{display:inline-block;padding:9px 13px;border:1px solid var(--line,#d8dbd1);background:transparent;color:var(--ink,#202420);text-decoration:none;line-height:1.4;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.destination-country-card .destination-tree a:hover,.destination-country-card .destination-tree a:focus-visible{background:var(--green,#485a40);border-color:var(--green,#485a40);color:#fff}
+.destination-country-card .destination-tree .destination-tree{margin:8px 0 0 12px}
+@media(max-width:650px){.destination-index-grid .destination-collage{aspect-ratio:1.2;gap:4px}}
+@media(prefers-reduced-motion:reduce){.destination-collage img,.destination-country-card .destination-tree a,.destination-country-card .section-head h2 a{transition:none}}
+
+.destination-country-card .destination-tree>li{flex:0 1 auto}.destination-country-card .destination-tree .destination-tree{gap:6px;flex-direction:column;align-items:flex-start;border-left:1px solid var(--line,#d8dbd1);padding-left:10px}

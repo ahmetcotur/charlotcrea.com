@@ -42,6 +42,34 @@ class PublicSite
         return $path.(str_contains($path, '?') ? '&' : '?').'delivery=4'.($fragment !== null ? '#'.$fragment : '');
     }
 
+    public function destinationCollage(Destination $destination, Collection $projects): array
+    {
+        $images = collect();
+        foreach ($projects as $project) {
+            if ($image = $project->coverImage(900)) {
+                $images->push($image);
+            }
+            if ($images->unique('src')->count() >= 3) {
+                break;
+            }
+        }
+        if ($images->unique('src')->count() < 3) {
+            foreach ($projects as $project) {
+                foreach ($project->galleryImages(900) as $image) {
+                    $images->push($image);
+                    if ($images->unique('src')->count() >= 3) {
+                        break 2;
+                    }
+                }
+            }
+        }
+        if ($images->isEmpty() && ($image = $destination->coverImage(900))) {
+            $images->push($image);
+        }
+
+        return $images->unique('src')->take(3)->values()->all();
+    }
+
     public function countryName(?string $country): string
     {
         return __($country ?: 'International');

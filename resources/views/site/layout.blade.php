@@ -26,7 +26,7 @@
 @foreach (['style','brand','portfolio','editorial','work','icons'] as $sheet)
 <link rel="stylesheet" href="/{{ $sheet }}.css">
 @endforeach
-<link rel="stylesheet" href="/site-content.css">
+<link rel="stylesheet" href="/site-content.css?v=2">
 <script type="application/ld+json">{!! json_encode($seo['graph'], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) !!}</script>
 </head>
 <body>

@@ -5,8 +5,17 @@
 <section class="section destination-index-grid">
 @foreach($destinations as $destination)
 @php($destinationData = $site->data($destination, $locale))
-@php($image = $destination->coverImage() ?: $destinationData['projects']->first()?->coverImage())
-<article class="destination-country-card">@if($image)<a href="{{ $destination->publicPath($locale) }}" class="destination-cover"><img src="{{ $image['src'] }}" alt="{{ $destination->title }}" loading="lazy" decoding="async"></a>@endif<div class="section-head"><h2><a href="{{ $destination->publicPath($locale) }}">{{ $destination->title }} @include('site.partials.icon')</a></h2></div><p>{{ $destinationData['projects']->count() }} {{ __('photography collections') }} · {{ $destinationData['films']->count() }} {{ __('films') }}</p>
+@php($collage = $site->destinationCollage($destination, $destinationData['projects']))
+<article class="destination-country-card">
+@if($collage)
+<a href="{{ $destination->publicPath($locale) }}" class="destination-cover destination-collage destination-collage--{{ count($collage) }}" aria-label="{{ $destination->title }}">
+@foreach($collage as $image)
+<span class="destination-collage-tile"><img src="{{ $image['src'] }}" alt="{{ $image['alt'] ?: $destination->title }}" loading="lazy" decoding="async"></span>
+@endforeach
+</a>
+@endif
+<div class="section-head"><h2><a href="{{ $destination->publicPath($locale) }}">{{ $destination->title }} @include('site.partials.icon')</a></h2></div>
+<p>{{ $destinationData['projects']->count() }} {{ __('photography collections') }} · {{ $destinationData['films']->count() }} {{ __('films') }}</p>
 @include('site.partials.destination-tree', ['nodes' => $allDestinations->where('parent_id', $destination->id)])
 </article>
 @endforeach
