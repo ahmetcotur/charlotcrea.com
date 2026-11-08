@@ -1,0 +1,32 @@
+{
+  "/en/": {
+    "en": {
+      "seo_title": "Hotel Photography & Commercial Films | Charlot Crea",
+      "description": "Charlot Crea creates hotel and architectural photography and commercial films in Türkiye, the UAE, Egypt and Saudi Arabia. Explore our work and plan your shoot."
+    },
+    "tr": {
+      "seo_title": "Otel Fotoğrafçılığı ve Tanıtım Filmi | Charlot Crea",
+      "description": "Charlot Crea ile otel ve mimari fotoğrafçılık, tanıtım filmi prodüksiyonu. Türkiye, BAE, Mısır ve Suudi Arabistan’daki projelerimizi inceleyin."
+    }
+  },
+  "/en/home-2/": {
+    "en": {
+      "seo_title": "Hotel & Architectural Photography | Charlot Crea",
+      "description": "Explore hotel, resort and architectural photography by Charlot Crea, from Istanbul and Antalya to Dubai, Cairo and Makkah. Discuss your next photography project."
+    },
+    "tr": {
+      "seo_title": "Otel ve Mimari Fotoğrafçılık | Charlot Crea",
+      "description": "İstanbul ve Antalya’dan Dubai, Kahire ve Mekke’ye Charlot Crea’nın otel, resort ve mimari fotoğraf çalışmalarını keşfedin. Çekim projenizi birlikte planlayalım."
+    }
+  },
+  "/en/home-3/": {
+    "en": {
+      "seo_title": "Hotel Photography & Film Production | Charlot Crea",
+      "description": "Discover Charlot Crea’s hotel photography and commercial films. Explore hospitality projects across Türkiye and the Middle East, and request a production quote."
+    },
+    "tr": {
+      "seo_title": "Otel Fotoğrafçılığı ve Film Prodüksiyonu | Charlot Crea",
+      "description": "Charlot Crea’nın otel fotoğrafçılığı ve tanıtım filmi çalışmalarını keşfedin. Türkiye ve Orta Doğu’daki projelerimizi inceleyin, çekiminiz için teklif isteyin."
+    }
+  }
+}

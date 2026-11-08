@@ -48,7 +48,7 @@ def dimensions(path):
    i+=length
  return None
 metadata={
- '/en/':('Photography & Film | Charlot Crea','Photography and commercial film by Charlot Crea. Explore selected projects, international work and more than 25 years of photographic experience.','/assets/hero.jpg','WebPage','Home'),
+ '/en/':('Hotel Photography & Commercial Films | Charlot Crea', 'Charlot Crea creates hotel and architectural photography and commercial films in Türkiye, the UAE, Egypt and Saudi Arabia. Explore our work and plan your shoot.', '/assets/hero.jpg', 'WebPage', 'Home'),
  '/en/photography/':('Photography Portfolio | Charlot Crea','Explore Charlot Crea’s selected photography projects across Türkiye, the UAE, Egypt and Saudi Arabia, with full galleries and project locations.','/assets/25hours-dubai-cover.jpg','CollectionPage','Photography'),
  '/en/film/':('Commercial Film Production | Charlot Crea','Discover Charlot Crea’s approach to commercial film. Share your brand, product or service story and discuss the brief, production and delivery.','/assets/logo.png','WebPage','Film'),
  '/en/about/':('About Charlot Crea | Photography & Film','Discover Charlot Crea’s photographic approach, more than 25 years of experience, work across four continents and consultation before and after a shoot.','/assets/about-original.jpg','AboutPage','About'),
@@ -57,8 +57,8 @@ metadata={
  '/en/contact/':('Discuss a Photography or Film Project | Charlot Crea','Plan your next photography or commercial film project with Charlot Crea. Share your location, preferred timing and creative brief.','/assets/logo.png','ContactPage','Contact'),
  '/en/destinations/':('International Photography Projects | Charlot Crea','Discover Charlot Crea’s selected photography projects by destination: Türkiye, the United Arab Emirates, Egypt and Saudi Arabia.','/assets/hero.jpg','CollectionPage','Destinations'),
  '/en/destinations/uae/dubai/':('Photography in Dubai | Charlot Crea','Explore Charlot Crea’s Dubai photography portfolio, including 25 Hours Dubai, Raffles The Palm and Rixos The Palm. Discuss your next Dubai project.','/assets/raffles-the-palm-dubai-cover.jpg','CollectionPage','Dubai'),
- '/en/home-2/':('Photography & Film — Home 2 | Charlot Crea','An alternative Charlot Crea homepage concept with a full-bleed, cinematic hero treatment.','/assets/fairmont-istanbul-cover.jpg','WebPage','Home 2'),
- '/en/home-3/':('Photography & Film — Home 3 | Charlot Crea','An alternative Charlot Crea homepage concept with the showreel film playing as a full-bleed video hero.','/assets/films/charlot-crea-showreel.jpg','WebPage','Home 3')}
+ '/en/home-2/':('Hotel & Architectural Photography | Charlot Crea', 'Explore hotel, resort and architectural photography by Charlot Crea, from Istanbul and Antalya to Dubai, Cairo and Makkah. Discuss your next photography project.', '/assets/fairmont-istanbul-cover.jpg', 'WebPage', 'Home 2'),
+ '/en/home-3/':('Hotel Photography & Film Production | Charlot Crea', 'Discover Charlot Crea’s hotel photography and commercial films. Explore hospitality projects across Türkiye and the Middle East, and request a production quote.', '/assets/films/charlot-crea-showreel.jpg', 'WebPage', 'Home 3')}
 # Alternative homepage concepts stay unbranded in the visible breadcrumb; they are variants of the same page, not sub-pages.
 home_variants=('/en/home-2/','/en/home-3/')
 country_slugs={'Türkiye':'turkey','UAE':'uae','Egypt':'egypt','Saudi Arabia':'saudi-arabia'}
