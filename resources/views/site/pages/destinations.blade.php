@@ -16,7 +16,11 @@
 @endif
 <div class="section-head"><h2><a href="{{ $destination->publicPath($locale) }}">{{ $destination->title }} @include('site.partials.icon')</a></h2></div>
 <p>{{ $destinationData['projects']->count() }} {{ __('photography collections') }} · {{ $destinationData['films']->count() }} {{ __('films') }}</p>
-@include('site.partials.destination-tree', ['nodes' => $allDestinations->where('parent_id', $destination->id)])
+<ul class="destination-locations">
+@foreach($allDestinations->filter(fn ($node) => $node->_lft > $destination->_lft && $node->_rgt < $destination->_rgt) as $location)
+<li><a href="{{ $location->publicPath($locale) }}">{{ $location->title }}</a></li>
+@endforeach
+</ul>
 </article>
 @endforeach
 </section>

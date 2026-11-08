@@ -47,37 +47,37 @@ class PublicSite
         $images = collect();
         foreach (config('destination-collages.'.$destination->import_key, []) as $selection) {
             $project = $projects->firstWhere('import_key', $selection['project']);
-            $image = $project?->galleryImages(1000)[$selection['image'] - 1] ?? null;
+            $image = $project?->galleryImages(500)[$selection['image'] - 1] ?? null;
             if ($image) {
                 $images->push($image);
             }
         }
         if ($images->isNotEmpty()) {
-            return $images->unique('src')->take(3)->values()->all();
+            return $images->unique('src')->take(6)->values()->all();
         }
         foreach ($projects as $project) {
-            if ($image = $project->coverImage(900)) {
+            if ($image = $project->coverImage(500)) {
                 $images->push($image);
             }
-            if ($images->unique('src')->count() >= 3) {
+            if ($images->unique('src')->count() >= 6) {
                 break;
             }
         }
-        if ($images->unique('src')->count() < 3) {
+        if ($images->unique('src')->count() < 6) {
             foreach ($projects as $project) {
-                foreach ($project->galleryImages(900) as $image) {
+                foreach ($project->galleryImages(500) as $image) {
                     $images->push($image);
-                    if ($images->unique('src')->count() >= 3) {
+                    if ($images->unique('src')->count() >= 6) {
                         break 2;
                     }
                 }
             }
         }
-        if ($images->isEmpty() && ($image = $destination->coverImage(900))) {
+        if ($images->isEmpty() && ($image = $destination->coverImage(500))) {
             $images->push($image);
         }
 
-        return $images->unique('src')->take(3)->values()->all();
+        return $images->unique('src')->take(6)->values()->all();
     }
 
     public function countryName(?string $country): string
