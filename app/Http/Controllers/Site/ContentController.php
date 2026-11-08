@@ -35,6 +35,18 @@ class ContentController extends Controller
         $locale = explode('/', trim($path, '/'))[0];
         abort_unless(in_array($locale, ['en', 'tr']), 404);
         app()->setLocale($locale);
+        // Enquiry HTML contains session-specific CSRF tokens, old input and flash
+        // messages. It must never be reused across visitors or hostnames.
+        $formPage = Page::forPublic($locale)->with(['translations', 'medias'])
+            ->whereIn('import_key', ['/en/contact/', '/en/request-a-quote/'])
+            ->whereHas('translations', fn ($q) => $q->where('path', $path)->where('locale', $locale)->where('active', true))
+            ->first();
+        if ($formPage) {
+            return response($renderer->render($formPage, $locale))
+                ->header('Content-Type', 'text/html; charset=UTF-8')
+                ->header('Cache-Control', 'private, no-store, max-age=0')
+                ->header('X-Robots-Tag', config('charlot.indexable') ? 'index, follow' : 'noindex, nofollow');
+        }
         $version = Cache::get('charlot:content-version', 'initial');
         $key = 'charlot:page:'.$version.':'.hash('sha256', config('app.url').$path.(int) config('charlot.indexable'));
         $html = Cache::remember($key, config('charlot.page_cache_seconds'), function () use ($path, $locale, $renderer) {

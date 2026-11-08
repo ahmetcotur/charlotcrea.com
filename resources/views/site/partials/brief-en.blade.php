@@ -8,7 +8,7 @@
         @if(session('inquiry-success'))<p class="form-success" role="status">{{ session('inquiry-success') }}</p>@endif
         @if($errors->any())<p class="form-error" role="alert">Please check the highlighted fields and try again.</p>@endif
         <div class="stepbar"><span class="done"></span><span></span><span></span></div>
-        <form id="brief" method="POST" action="{{ route('contact-inquiries.store') }}" data-initial-step="{{ $errors->any() ? 2 : 0 }}" @if(session('inquiry-success')) hidden @endif>
+        <form id="brief" method="POST" action="{{ route('contact-inquiries.store', [], false) }}" data-initial-step="{{ $errors->any() ? 2 : 0 }}" @if(session('inquiry-success')) hidden @endif>
             @csrf
             <input type="hidden" name="locale" value="en">
             <label class="contact-honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
