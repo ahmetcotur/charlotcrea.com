@@ -45,6 +45,16 @@ class PublicSite
     public function destinationCollage(Destination $destination, Collection $projects): array
     {
         $images = collect();
+        foreach (config('destination-collages.'.$destination->import_key, []) as $selection) {
+            $project = $projects->firstWhere('import_key', $selection['project']);
+            $image = $project?->galleryImages(1000)[$selection['image'] - 1] ?? null;
+            if ($image) {
+                $images->push($image);
+            }
+        }
+        if ($images->isNotEmpty()) {
+            return $images->unique('src')->take(3)->values()->all();
+        }
         foreach ($projects as $project) {
             if ($image = $project->coverImage(900)) {
                 $images->push($image);
