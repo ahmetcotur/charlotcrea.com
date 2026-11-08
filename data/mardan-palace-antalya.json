@@ -1,0 +1,75 @@
+{
+  "slug": "mardan-palace-antalya",
+  "name": "Mardan Palace Antalya",
+  "country": "Türkiye",
+  "city": "Antalya",
+  "cover": "/assets/portfolio/mardan-palace-antalya/01.jpg",
+  "cover_small": "/assets/portfolio/mardan-palace-antalya/01-800.jpg",
+  "images": [
+    {
+      "src": "/assets/portfolio/mardan-palace-antalya/01.jpg",
+      "small": "/assets/portfolio/mardan-palace-antalya/01-800.jpg",
+      "width": 2400,
+      "height": 1600,
+      "alt": {
+        "en": "Mardan Palace Antalya lobby staircase and chandeliers",
+        "tr": "Mardan Palace Antalya lobi merdivenleri ve avizeler"
+      },
+      "source_name": "AHG08527_.JPG",
+      "source_sha256": "4fd8911f4b581b941729093f8f863fbf0070059735004545e32445cb434ad179",
+      "asset_sha256": "8561c3f9516c5a078a58c4b98cff17326c0529c13135105931c89729651b1a8e"
+    },
+    {
+      "src": "/assets/portfolio/mardan-palace-antalya/02.jpg",
+      "small": "/assets/portfolio/mardan-palace-antalya/02-800.jpg",
+      "width": 2400,
+      "height": 1600,
+      "alt": {
+        "en": "Poolside terrace and tower at Mardan Palace Antalya",
+        "tr": "Mardan Palace Antalya havuz terası ve kule manzarası"
+      },
+      "source_name": "AHG07424_.JPG",
+      "source_sha256": "50efeb954b4598ddb04b84f0002416c03e9dd40dc4e0b487e1918dec96bbf7bc",
+      "asset_sha256": "bacc73b37bbfdfc8383ce2a0c14624be64a19a6b4b17789454c14d71068576a3"
+    },
+    {
+      "src": "/assets/portfolio/mardan-palace-antalya/03.jpg",
+      "small": "/assets/portfolio/mardan-palace-antalya/03-800.jpg",
+      "width": 2400,
+      "height": 1331,
+      "alt": {
+        "en": "Lounge interior overlooking the pool at Mardan Palace Antalya",
+        "tr": "Mardan Palace Antalya havuz manzaralı salon"
+      },
+      "source_name": "AHG07780_v2.JPG",
+      "source_sha256": "7cbc90d80e671c7404a7b90f2259bc78fe650a0ce654b5c36d16794f163c83f6",
+      "asset_sha256": "274a93e75897476a16adae59a43b8db27e24066be82b43d068885f034eab7c7b"
+    },
+    {
+      "src": "/assets/portfolio/mardan-palace-antalya/04.jpg",
+      "small": "/assets/portfolio/mardan-palace-antalya/04-800.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt": {
+        "en": "Bar portrait at Mardan Palace Antalya",
+        "tr": "Mardan Palace Antalya barında portre"
+      },
+      "source_name": "AHG07857_.JPG",
+      "source_sha256": "060318ab602e17bdf9f692628e3cce765e56aa2734c369a3b6165ccd471371ba",
+      "asset_sha256": "18fe15bbe596f852da9692e7ec058675d168b5fc5bb0dba32e9c775ec5311ca8"
+    },
+    {
+      "src": "/assets/portfolio/mardan-palace-antalya/05.jpg",
+      "small": "/assets/portfolio/mardan-palace-antalya/05-800.jpg",
+      "width": 2400,
+      "height": 1600,
+      "alt": {
+        "en": "Hospitality lifestyle photography at Mardan Palace Antalya",
+        "tr": "Mardan Palace Antalya otel yaşam tarzı fotoğrafı"
+      },
+      "source_name": "AHG07895_.JPG",
+      "source_sha256": "64bb9a19d015c435c13c1983128434d289df51ea33b689b8ffeada853fb817ed",
+      "asset_sha256": "da29caa8d35f770e4cfb1f6581605ec9be1d419ee52df445f24fba084fa2ec47"
+    }
+  ]
+}

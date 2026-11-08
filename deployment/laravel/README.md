@@ -21,6 +21,7 @@ docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.
 docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml up -d database app web
 docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml exec app php artisan migrate --force
 docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml exec app php artisan charlot:import
+docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml exec app php artisan charlot:seed-mardan-palace
 docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml exec app php artisan charlot:import-media
 docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml exec app php artisan charlot:import-references
 docker compose --env-file deployment/laravel/.env -f deployment/laravel/compose.yaml exec app php artisan charlot:seed-settings

@@ -3,13 +3,14 @@
 namespace App\Console\Commands;
 
 use A17\Twill\Models\Media;
+use App\Models\Project;
 use App\Services\ContentTypes;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
 
 class ImportLegacyMedia extends Command
 {
-    protected $signature = 'charlot:import-media';
+    protected $signature = 'charlot:import-media {--project= : Import media only for this project import key}';
 
     protected $description = 'Copy original portfolio photographs into Twill without replacing edited selections';
 
@@ -17,7 +18,14 @@ class ImportLegacyMedia extends Command
     {
         $count = 0;
         foreach (ContentTypes::MODELS as $class) {
-            foreach ($class::with('medias')->cursor() as $model) {
+            if ($this->option('project') && $class !== Project::class) {
+                continue;
+            }
+            $models = $class::with('medias');
+            if ($this->option('project')) {
+                $models->where('import_key', $this->option('project'));
+            }
+            foreach ($models->cursor() as $model) {
                 $source = $model->source_data ?? [];
                 $roles = [
                     'cover' => array_filter([$source['cover'] ?? $source['poster'] ?? $source['image'] ?? null]),
