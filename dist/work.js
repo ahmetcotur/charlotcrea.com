@@ -27,7 +27,9 @@
                 video.controls = true;
                 video.playsInline = true;
                 video.setAttribute('playsinline', '');
-                video.preload = 'metadata';
+                video.preload = 'auto';
+                const poster = button.querySelector('img');
+                if (poster) video.poster = poster.currentSrc || poster.src;
                 video.setAttribute('aria-label', title);
                 host.append(video);
                 dialog.showModal();

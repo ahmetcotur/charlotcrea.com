@@ -41,7 +41,7 @@
 @php($isContactPage = $model instanceof \App\Models\Page && in_array($model->import_key, ['/en/contact/', '/en/request-a-quote/', '/tr/iletisim/']))
 @foreach (['app','assets/vendor/gsap.min','assets/vendor/ScrollTrigger.min','motion','gallery','site','work','icons','back-to-top'] as $script)
 @if($isContactPage && in_array($script, ['app', 'site'])) @continue @endif
-<script src="/{{ $script }}.js{{ $script === 'work' ? '?v=2' : '' }}"></script>
+<script src="/{{ $script }}.js{{ $script === 'work' ? '?v=3' : '' }}"></script>
 @endforeach
 @if($isContactPage)<script src="/contact-form.js" defer></script>@endif
 @stack('site_scripts')

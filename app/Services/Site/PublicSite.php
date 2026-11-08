@@ -36,6 +36,7 @@ class PublicSite
         if (! $url || ! str_starts_with($url, '/assets/films/')) {
             return $url;
         }
+        $url = preg_replace('~^/assets/films/charlot-crea-showreel\.mp4(?=[?#]|$)~', '/assets/films/charlot-crea-showreel-v2.mp4', $url);
         [$path, $fragment] = array_pad(explode('#', $url, 2), 2, null);
 
         return $path.(str_contains($path, '?') ? '&' : '?').'delivery=4'.($fragment !== null ? '#'.$fragment : '');
