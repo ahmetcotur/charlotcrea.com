@@ -29,8 +29,36 @@ use App\Http\Controllers\Public\QuoteApprovalController;
 use App\Http\Controllers\Public\WorkDeliveryController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/sitemap.xml', SitemapController::class);
-Route::get('/robots.txt', fn () => response("User-agent: *\n".(config('charlot.indexable') ? "Allow: /\nDisallow: /admin/\nDisallow: /panel/\nDisallow: /legacy-cms/\n" : "Disallow: /\n"))->header('Content-Type', 'text/plain'));
+Route::get('/sitemap.xml', SitemapController::class)
+    ->withoutMiddleware([\App\Http\Middleware\RecordPageVisit::class]);
+Route::get('/robots.txt', function () {
+    $baseUrl = rtrim(config('app.url'), '/');
+    if (config('charlot.indexable')) {
+        $lines = [
+            'User-agent: *',
+            'Allow: /',
+            'Disallow: /admin/',
+            'Disallow: /panel/',
+            'Disallow: /legacy-cms/',
+            'Disallow: /teklif/',
+            'Disallow: /teslimat/',
+            '',
+            'Sitemap: ' . $baseUrl . '/sitemap.xml',
+        ];
+    } else {
+        $lines = [
+            'User-agent: *',
+            'Disallow: /',
+            '',
+            'Sitemap: ' . $baseUrl . '/sitemap.xml',
+        ];
+    }
+
+    return response(implode("\n", $lines) . "\n", 200, [
+        'Content-Type' => 'text/plain; charset=UTF-8',
+        'Cache-Control' => 'public, max-age=86400',
+    ]);
+})->withoutMiddleware([\App\Http\Middleware\RecordPageVisit::class]);
 Route::post('/quote-requests', StoreInquiryController::class)->middleware('throttle:5,1')->name('quote-requests.store');
 Route::post('/contact-inquiries', StoreInquiryController::class)->middleware('throttle:5,1')->name('contact-inquiries.store');
 

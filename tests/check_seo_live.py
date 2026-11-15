@@ -1,10 +1,11 @@
 """Check the running Laravel site with the sitemap as the canonical page list."""
 import argparse
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 
@@ -47,14 +48,21 @@ def main():
     parser.add_argument('--base-url', default='http://localhost:8081')
     args = parser.parse_args()
     base = args.base_url.rstrip('/')
-    sitemap = ET.fromstring(urlopen(base + '/sitemap.xml', timeout=30).read())
+    req_headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
+    sitemap_req = Request(base + '/sitemap.xml', headers=req_headers)
+    sitemap = ET.fromstring(urlopen(sitemap_req, timeout=30).read())
     namespace = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
     urls = [element.text for element in sitemap.findall('s:url/s:loc', namespace)]
     assert urls and len(urls) == len(set(urls)), 'Empty or duplicate sitemap entries'
 
+    lastmods = [element.text for element in sitemap.findall('s:url/s:lastmod', namespace)]
+    assert len(lastmods) == len(urls), f'Missing lastmod elements: found {len(lastmods)} for {len(urls)} urls'
+    assert all(re.match(r'^\d{4}-\d{2}-\d{2}$', lm) for lm in lastmods), 'Invalid lastmod date format'
+
     def check(url):
         path = urlsplit(url).path
-        response = urlopen(base + path, timeout=30)
+        req = Request(base + path, headers=req_headers)
+        response = urlopen(req, timeout=30)
         page = Page()
         page.feed(response.read().decode('utf-8'))
         assert response.status == 200, path
